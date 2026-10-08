@@ -1,0 +1,17 @@
+{
+  "name": "Konstantinos C. Makris",
+  "title": "Professor of Environmental Health",
+  "institution": "Cyprus University of Technology",
+  "department": "Department of Rehabilitation Sciences",
+  "orcid": "0000-0001-5251-8619",
+  "openAlexId": "A5059194195",
+  "openAlexAuthorIds": ["A5059194195", "A5129952756"],
+  "openAlexInstitutionId": "I163151358",
+  "ktisisPersonId": "d526a7a1-3a1b-4b46-aed8-d3276a929152",
+  "ktisisLegacyId": "rp00058",
+  "scholarUrl": "https://scholar.google.com/citations?user=iCd8LKAAAAAJ&sortby=pubdate",
+  "institutionUrl": "https://www.cut.ac.cy/faculties/hsc/reh/staff/Teaching%2Band%2BResearch%2BStaff%2B/konstantinos.makris/?languageId=1",
+  "repositoryUrl": "https://ktisis.cut.ac.cy/entities/person/d526a7a1-3a1b-4b46-aed8-d3276a929152",
+  "verifiedAt": "2026-10-07",
+  "verification": "Ktisis links the supplied Google Scholar profile to ORCID 0000-0001-5251-8619. Both candidate OpenAlex author profiles carry that ORCID and Cyprus University of Technology affiliation. The secondary profile also contains misattributed physics supplements, so its works require additional work-level affiliation, raw ORCID, or independently verified coauthor evidence. Explicit exclusions are recorded in publication-exclusions.json. Name-only author-profile matches were excluded."
+}

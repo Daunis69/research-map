@@ -1,0 +1,27 @@
+[
+  {
+    "openAlexId": "W7139078935",
+    "doi": "10.60893/figshare.app.c.8310463",
+    "reason": "Physics Figshare collection misattributed to the secondary OpenAlex profile. Raw author name is Makris, Konstantinos; no work-level CUT affiliation or raw ORCID; coauthors Kyriakos Skarsoulis and Demetri Psaltis. The environmental-health researcher's verified ORCID is not sufficient evidence when merely inherited from an OpenAlex author entity."
+  },
+  {
+    "openAlexId": "W7138848246",
+    "doi": "10.60893/figshare.app.31341055",
+    "reason": "Supplementary material for the same unrelated physics work; excluded from the publication corpus and identity mismatch."
+  },
+  {
+    "openAlexId": "W7138906360",
+    "doi": "10.60893/figshare.app.31341055.v1",
+    "reason": "Versioned supplementary material for the same unrelated physics work; excluded from the publication corpus and identity mismatch."
+  },
+  {
+    "openAlexId": "W7214607791",
+    "doi": "10.6084/m9.figshare.34007495.v1",
+    "reason": "Additional file 1 for the genuine childhood plastics article. Figshare supplement, not a separate scientific publication, despite OpenAlex's article classification."
+  },
+  {
+    "openAlexId": "W7214640891",
+    "doi": "10.6084/m9.figshare.34007495",
+    "reason": "Unversioned DOI of the same childhood plastics additional file; supplementary material is not counted as a separate publication."
+  }
+]

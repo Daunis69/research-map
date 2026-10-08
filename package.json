@@ -1,0 +1,41 @@
+{
+  "name": "makris-research-map",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "import": "tsx scripts/import.ts"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "@vercel/blob": "2.8.1",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "react-leaflet": "^5.0.0",
+    "lucide-react": "1.52.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/leaflet": "^1.9.0",
+    "@types/leaflet.markercluster": "^1.5.0",
+    "typescript": "^5.9.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.4.0",
+    "tsx": "^4.20.0"
+  }
+}

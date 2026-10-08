@@ -1,0 +1,210 @@
+{
+  "importedAt": "2026-10-07T11:23:31.047Z",
+  "reviewedAt": "2026-10-07T11:29:17.927Z",
+  "researcher": {
+    "name": "Konstantinos C. Makris",
+    "title": "Professor of Environmental Health",
+    "institution": "Cyprus University of Technology",
+    "department": "Department of Rehabilitation Sciences",
+    "orcid": "0000-0001-5251-8619",
+    "openAlexId": "A5059194195",
+    "openAlexAuthorIds": [
+      "A5059194195",
+      "A5129952756"
+    ],
+    "openAlexInstitutionId": "I163151358",
+    "ktisisPersonId": "d526a7a1-3a1b-4b46-aed8-d3276a929152",
+    "ktisisLegacyId": "rp00058",
+    "scholarUrl": "https://scholar.google.com/citations?user=iCd8LKAAAAAJ&sortby=pubdate",
+    "institutionUrl": "https://www.cut.ac.cy/faculties/hsc/reh/staff/Teaching%2Band%2BResearch%2BStaff%2B/konstantinos.makris/?languageId=1",
+    "repositoryUrl": "https://ktisis.cut.ac.cy/entities/person/d526a7a1-3a1b-4b46-aed8-d3276a929152",
+    "verifiedAt": "2026-10-07",
+    "verification": "Ktisis links the supplied Google Scholar profile to ORCID 0000-0001-5251-8619. Both candidate OpenAlex author profiles carry that ORCID and Cyprus University of Technology affiliation. The secondary profile also contains misattributed physics supplements, so its works require additional work-level affiliation, raw ORCID, or independently verified coauthor evidence. Explicit exclusions are recorded in publication-exclusions.json. Name-only author-profile matches were excluded."
+  },
+  "identityEvidence": [
+    {
+      "url": "https://ktisis.cut.ac.cy/entities/person/d526a7a1-3a1b-4b46-aed8-d3276a929152",
+      "fact": "The institutional person record names Makris, Konstantinos C.; lists Professor of Environmental Health, CUT; and links BOTH supplied Scholar iCd8LKAAAAAJ and ORCID 0000-0001-5251-8619."
+    },
+    {
+      "url": "https://www.cut.ac.cy/faculties/hsc/reh/staff/Teaching%2Band%2BResearch%2BStaff%2B/konstantinos.makris/?languageId=1",
+      "fact": "Official university staff page identifies Professor Konstantinos Makris, Water and Health / exposome research, and Cyprus University of Technology."
+    },
+    {
+      "url": "https://api.openalex.org/authors?filter=orcid:https://orcid.org/0000-0001-5251-8619",
+      "fact": "Returned A5059194195 and A5129952756 with the institutional ORCID and CUT affiliation. The secondary author cluster needs per-work checks because it also contained unrelated physics supplements."
+    },
+    {
+      "url": "https://www-oembed.physics.uoc.gr/en/faculty/k.makris",
+      "fact": "The University of Crete physicist has different ORCID 0000-0002-0626-0589 and Scholar Xb9GqdoAAAAJ. Name similarity alone is not accepted."
+    }
+  ],
+  "doiCrossChecks": [
+    {
+      "title": "BTEX chrono-metabolism and leukemogenic effects of night shift work in workers of gasoline stations: the EXPOSOWORK prospective panel study in Bulgaria",
+      "doi": "10.1016/j.jncc.2025.01.006",
+      "source": {
+        "crossref": "https://api.crossref.org/works/10.1016%2Fj.jncc.2025.01.006",
+        "orcid": "https://orcid.org/0000-0001-5251-8619/work/186652688",
+        "ktisis": "https://ktisis.cut.ac.cy/entities/publication/b8798dcc-d2ae-4a9e-93d9-b4d88608616a",
+        "openAlex": "https://openalex.org/W4409204976"
+      },
+      "evidence": "The same DOI is independently present in the verified author's ORCID record, exact-authority Ktisis publication and OpenAlex harvest."
+    },
+    {
+      "title": "An anti-inflammatory response of an organic food intervention by reducing pesticide exposures in children of Cyprus: A cluster-randomized crossover trial",
+      "doi": "10.1016/j.envres.2024.118710",
+      "source": {
+        "crossref": "https://api.crossref.org/works/10.1016%2Fj.envres.2024.118710",
+        "orcid": "https://orcid.org/0000-0001-5251-8619/work/155569518",
+        "ktisis": "https://ktisis.cut.ac.cy/entities/publication/085d293a-c118-4a62-99c9-3471628fb9d6",
+        "openAlex": "https://openalex.org/W4392888585"
+      },
+      "evidence": "The same DOI is independently present in the verified author's ORCID record, exact-authority Ktisis publication and OpenAlex harvest."
+    },
+    {
+      "title": "Temporal trends of cancer incidence rates for the most frequent cancer sites in Cyprus (2004–2017)",
+      "doi": "10.1002/cnr2.2000",
+      "source": {
+        "crossref": "https://api.crossref.org/works/10.1002%2Fcnr2.2000",
+        "orcid": "https://orcid.org/0000-0001-5251-8619/work/161453374",
+        "ktisis": "https://ktisis.cut.ac.cy/entities/publication/d24095e5-b0be-4770-8126-6e933e814ce5",
+        "openAlex": "https://openalex.org/W4399571641"
+      },
+      "evidence": "The same DOI is independently present in the verified author's ORCID record, exact-authority Ktisis publication and OpenAlex harvest."
+    },
+    {
+      "title": "The Need for an Alternative Health Claim Process for Foods Based on Both Nutrient and Contaminant Profiles",
+      "doi": "10.1016/j.cdnut.2024.103764",
+      "source": {
+        "crossref": "https://api.crossref.org/works/10.1016%2Fj.cdnut.2024.103764",
+        "orcid": "https://orcid.org/0000-0001-5251-8619/work/158446617",
+        "ktisis": "https://ktisis.cut.ac.cy/entities/publication/22f0e3c6-0f7a-4eab-86fa-1feeb82261c2",
+        "openAlex": "https://openalex.org/W4395480049"
+      },
+      "evidence": "The same DOI is independently present in the verified author's ORCID record, exact-authority Ktisis publication and OpenAlex harvest."
+    },
+    {
+      "title": "Chrono-modulated effects of external stressors on oxidative stress and damage in humans: A scoping review on night shift work",
+      "doi": "10.1016/j.envint.2023.108048",
+      "source": {
+        "crossref": "https://api.crossref.org/works/10.1016%2Fj.envint.2023.108048",
+        "orcid": "https://orcid.org/0000-0001-5251-8619/work/137242931",
+        "ktisis": "https://ktisis.cut.ac.cy/entities/publication/076fc7d5-ddde-4ea1-84ec-0b0ad3f01c1a",
+        "openAlex": "https://openalex.org/W4381435333"
+      },
+      "evidence": "The same DOI is independently present in the verified author's ORCID record, exact-authority Ktisis publication and OpenAlex harvest."
+    }
+  ],
+  "crossrefChecks": [
+    {
+      "title": "Bioplastic Food Packaging and the Young Women’s Exposome: Body Burden of Bisphenols in a Randomized Intervention Trial",
+      "doi": "10.21203/rs.3.rs-10572106/v1",
+      "crossref": "https://api.crossref.org/works/10.21203%2Frs.3.rs-10572106%2Fv1",
+      "evidence": "Fetched Crossref's single DOI endpoint and accepted metadata only when the response DOI exactly matched the already-verified publication DOI. No claim is made that Crossref supplied an author ORCID."
+    },
+    {
+      "title": "Climate change and health impacts “through undergraduate medical students’ eyes”: a cross-sectional study in Greece",
+      "doi": "10.1080/09603123.2026.2638885",
+      "crossref": "https://api.crossref.org/works/10.1080%2F09603123.2026.2638885",
+      "evidence": "Fetched Crossref's single DOI endpoint and accepted metadata only when the response DOI exactly matched the already-verified publication DOI. No claim is made that Crossref supplied an author ORCID."
+    },
+    {
+      "title": "Designing a children’s health exposomics study protocol: The CHILDREN_FIRST multi-country prospective cohort using multi-omics and personalized prevention approaches",
+      "doi": "10.1371/journal.pone.0326641",
+      "crossref": "https://api.crossref.org/works/10.1371%2Fjournal.pone.0326641",
+      "evidence": "Fetched Crossref's single DOI endpoint and accepted metadata only when the response DOI exactly matched the already-verified publication DOI. No claim is made that Crossref supplied an author ORCID."
+    },
+    {
+      "title": "Designing a School-Based, Complex Public Health Intervention to Improve Iodine Awareness in Adolescents in Six Countries",
+      "doi": "10.3390/nu18172820",
+      "crossref": "https://api.crossref.org/works/10.3390%2Fnu18172820",
+      "evidence": "Fetched Crossref's single DOI endpoint and accepted metadata only when the response DOI exactly matched the already-verified publication DOI. No claim is made that Crossref supplied an author ORCID."
+    }
+  ],
+  "harvest": {
+    "openAlexCandidateWorks": 222,
+    "openAlexPages": 3,
+    "openAlexRetained": 217,
+    "orcidGroupedWorks": 159,
+    "ktisisEntities": 201,
+    "ktisisPages": 3,
+    "ktisisPublications": 176,
+    "deduplicatedTotal": 251,
+    "crossrefEnriched": 50
+  },
+  "exclusions": [
+    {
+      "openAlexId": "W7139078935",
+      "doi": "10.60893/figshare.app.c.8310463",
+      "reason": "Physics Figshare collection misattributed to the secondary OpenAlex profile. Raw author name is Makris, Konstantinos; no work-level CUT affiliation or raw ORCID; coauthors Kyriakos Skarsoulis and Demetri Psaltis. The environmental-health researcher's verified ORCID is not sufficient evidence when merely inherited from an OpenAlex author entity."
+    },
+    {
+      "openAlexId": "W7138848246",
+      "doi": "10.60893/figshare.app.31341055",
+      "reason": "Supplementary material for the same unrelated physics work; excluded from the publication corpus and identity mismatch."
+    },
+    {
+      "openAlexId": "W7138906360",
+      "doi": "10.60893/figshare.app.31341055.v1",
+      "reason": "Versioned supplementary material for the same unrelated physics work; excluded from the publication corpus and identity mismatch."
+    },
+    {
+      "openAlexId": "W7214607791",
+      "doi": "10.6084/m9.figshare.34007495.v1",
+      "reason": "Additional file 1 for the genuine childhood plastics article. Figshare supplement, not a separate scientific publication, despite OpenAlex's article classification."
+    },
+    {
+      "openAlexId": "W7214640891",
+      "doi": "10.6084/m9.figshare.34007495",
+      "reason": "Unversioned DOI of the same childhood plastics additional file; supplementary material is not counted as a separate publication."
+    }
+  ],
+  "secondaryProfileRules": "Accept only work-level raw ORCID/CUT affiliation or at least two coauthors independently present in authority-linked Ktisis publications. Current two genuine 2026 health articles carry work-level CUT affiliation. The HBM review has Maryam Zare Jeddi and Karen S. Galea; both occur in Ktisis-verified papers.",
+  "corpusScope": "Includes articles, reviews, preprints, books/chapters, dissertations, conference papers/abstracts and corrections present in verified sources. Supplementary files, datasets, software, awards, talks, committee memberships and teaching records are excluded. Distinct preprint/final DOIs are kept separately.",
+  "limitations": [
+    "Complete pagination means complete records returned by these APIs on the import date, not a guarantee that every publication is indexed.",
+    "Seven large primary-profile Global Burden of Disease collaborations have OpenAlex authorship lists truncated at 100. Their author-profile index association is retained; full author lists may be added by subsequent Crossref enrichment.",
+    "Crossref initial enrichment succeeded for 11 of 80 attempted known DOIs; other attempts were unavailable. Runtime enrichment now respects the current single concurrent request public-pool limit with pacing and a 45-second budget, and retries unfinished enrichment on later syncs.",
+    "ORCID works can be self-maintained or incomplete; missing fields stay missing until another source supplies metadata.",
+    "Study geography is inferred conservatively from article text and never from author or publisher affiliations. Unknown locations remain visible in the list and timeline."
+  ],
+  "apiDocumentation": [
+    "https://help.openalex.org/api/paging/",
+    "https://help.openalex.org/api/authentication/",
+    "https://github.com/ORCID/ORCID-Source/blob/main/orcid-api-web/tutorial/works.md",
+    "https://github.com/DSpace/RestContract/blob/main/search-endpoint.md",
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/"
+  ],
+  "lastLiveSync": {
+    "timestamp": "2026-10-07T11:29:17.927Z",
+    "total": 249,
+    "sources": [
+      {
+        "source": "OpenAlex",
+        "status": "ok",
+        "count": 217,
+        "message": "Complete cursor harvest: 222 candidates over 3 pages; 217 retained after identity and supplementary-material checks."
+      },
+      {
+        "source": "ORCID",
+        "status": "ok",
+        "count": 159,
+        "message": "Complete public grouped works record."
+      },
+      {
+        "source": "Ktisis",
+        "status": "ok",
+        "count": 176,
+        "message": "Complete authority search: 3 pages, 201 entities; 176 verified Publication entities retained."
+      },
+      {
+        "source": "Crossref",
+        "status": "error",
+        "count": 39,
+        "message": "39 known DOIs enriched; 1 unavailable; 155 queued for a later sync."
+      }
+    ],
+    "note": "An authorized POST to the built production server refreshed all sources and persisted this snapshot. Exact source-record identity merges ORCID summary/detail records when missing authors become available."
+  }
+}
