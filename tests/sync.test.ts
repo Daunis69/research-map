@@ -1,5 +1,13 @@
 import test from "node:test";
+import * as syncLogic from "../lib/syncLogic";
 import assert from "node:assert/strict";
+
+test("an affiliation snapshot over 2MB round-trips through a cache value under 2MB", () => {
+  const dataset = { publications: [{ title: "affiliation metadata ".repeat(130000) }], fetchedAt: "2026-10-14", sources: [] };
+  const encoded = syncLogic.encodeCachedDataset?.(dataset as unknown as import("../types/publication").PublicationDataset);
+  assert.ok(encoded && Buffer.byteLength(encoded) < 2_000_000);
+  assert.deepEqual(syncLogic.decodeCachedDataset?.(encoded!), dataset);
+});
 import {
   compareDatasets,
   failedRefreshDataset,

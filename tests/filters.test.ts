@@ -39,8 +39,9 @@ const located: Publication = {
   year: 2024,
   geographyStatus: "located",
   studyLocations: [
-    { name: "Nicosia", country: "Cyprus", city: "Nicosia", confidence: "high" },
+    { name: "Athens", country: "Greece", city: "Athens", confidence: "high" },
   ],
+  authorLocations: [{ name: "Nicosia", country: "Cyprus", city: "Nicosia", confidence: "high", authors: ["Fixture Author"], institutions: ["Fixture University"], precision: "institution" }],
 };
 const unknownYear: Publication = { ...base, id: "c", year: null };
 
@@ -56,6 +57,9 @@ test("all views retain unknown geography and unknown years by default", () => {
     }).map((p) => p.id),
     ["a", "b", "c"],
   );
+});
+test("legacy study geography cannot supply an author-location filter", () => {
+  assert.equal(filterPublications([{ ...located, authorLocations: undefined }], { ...filters, country: "Greece" }).length, 0);
 });
 test("shared filters combine geography, years and metadata keywords", () => {
   assert.deepEqual(

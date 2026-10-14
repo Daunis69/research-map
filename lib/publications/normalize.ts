@@ -1,4 +1,5 @@
 import type { Publication } from "../../types/publication";
+import { enrichAuthorLocations } from "../authorLocations";
 
 /** Only work-specific source URLs identify a paper; a shared author profile does not. */
 export function sourceIdentityKeys(
@@ -159,5 +160,5 @@ export function makePublication(
     discoveredAt: input.discoveredAt ?? now,
     updatedAt: input.updatedAt ?? now,
   };
-  return publication;
+  return enrichAuthorLocations(publication);
 }

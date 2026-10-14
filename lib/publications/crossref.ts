@@ -1,4 +1,5 @@
 import type { Publication, SourceStatus } from "../../types/publication";
+import { findKnownPlace } from "../geocode";
 import { fetchJson, mapConcurrent, type FetchOptions } from "./http";
 import {
   array,
@@ -32,6 +33,21 @@ export function normalizeCrossrefWork(
       )
       .find((year) => year !== null) ?? null;
   const doi = normalizeDoi(work.DOI);
+  const authorEntries = array(work.author).map(value => {
+    const author = record(value);
+    return { value: author, name: plainText(author.name ?? [author.given, author.family].filter(part => typeof part === "string").join(" ")) };
+  });
+  const authorAffiliations = authorEntries.flatMap(({ value, name }) => {
+    if (!name) return [];
+    return array(value.affiliation).flatMap(item => {
+      const institution = plainText(record(item).name);
+      if (!institution) return [];
+      // Only an explicit standalone country in an affiliation address qualifies.
+      const country = institution.split(",").map(part => findKnownPlace(part.trim())).find(place => place && !place.city)?.country;
+      return [{ author: name, institution, country,
+        sourceUrl: doi ? `https://api.crossref.org/works/${encodeURIComponent(doi)}` : undefined }];
+    });
+  });
   return makePublication(
     {
       title,
@@ -48,6 +64,8 @@ export function normalizeCrossrefWork(
           );
         }),
       ),
+      authorAffiliations,
+      affiliationsIncomplete: authorEntries.some(({ name }) => !authorAffiliations.some(a => a.author === name)),
       journal: plainText(array(work["container-title"])[0]),
       abstract: plainText(work.abstract),
       topics: [],
@@ -77,7 +95,7 @@ export async function enrichWithCrossref(
   // Only DOI identities already established by a verified author source enter this queue.
   // Old successes are retained in the snapshot, so remaining works are enriched on later runs.
   const pending = publications
-    .filter((publication) => publication.doi && !publication.source.crossref)
+    .filter((publication) => publication.doi && (!publication.source.crossref || publication.authorAffiliations === undefined))
     .sort(
       (a, b) =>
         Number(!b.abstract || !b.authors.length) -

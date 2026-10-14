@@ -18,6 +18,8 @@ interface Point {
   latitude: number;
   longitude: number;
   ids: Set<string>;
+  institutions: Set<string>;
+  approximate: boolean;
 }
 const INITIAL_CENTER: L.LatLngTuple = [28, 21];
 
@@ -33,15 +35,18 @@ function Markers({
   const points = useMemo(() => {
     const grouped = new Map<string, Point>();
     publications.forEach((publication) =>
-      publication.studyLocations.filter(hasCoordinates).forEach((location) => {
+      (publication.authorLocations ?? []).filter(hasCoordinates).forEach((location) => {
         const key = `${location.latitude.toFixed(4)},${location.longitude.toFixed(4)}`;
         const point = grouped.get(key) ?? {
           name: location.name,
           latitude: location.latitude,
           longitude: location.longitude,
           ids: new Set<string>(),
+          institutions: new Set<string>(),
+          approximate: location.precision === "country",
         };
         point.ids.add(publication.id);
+        location.institutions.forEach(institution => point.institutions.add(institution));
         grouped.set(key, point);
       }),
     );
@@ -89,12 +94,15 @@ function Markers({
       const label = document.createElement("strong");
       label.textContent = point.name;
       const count = document.createElement("p");
-      count.textContent = `${point.ids.size} ${point.ids.size === 1 ? "publication" : "publications"} at this study location`;
+      count.textContent = `${point.ids.size} ${point.ids.size === 1 ? "publication" : "publications"} at this author location`;
       const button = document.createElement("button");
       button.type = "button";
       button.textContent = "Explore publications →";
       button.addEventListener("click", () => callback.current(point.name));
-      popup.append(label, count, button);
+      const affiliations = document.createElement("p");
+      const names = [...point.institutions];
+      affiliations.textContent = `${point.approximate ? "Country-level marker. " : ""}${names.slice(0, 3).join("; ")}${names.length > 3 ? `; +${names.length - 3} institutions` : ""}`;
+      popup.append(label, count, affiliations, button);
       marker.bindPopup(popup);
       group.addLayer(marker);
     });
@@ -153,7 +161,7 @@ export default function ResearchMap({
       zoomControl={false}
       scrollWheelZoom={false}
       className="research-leaflet-map"
-      aria-label="Interactive study locations map. Publication list is available alongside the map."
+      aria-label="Interactive author locations map. Publication list is available alongside the map."
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -1,8 +1,8 @@
 # Makris Scientific Research Map
 
-A responsive publication atlas for **Professor Konstantinos C. Makris, Cyprus University of Technology**. Explore the same dataset through an interactive study map, a chronological timeline, and a searchable publication list. Filters are shareable in the URL.
+A responsive publication atlas for **Professor Konstantinos C. Makris, Cyprus University of Technology**. Explore the same dataset through an interactive author-location map, a chronological timeline, and a searchable publication list. Filters are shareable in the URL.
 
-Map points represent **evidence of study geography**, never an author's affiliation or a journal's address. A country-level point is a representative location for that country, not a sampling coordinate. Papers without supported geography remain in the list and timeline as **Location not determined**. Explicitly non-geographic work has a separate label.
+Map points represent **the institutions of all available authors listed on each publication**. Institution coordinates are used when available; country-level markers are labelled as approximate. Papers without usable affiliations remain in the list and timeline as **Author locations unavailable**. Publication details show authors, institutions and incomplete affiliation coverage.
 
 ## Quick start
 
@@ -51,11 +51,11 @@ OpenAlex + ORCID + author-linked Ktisis records
                   ↓
        Crossref enriches known DOIs
                   ↓
-      topic + study-location extraction
+       topics + author institution locations
                   ↓
  private Blob JSON snapshot (local .cache file during development)
                   ↓
-          Next.js Data Cache
+      compressed Next.js Data Cache
                   ↓
         Map / Timeline / Publications
 ```
@@ -66,10 +66,11 @@ Important files:
 | ------------------------------ | --------------------------------- |
 | Shared data contract           | `types/publication.ts`            |
 | Source requests and merging    | `lib/publications/`               |
-| Location evidence rules        | `lib/locationExtractor.ts`        |
+| Author location derivation     | `lib/authorLocations.ts`           |
+| Institution coordinate cache  | `data/institutions.json`          |
 | Reviewed place coordinates     | `lib/geocode.ts`                  |
 | Topic grouping                 | `lib/topics.ts`                   |
-| Human corrections              | `data/location-overrides.json`    |
+| Human corrections              | `data/author-location-overrides.json` |
 | Durable dataset storage        | `lib/storage.ts`                  |
 | Sync and change counts         | `lib/sync.ts`, `lib/syncLogic.ts` |
 | Cached reads and stale refresh | `lib/dataset.ts`                  |
@@ -80,7 +81,7 @@ Important files:
 
 Serverless function memory and local files do not persist reliably on Vercel. A cache also is not a permanent record of which papers were previously discovered. Without durable storage, a cold start followed by a partial API outage could lose papers added after the bundled import, and new/updated counts would be unreliable.
 
-This application uses **one private Vercel Blob object**, not a database. It retains the merged publication history across deployments and outages. Next.js caches reads for five minutes. Blob writes use conditional ETags to reject conflicting concurrent writes. A failed source never causes known papers to be deleted; an all-source failure keeps the previous dataset. Local development writes to ignored `.cache/publications.json` instead, unless you explicitly configure Blob credentials.
+This application uses **one private Vercel Blob object**, not a database. It retains the merged publication history across deployments and outages. Next.js caches reads for five minutes using compressed JSON to stay within its per-item cache limit as affiliation metadata grows. Blob writes use conditional ETags to reject conflicting concurrent writes. A failed source never causes known papers to be deleted; an all-source failure keeps the previous dataset. Local development writes to ignored `.cache/publications.json` instead, unless you explicitly configure Blob credentials.
 
 ## Deploy to Vercel
 
@@ -144,26 +145,26 @@ npm run import
 
 This is a maintenance command for refreshing the committed starting snapshot, not a step required for every new paper. Review the resulting JSON and provenance changes before committing. Running the live `/api/sync` route updates persistent storage rather than modifying repository files.
 
-## How study locations are determined
+## How author locations are determined
 
-The extractor reads the title, abstract and descriptive keywords. Repository abstracts/keywords join these fields during normalization. Explicit study-area repository labels are supported by the reusable extractor. Author addresses are deliberately excluded.
+OpenAlex authorships attach each author to the institutions they listed on that particular work. The importer retains those author–institution relationships and country codes. It uses institution geographic records to resolve city, country and coordinates. It does not use an author's current profile affiliations or places mentioned in research titles and abstracts.
 
-It requires phrases that tie geography to actual study activity: participants recruited in a place, samples collected there, or an empirical title with a geographic scope. Affiliation, background comparisons, hypothetical and negated statements are rejected. Bare country keywords are insufficient. Each accepted location stores the source sentence and a confidence label. Automatic extraction is conservative and can miss real places; confidence is a rule-based indication, not a statistical probability.
+The checked-in institution cache makes initial browsing independent of network access. Daily sync resolves newly encountered institution IDs in batches with a 45-second budget, retaining resolved coordinates in the stored publication snapshot. An institution lookup failure leaves a country-level fallback where the paper supplies a country; otherwise the affiliation remains unmapped.
 
-Reviewed gazetteer points geocode already identified locations. Names outside the coordinate cache remain visible in publication details and filters without a guessed map pin. Add reviewed coordinates to `lib/geocode.ts` or use an override. The optional geocoder adapter has request coalescing, caching and rate limits, but no third-party geocoding traffic runs automatically. Do not geocode affiliations to fill gaps.
+Country-only affiliations use representative gazetteer points and are labelled separately from institution locations. The institution record may identify an organisation's main location rather than a particular campus. OpenAlex affiliation matches can be incomplete or incorrect. Its author list is capped at 100, so large collaborations are labelled incomplete. Missing affiliations never become study-area or publisher-address pins.
 
-Papers may have multiple locations. Therefore country/region totals and marker counts cannot always be added to obtain the number of distinct papers. Cluster bubbles count distinct associated publications. Unknown geography is different from explicitly global/non-geographic scope.
+Papers may have multiple author locations. Country totals and marker counts cannot be added to obtain the total number of papers. Each marker and cluster counts distinct publications, even when multiple coauthors share a location. Global research can still have author institution locations. The legacy `studyLocations` field and text extractor remain for compatibility with historical data; the UI exclusively uses `authorLocations`.
 
-## Correcting a study location
+## Correcting an author location
 
-Edit **`data/location-overrides.json`**. It is a JSON object keyed by a real DOI, or by the publication's internal `id` when no DOI exists. DOI matching ignores case and accepts a `https://doi.org/` prefix. An override always wins over automatic extraction, including an intentionally empty list.
+Edit **`data/author-location-overrides.json`**. It is a JSON object keyed by a real DOI, or by the publication's internal `id` when no DOI exists. DOI matching ignores case and accepts a `https://doi.org/` prefix. An override always wins over affiliation metadata, including an intentionally empty list. Historical study overrides in `data/location-overrides.json` do not affect the author map.
 
 The following is a **format illustration**. Replace the key with the paper's real DOI and use the place only after checking the paper; do not paste it as a factual correction without evidence:
 
 ```json
 {
   "PASTE_REAL_DOI_HERE": {
-    "note": "Methods section, page 3: participants recruited in Limassol.",
+    "note": "Author affiliation block: verified institution in Limassol.",
     "locations": [
       {
         "name": "Limassol",
@@ -177,23 +178,26 @@ The following is a **format illustration**. Replace the key with the paper's rea
 }
 ```
 
-Coordinates for known places can be omitted; the reviewed gazetteer fills them. For a new place, copy verified latitude/longitude from a reliable geographic source and cite the source in `note`. Never use the university address unless the methods specifically establish it as the study site.
+Coordinates for known places can be omitted; the reviewed gazetteer fills them. For an institution or new city, copy verified latitude/longitude from a reliable geographic source and cite it in `note`. Check the affiliation block on the paper being corrected.
 
-To suppress an incorrect automatic location, use `"locations": []` with `"geographyStatus": "unknown"`. To mark verified non-geographic work, use `"locations": []` with `"geographyStatus": "non-geographic"`. For multiple study sites, add multiple objects to `locations`. JSON does not allow comments or trailing commas.
+To suppress an incorrect location, use `"locations": []` with `"geographyStatus": "unknown"`. For multiple author locations, add multiple objects to `locations`. JSON does not allow comments or trailing commas.
 
 Run `npm test` and `npm run build`, commit the correction, and deploy. Overrides apply when data is read, so they also correct an older stored snapshot immediately after deployment; no full re-import is needed.
 
 ## Troubleshooting
 
 - **A paper is missing:** clear filters first. Check its DOI and author record in the verified OpenAlex, ORCID and institutional profiles. Look at `/api/sync` source outcomes and server logs. Indexing delays cannot be fixed by scraping Scholar. Check that the paper is attached to the verified identities, and that repository entries have Publication entity type.
-- **A paper has no pin:** open the Publications view. A missing abstract, vague study description, unsupported place name or missing reviewed coordinates can leave it unmapped. Add an evidence-backed location override after reading the paper.
-- **An incorrect pin:** correct the override file; for a repeated extraction bug, add a failing test under `tests/` and update `lib/locationExtractor.ts`.
+- **A paper has no pin:** open its details and check the reported affiliations. Missing institution countries or coordinates can leave it unmapped. Add a verified author-location override after checking the paper's affiliation block.
+- **An incorrect pin:** correct the author-location override file; for a repeated derivation bug, add a failing test under `tests/` and update `lib/authorLocations.ts`.
 - **No automatic updates on Vercel:** confirm the private Blob connection, Production `CRON_SECRET`, cron schedule and function logs. Preview deployments do not receive normal production cron invocations. Credentials added after deployment need a redeploy.
 - **Upstream API returns 429/403:** wait and check provider policies/quota. Configure an optional OpenAlex key. Existing publications remain available during a failure.
 - **Map tiles fail:** the list and timeline still work. Check network access to the OpenStreetMap tile host and do not remove attribution.
 - **Unexpected duplicate:** DOI is the primary key. Without DOI, normalized title, year and first author identify the work. Different DOIs are kept distinct, including preprints and final versions. Inspect the source metadata before changing merge rules.
 
 ## References
+
+- [OpenAlex paper-specific authorships](https://help.openalex.org/data/authorships/)
+- [OpenAlex institution geography](https://help.openalex.org/data/institutions/)
 
 - [Next.js Data Cache and revalidation](https://nextjs.org/docs/app/api-reference/functions/unstable_cache)
 - [Next.js background work with after](https://nextjs.org/docs/app/api-reference/functions/after)

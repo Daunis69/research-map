@@ -15,9 +15,9 @@ export interface ExplorerFilters {
   sort: Sort;
 }
 
-export function hasCoordinates(
-  location: StudyLocation,
-): location is StudyLocation & { latitude: number; longitude: number } {
+export function hasCoordinates<T extends StudyLocation>(
+  location: T,
+): location is T & { latitude: number; longitude: number } {
   return (
     typeof location.latitude === "number" &&
     Number.isFinite(location.latitude) &&
@@ -29,18 +29,13 @@ export function hasCoordinates(
 }
 
 export function geographyStatus(publication: Publication) {
-  return (
-    publication.geographyStatus ??
-    (publication.studyLocations.length ? "located" : "unknown")
-  );
+  return publication.authorLocations?.length ? "located" : "unknown";
 }
 
 export function locationLabel(publication: Publication) {
-  if (geographyStatus(publication) === "non-geographic")
-    return "Global / Non-geographic research";
   return (
-    publication.studyLocations.map((location) => location.name).join(" · ") ||
-    "Location not determined"
+    (publication.authorLocations ?? []).map((location) => location.name).join(" · ") ||
+    "Author locations unavailable"
   );
 }
 
@@ -59,6 +54,7 @@ export function filterPublications(
           publication.journal ?? "",
           ...publication.topics,
           ...(publication.keywords ?? []),
+          ...(publication.authorAffiliations ?? []).map(a => a.institution ?? ""),
         ]
           .join(" ")
           .toLocaleLowerCase()
@@ -79,21 +75,21 @@ export function filterPublications(
         return false;
       if (
         filters.country &&
-        !publication.studyLocations.some(
+        !(publication.authorLocations ?? []).some(
           (location) => location.country === filters.country,
         )
       )
         return false;
       if (
         filters.city &&
-        !publication.studyLocations.some(
+        !(publication.authorLocations ?? []).some(
           (location) => location.city === filters.city,
         )
       )
         return false;
       if (
         filters.place &&
-        !publication.studyLocations.some(
+        !(publication.authorLocations ?? []).some(
           (location) => location.name === filters.place,
         )
       )

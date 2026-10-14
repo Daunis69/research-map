@@ -106,6 +106,9 @@ test("OpenAlex walks every cursor and scopes the query to ORCID plus institution
         ],
       });
     assert.equal(url.searchParams.get("filter"), "authorships.author.id:A1|A2");
+    // The live API rejects this field even though some archived work records include it.
+    if (url.searchParams.get("select")?.split(",").includes("authors_count"))
+      return new Response("Invalid select field", { status: 400 });
     const first = url.searchParams.get("cursor") === "*";
     return json({
       meta: { next_cursor: first ? "second-page" : null },

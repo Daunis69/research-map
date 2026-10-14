@@ -71,7 +71,7 @@ export default function ResearchExplorer({
     city: params.get("city") ?? "",
     place: params.get("place") ?? "",
     topic: params.get("topic") ?? "",
-    geography: params.get("geography") ?? "",
+    geography: ["located", "unknown"].includes(params.get("geography") ?? "") ? params.get("geography") ?? "" : "",
     sort: (["newest", "oldest", "title", "citations"].includes(
       params.get("sort") ?? "",
     )
@@ -126,7 +126,7 @@ export default function ResearchExplorer({
     .filter((year): year is number => year !== null);
   const countries = new Set(
     dataset.publications.flatMap((publication) =>
-      publication.studyLocations
+      (publication.authorLocations ?? [])
         .map((location) => location.country)
         .filter(Boolean),
     ),
@@ -135,15 +135,12 @@ export default function ResearchExplorer({
     dataset.publications.flatMap((publication) => publication.topics),
   );
   const mapped = filtered.filter((publication) =>
-    publication.studyLocations.some(hasCoordinates),
+    (publication.authorLocations ?? []).some(hasCoordinates),
   );
   const unknown = filtered.filter(
     (publication) => geographyStatus(publication) === "unknown",
   ).length;
-  const global = filtered.filter(
-    (publication) => geographyStatus(publication) === "non-geographic",
-  ).length;
-  const unplotted = filtered.length - mapped.length - unknown - global;
+  const unplotted = filtered.length - mapped.length - unknown;
   const timeline = countValues(
     filtered.map((publication) =>
       publication.year === null ? "Year unavailable" : String(publication.year),
@@ -169,10 +166,8 @@ export default function ResearchExplorer({
     topic: filters.topic,
     geography:
       filters.geography === "unknown"
-        ? "Location not determined"
-        : filters.geography === "non-geographic"
-          ? "Global / Non-geographic"
-          : filters.geography === "located"
+        ? "Author locations unavailable"
+        : filters.geography === "located"
             ? "Identified locations"
             : "",
   }).filter(([, value]) => value);
@@ -232,7 +227,7 @@ export default function ResearchExplorer({
             <h1 id="page-title">Professor Konstantinos C. Makris</h1>
             <p className="researcher-line">Cyprus University of Technology</p>
             <p className="hero-description">
-              Explore publications by study location, topic and year.
+              Explore publications by author location, topic and year.
             </p>
           </div>
         </section>
@@ -246,7 +241,7 @@ export default function ResearchExplorer({
           <div className="metric">
             <div>
               <strong>{countries.size}</strong>
-              <span>Study countries</span>
+              <span>Author countries</span>
             </div>
           </div>
           <div className="metric">
@@ -362,10 +357,10 @@ export default function ResearchExplorer({
               <div className="map-layout">
                 <section
                   className="map-section"
-                  aria-label="Study location map"
+                  aria-label="Author location map"
                 >
                   <div className="map-heading">
-                    <h2>Study locations</h2>
+                    <h2>Author locations</h2>
                     <p>Select a marker to explore.</p>
                   </div>
                   <div className="map-container">
@@ -377,7 +372,7 @@ export default function ResearchExplorer({
                     {mapped.length === 0 && (
                       <div className="map-empty">
                         <MapPin size={20} />
-                        <strong>No mapped study locations</strong>
+                        <strong>No mapped author locations</strong>
                         <span>
                           {filtered.length
                             ? "These publications remain available in the list."
@@ -389,7 +384,7 @@ export default function ResearchExplorer({
                   <div className="map-bottom-overlay">
                     <div className="map-legend">
                       <span className="legend-bubble">n</span>
-                      <span>Publications at a study location</span>
+                      <span>Publications at a author location</span>
                     </div>
                     <button
                       onClick={() => {
@@ -404,7 +399,7 @@ export default function ResearchExplorer({
                   <div className="map-caption">
                     <span>
                       <MapPin size={13} aria-hidden="true" />
-                      {mapped.length} publications with mapped study locations
+                      {mapped.length} publications with mapped author locations
                     </span>
                   </div>
                 </section>
@@ -583,7 +578,7 @@ export default function ResearchExplorer({
             <div className="geography-note">
               <p>
                 {unknown}{" "}
-                with location not determined · {global} global / non-geographic
+                with author locations unavailable
                 {unplotted > 0
                   ? ` · ${unplotted} with an identified place awaiting coordinates`
                   : ""}
@@ -610,15 +605,16 @@ export default function ResearchExplorer({
             <span
               className={`status-dot ${dataset.isFallback || sourceFailure ? "status-amber" : ""}`}
             />
-            Sources & study-location methodology{" "}
+            Sources & author-location methodology{" "}
             <ChevronRight size={14} aria-hidden="true" />
           </summary>
           <div className="source-detail-content">
             <p>
-              Study locations come from evidence in publication titles,
-              abstracts and keywords, never author affiliations. Open a
-              publication to inspect its location evidence and confidence.
-              Uncertain locations remain unmapped.
+              Locations represent all available authors’ institutions listed on
+              each publication. Institution coordinates are used when available;
+              country markers are labelled as approximate. Open a publication
+              to inspect its authors and institutions. Missing and incomplete
+              affiliations are clearly labelled.
             </p>
             <p>
               {dataset.isFallback

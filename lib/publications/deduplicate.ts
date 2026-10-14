@@ -1,7 +1,8 @@
-import type { Publication } from "../../types/publication";
+import type { AuthorAffiliation, Publication } from "../../types/publication";
 import {
   fallbackKey,
   normalizeDoi,
+  normalizeText,
   publicationId,
   sourceIdentityKeys,
   uniqueStrings,
@@ -10,12 +11,35 @@ import {
 const quality = (p: Publication) =>
   p.source.openAlex ? 4 : p.source.ktisis ? 3 : p.source.crossref ? 2 : 1;
 
+const authorKey = (name: string) => normalizeText(name.includes(",") ? name.split(",").reverse().join(" ") : name);
+const affiliationKey = (a: AuthorAffiliation) => `${a.authorId ?? authorKey(a.author)}|${a.institutionId ?? a.institution?.toLowerCase() ?? ""}|${a.countryCode ?? ""}`;
+
 export function mergePublications(a: Publication, b: Publication): Publication {
-  const [preferred, other] = quality(a) >= quality(b) ? [a, b] : [b, a];
+  const preferA = quality(a) > quality(b) || (quality(a) === quality(b) && a.updatedAt >= b.updatedAt);
+  const [preferred, other] = preferA ? [a, b] : [b, a];
   const abstract =
     (a.abstract?.length ?? 0) >= (b.abstract?.length ?? 0)
       ? a.abstract
       : b.abstract;
+  const affiliations = new Map<string, AuthorAffiliation>();
+  const primary = preferred.authorAffiliations ?? other.authorAffiliations ?? [];
+  const primaryAuthors = new Set(primary.map(link => authorKey(link.author)));
+  const oldByKey = new Map((other.authorAffiliations ?? []).map(link => [affiliationKey(link), link]));
+  const supplements = (other.authorAffiliations ?? []).filter(link => {
+    const sameProvider = Boolean(link.sourceUrl && Object.values(preferred.source).includes(link.sourceUrl));
+    return !primaryAuthors.has(authorKey(link.author)) && (preferred.affiliationsIncomplete !== false || !sameProvider);
+  });
+  // A refreshed author relationship replaces the older one; only matching
+  // relationships inherit resolved geography. Missing/truncated records retain
+  // earlier links for uncovered authors, and other providers may fill gaps.
+  for (const affiliation of [...supplements, ...primary]) {
+    const key = affiliationKey(affiliation);
+    const defined = Object.fromEntries(Object.entries(affiliation).filter(([, value]) => value !== undefined));
+    affiliations.set(key, { ...oldByKey.get(key), ...affiliations.get(key), ...defined } as AuthorAffiliation);
+  }
+  const authors = a.authors.length >= b.authors.length ? a.authors : b.authors;
+  const authorCount = Math.max(a.authorCount ?? a.authors.length, b.authorCount ?? b.authors.length);
+  const covered = new Set([...affiliations.values()].map(link => authorKey(link.author)));
   const merged: Publication = {
     ...other,
     ...preferred,
@@ -24,7 +48,10 @@ export function mergePublications(a: Publication, b: Publication): Publication {
     journal: preferred.journal || other.journal,
     abstract,
     publicationUrl: preferred.publicationUrl || other.publicationUrl,
-    authors: a.authors.length >= b.authors.length ? a.authors : b.authors,
+    authors,
+    authorAffiliations: affiliations.size ? [...affiliations.values()] : preferred.authorAffiliations ?? other.authorAffiliations,
+    authorCount,
+    affiliationsIncomplete: preferred.affiliationsIncomplete === true || authorCount > authors.length || authors.some(author => !covered.has(authorKey(author))),
     topics: uniqueStrings([...preferred.topics, ...other.topics]),
     keywords: uniqueStrings([
       ...(preferred.keywords ?? []),

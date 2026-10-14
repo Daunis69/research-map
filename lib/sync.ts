@@ -2,7 +2,8 @@ import "server-only";
 import { revalidateTag } from "next/cache";
 import seed from "@/data/publications.json";
 import type { PublicationDataset } from "@/types/publication";
-import { enrichPublication } from "@/lib/locationExtractor";
+import { deduplicatePublications } from "@/lib/publications/deduplicate";
+import { enrichAuthorLocations } from "@/lib/authorLocations";
 import {
   AllSourcesFailedError,
   fetchAllPublications,
@@ -34,7 +35,7 @@ async function performSync(onlyIfStale: boolean): Promise<SyncResult> {
     throw new Error("Persistent snapshot storage is not configured");
   // Storage read failure must never be treated as an empty store and overwrite known data.
   const stored = await readSnapshot();
-  const previous = stored?.dataset ?? seedDataset;
+  const previous = stored ? { ...stored.dataset, publications: deduplicatePublications([...stored.dataset.publications, ...seedDataset.publications]) } : seedDataset;
   const timestamp = new Date().toISOString();
   if (onlyIfStale && !needsRefresh(previous)) {
     return {
@@ -61,8 +62,8 @@ async function performSync(onlyIfStale: boolean): Promise<SyncResult> {
     throw error;
   }
   const result = compareDatasets(
-    previous.publications.map((p) => enrichPublication(p)),
-    incoming.publications.map((p) => enrichPublication(p)),
+    previous.publications.map((p) => enrichAuthorLocations(p)),
+    incoming.publications.map((p) => enrichAuthorLocations(p)),
     timestamp,
   );
   const next: PublicationDataset = {

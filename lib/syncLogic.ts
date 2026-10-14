@@ -1,6 +1,16 @@
 import { createHash, timingSafeEqual } from "node:crypto";
+import { gzipSync, gunzipSync } from "node:zlib";
 import type { Publication, PublicationDataset } from "@/types/publication";
 import { fallbackKey, sourceIdentityKeys } from "@/lib/publications/normalize";
+
+/** Next's data-cache item limit is 2MB; affiliations compress well as JSON. */
+export function encodeCachedDataset(dataset: PublicationDataset): string {
+  return gzipSync(JSON.stringify(dataset)).toString("base64");
+}
+
+export function decodeCachedDataset(value: string): PublicationDataset {
+  return JSON.parse(gunzipSync(Buffer.from(value, "base64")).toString("utf8")) as PublicationDataset;
+}
 
 export function isAuthorized(
   header: string | null,

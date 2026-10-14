@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { existsSync } from "node:fs";
 import { fetchAllPublications } from "../lib/publications/fetchAll";
-import { enrichPublication } from "../lib/locationExtractor";
+import { enrichAuthorLocations } from "../lib/authorLocations";
 import type { PublicationDataset } from "../types/publication";
 
 async function main() {
@@ -20,7 +20,7 @@ async function main() {
   }
   const dataset = await fetchAllPublications(previous?.publications ?? []);
   dataset.publications = dataset.publications.map((publication) =>
-    enrichPublication(publication),
+    enrichAuthorLocations(publication),
   );
   await writeFile(path, `${JSON.stringify(dataset, null, 2)}\n`);
   console.log(
