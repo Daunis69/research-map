@@ -3,22 +3,22 @@ import { unstable_cache } from "next/cache";
 import { after } from "next/server";
 import { readSnapshot, hasBlobStorage } from "@/lib/storage";
 import { DATASET_TAG, seedDataset, syncPublications } from "@/lib/sync";
-import { needsRefresh } from "@/lib/syncLogic";
-import { enrichPublication } from "@/lib/locationExtractor";
+import { decodeCachedDataset, encodeCachedDataset, needsRefresh } from "@/lib/syncLogic";
+import { enrichAuthorLocations } from "@/lib/authorLocations";
 import type { PublicationDataset } from "@/types/publication";
 import { isExcludedPublication } from "@/lib/publications/eligibility";
 import { deduplicatePublications } from "@/lib/publications/deduplicate";
 
 const cachedSnapshot = unstable_cache(
-  async () => (await readSnapshot())?.dataset ?? seedDataset,
-  ["makris-dataset-v1", seedDataset.fetchedAt, String(seedDataset.publications.length)],
+  async () => encodeCachedDataset((await readSnapshot())?.dataset ?? seedDataset),
+  ["makris-author-affiliations-gzip-v3", seedDataset.fetchedAt, String(seedDataset.publications.length)],
   { revalidate: 300, tags: [DATASET_TAG] },
 );
 
 export async function getPublicationDataset(): Promise<PublicationDataset> {
   let dataset: PublicationDataset;
   try {
-    dataset = await cachedSnapshot();
+    dataset = decodeCachedDataset(await cachedSnapshot());
   } catch {
     console.error(
       "Publication snapshot read failed; serving the bundled import.",
@@ -49,8 +49,8 @@ export async function getPublicationDataset(): Promise<PublicationDataset> {
   return {
     ...dataset,
     sources,
-    publications: deduplicatePublications(dataset.publications)
+    publications: deduplicatePublications([...dataset.publications, ...seedDataset.publications])
       .filter((p) => !isExcludedPublication(p))
-      .map((p) => enrichPublication(p)),
+      .map((p) => enrichAuthorLocations(p)),
   };
 }

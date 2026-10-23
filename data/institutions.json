@@ -1,0 +1,3108 @@
+{
+  "https://openalex.org/I189158943": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Milan",
+    "latitude": 45.46427,
+    "longitude": 9.18951
+  },
+  "https://openalex.org/I124055696": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.67594,
+    "longitude": 12.56553
+  },
+  "https://openalex.org/I8204097": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Munich",
+    "latitude": 48.13743,
+    "longitude": 11.57549
+  },
+  "https://openalex.org/I31746571": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732
+  },
+  "https://openalex.org/I154425047": {
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Edmonton",
+    "latitude": 53.55014,
+    "longitude": -113.46871
+  },
+  "https://openalex.org/I4210155236": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I98704320": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "New York",
+    "latitude": 40.71427,
+    "longitude": -74.00597
+  },
+  "https://openalex.org/I96673099": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Kongens Lyngby",
+    "latitude": 55.77044,
+    "longitude": 12.50378
+  },
+  "https://openalex.org/I2801952686": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Rotterdam",
+    "latitude": 51.9225,
+    "longitude": 4.47917
+  },
+  "https://openalex.org/I126231945": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Belfast",
+    "latitude": 54.59682,
+    "longitude": -5.92541
+  },
+  "https://openalex.org/I21370196": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Thessaloniki",
+    "latitude": 40.64361,
+    "longitude": 22.93086
+  },
+  "https://openalex.org/I44260953": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Düsseldorf",
+    "latitude": 51.22319,
+    "longitude": 6.77927
+  },
+  "https://openalex.org/I153976015": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05108,
+    "longitude": 14.50513
+  },
+  "https://openalex.org/I97565354": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Lausanne",
+    "latitude": 46.516,
+    "longitude": 6.63282
+  },
+  "https://openalex.org/I124227911": {
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Beersheba",
+    "latitude": 31.25181,
+    "longitude": 34.7913
+  },
+  "https://openalex.org/I28290843": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Guildford",
+    "latitude": 51.23536,
+    "longitude": -0.57427
+  },
+  "https://openalex.org/I39063666": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Catania",
+    "latitude": 37.49223,
+    "longitude": 15.07041
+  },
+  "https://openalex.org/I2801357902": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Madrid",
+    "latitude": 40.4165,
+    "longitude": -3.70256
+  },
+  "https://openalex.org/I170486558": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I2803066834": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Milan",
+    "latitude": 45.46427,
+    "longitude": 9.18951
+  },
+  "https://openalex.org/I36522303": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Greifswald",
+    "latitude": 54.08905,
+    "longitude": 13.40244
+  },
+  "https://openalex.org/I4210153755": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Cologne",
+    "latitude": 50.93333,
+    "longitude": 6.95
+  },
+  "https://openalex.org/I11932220": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I4210089242": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Düsseldorf",
+    "latitude": 51.22172,
+    "longitude": 6.77616
+  },
+  "https://openalex.org/I34771391": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.17284,
+    "longitude": 33.35397
+  },
+  "https://openalex.org/I7923278": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "The Hague",
+    "latitude": 52.07667,
+    "longitude": 4.29861
+  },
+  "https://openalex.org/I4210154894": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Madrid",
+    "latitude": 40.4165,
+    "longitude": -3.70256
+  },
+  "https://openalex.org/I2799318839": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Greifswald",
+    "latitude": 54.08905,
+    "longitude": 13.40244
+  },
+  "https://openalex.org/I2801323708": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05108,
+    "longitude": 14.50513
+  },
+  "https://openalex.org/I4210134249": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Thessaloniki",
+    "latitude": 40.64360809326172,
+    "longitude": 22.93086051940918
+  },
+  "https://openalex.org/I2801770344": {
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Helsinki",
+    "latitude": 60.16952,
+    "longitude": 24.93545
+  },
+  "https://openalex.org/I4210148332": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I2802153510": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Bergen",
+    "latitude": 60.39299,
+    "longitude": 5.32415
+  },
+  "https://openalex.org/I163151358": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Limassol",
+    "latitude": 34.684059143066406,
+    "longitude": 33.037940979003906
+  },
+  "https://openalex.org/I206573129": {
+    "countryCode": "PK",
+    "country": "Pakistan",
+    "city": "Peshawar",
+    "latitude": 34.008,
+    "longitude": 71.57849
+  },
+  "https://openalex.org/I4210099008": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.721824645996094,
+    "longitude": 12.580604553222656
+  },
+  "https://openalex.org/I4210149340": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Lausanne",
+    "latitude": 46.51599884033203,
+    "longitude": 6.632820129394531
+  },
+  "https://openalex.org/I4210161588": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Pozzuoli",
+    "latitude": 40.846744537353516,
+    "longitude": 14.093174934387207
+  },
+  "https://openalex.org/I81831788": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Bootle",
+    "latitude": 53.46667,
+    "longitude": -3.01667
+  },
+  "https://openalex.org/I4405260790": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Munich",
+    "latitude": 48.13743,
+    "longitude": 11.57549
+  },
+  "https://openalex.org/I2800214767": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Buxton",
+    "latitude": 53.25741,
+    "longitude": -1.90982
+  },
+  "https://openalex.org/I4210129077": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "latitude": 55.93378448486328,
+    "longitude": -3.360466957092285
+  },
+  "https://openalex.org/I3130420675": {
+    "countryCode": "AL",
+    "country": "Albania",
+    "city": "Vlorë",
+    "latitude": 40.46860122680664,
+    "longitude": 19.483179092407227
+  },
+  "https://openalex.org/I4210112396": {
+    "countryCode": "BD",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "latitude": 23.7104,
+    "longitude": 90.40744
+  },
+  "https://openalex.org/I3019523068": {
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Warsaw",
+    "latitude": 52.22977,
+    "longitude": 21.01178
+  },
+  "https://openalex.org/I4210121579": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05108,
+    "longitude": 14.50513
+  },
+  "https://openalex.org/I4210104221": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Limassol",
+    "latitude": 34.70713424682617,
+    "longitude": 32.983551025390625
+  },
+  "https://openalex.org/I4210129645": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.08369827270508,
+    "longitude": 33.299808502197266
+  },
+  "https://openalex.org/I179450942": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Thessaloniki",
+    "latitude": 40.597835540771484,
+    "longitude": 23.00242805480957
+  },
+  "https://openalex.org/I4405267180": {
+    "countryCode": "IE",
+    "country": "Ireland",
+    "city": "Dublin",
+    "latitude": 53.33306,
+    "longitude": -6.24889
+  },
+  "https://openalex.org/I19820366": {
+    "countryCode": "CN",
+    "country": "China",
+    "city": "Beijing",
+    "latitude": 39.9075,
+    "longitude": 116.39723
+  },
+  "https://openalex.org/I201448701": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Seattle",
+    "latitude": 47.60621,
+    "longitude": -122.33207
+  },
+  "https://openalex.org/I32971472": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "New Haven",
+    "latitude": 41.30815,
+    "longitude": -72.92816
+  },
+  "https://openalex.org/I99464096": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Leuven",
+    "latitude": 50.87959,
+    "longitude": 4.70093
+  },
+  "https://openalex.org/I861853513": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I165143802": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Brisbane",
+    "latitude": -27.46794,
+    "longitude": 153.02809
+  },
+  "https://openalex.org/I4210087915": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Boston",
+    "latitude": 42.35843,
+    "longitude": -71.05977
+  },
+  "https://openalex.org/I138689650": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Padua",
+    "latitude": 45.40797,
+    "longitude": 11.88586
+  },
+  "https://openalex.org/I184942183": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Oslo",
+    "latitude": 59.91273,
+    "longitude": 10.74609
+  },
+  "https://openalex.org/I177725633": {
+    "countryCode": "HK",
+    "country": "Hong Kong",
+    "city": "Hong Kong",
+    "latitude": 22.27832,
+    "longitude": 114.17469
+  },
+  "https://openalex.org/I71267560": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Naples",
+    "latitude": 40.85216,
+    "longitude": 14.26811
+  },
+  "https://openalex.org/I143302722": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Lexington",
+    "latitude": 37.98869,
+    "longitude": -84.47772
+  },
+  "https://openalex.org/I181369854": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Erlangen",
+    "latitude": 49.59099,
+    "longitude": 11.00783
+  },
+  "https://openalex.org/I145872427": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Nijmegen",
+    "latitude": 51.8425,
+    "longitude": 5.85278
+  },
+  "https://openalex.org/I913481162": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Wageningen",
+    "latitude": 51.97,
+    "longitude": 5.66667
+  },
+  "https://openalex.org/I197347611": {
+    "countryCode": "KR",
+    "country": "South Korea",
+    "city": "Seoul",
+    "latitude": 37.566,
+    "longitude": 126.9784
+  },
+  "https://openalex.org/I899635006": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Saint-Martin-d'Hères",
+    "latitude": 45.1787,
+    "longitude": 5.76281
+  },
+  "https://openalex.org/I100930933": {
+    "countryCode": "IE",
+    "country": "Ireland",
+    "city": "Dublin",
+    "latitude": 53.33306,
+    "longitude": -6.24889
+  },
+  "https://openalex.org/I205640436": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Perth",
+    "latitude": -31.95224,
+    "longitude": 115.8614
+  },
+  "https://openalex.org/I114832834": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "New Orleans",
+    "latitude": 29.95465,
+    "longitude": -90.07507
+  },
+  "https://openalex.org/I103320735": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Milan",
+    "latitude": 45.46427,
+    "longitude": 9.18951
+  },
+  "https://openalex.org/I58048189": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Tehran",
+    "latitude": 35.69439,
+    "longitude": 51.42151
+  },
+  "https://openalex.org/I83558840": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.72509,
+    "longitude": -9.1498
+  },
+  "https://openalex.org/I392282": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Albany",
+    "latitude": 42.65258026123047,
+    "longitude": -73.75623321533203
+  },
+  "https://openalex.org/I191972202": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Noida",
+    "latitude": 28.58,
+    "longitude": 77.33
+  },
+  "https://openalex.org/I2802557943": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I4210153126": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I11892038": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Nsukka",
+    "latitude": 6.85783,
+    "longitude": 7.39577
+  },
+  "https://openalex.org/I4210104433": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "De Bilt",
+    "latitude": 52.11000061035156,
+    "longitude": 5.180560111999512
+  },
+  "https://openalex.org/I1333353642": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Oslo",
+    "latitude": 59.91273,
+    "longitude": 10.74609
+  },
+  "https://openalex.org/I4210107087": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Ludwigshafen am Rhein",
+    "latitude": 49.48121,
+    "longitude": 8.44641
+  },
+  "https://openalex.org/I868834043": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Paisley",
+    "latitude": 55.831729888916016,
+    "longitude": -4.432539939880371
+  },
+  "https://openalex.org/I1339417872": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Albany",
+    "latitude": 42.65258026123047,
+    "longitude": -73.75623321533203
+  },
+  "https://openalex.org/I68522396": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Mol",
+    "latitude": 51.19187927246094,
+    "longitude": 5.116620063781738
+  },
+  "https://openalex.org/I4210121739": {
+    "countryCode": "BR",
+    "country": "Brazil",
+    "city": "Brasília",
+    "latitude": -15.77972,
+    "longitude": -47.92972
+  },
+  "https://openalex.org/I4210136308": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Grenoble",
+    "latitude": 45.17869,
+    "longitude": 5.71479
+  },
+  "https://openalex.org/I145019703": {
+    "countryCode": "JO",
+    "country": "Jordan",
+    "city": "Amman",
+    "latitude": 31.95522,
+    "longitude": 35.94503
+  },
+  "https://openalex.org/I4210142220": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.764564514160156,
+    "longitude": -9.164461135864258
+  },
+  "https://openalex.org/I4210129856": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Oslo",
+    "latitude": 59.91273,
+    "longitude": 10.74609
+  },
+  "https://openalex.org/I64946176": {
+    "countryCode": "KR",
+    "country": "South Korea",
+    "city": "Incheon",
+    "latitude": 37.456459045410156,
+    "longitude": 126.70514678955078
+  },
+  "https://openalex.org/I3143470655": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Seattle",
+    "latitude": 47.60621,
+    "longitude": -122.33207
+  },
+  "https://openalex.org/I4210119350": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I4405258683": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.72509,
+    "longitude": -9.1498
+  },
+  "https://openalex.org/I229325710": {
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Kuopio",
+    "latitude": 62.89237976074219,
+    "longitude": 27.677030563354492
+  },
+  "https://openalex.org/I3019562804": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Florham Park",
+    "latitude": 40.77726745605469,
+    "longitude": -74.4271469116211
+  },
+  "https://openalex.org/I4210105605": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Wacol",
+    "latitude": -27.58810043334961,
+    "longitude": 152.92495727539062
+  },
+  "https://openalex.org/I4210120175": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Bochum",
+    "latitude": 51.4682731628418,
+    "longitude": 7.2096662521362305
+  },
+  "https://openalex.org/I4210122450": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 38.08138656616211,
+    "longitude": 23.81316566467285
+  },
+  "https://openalex.org/I4210144605": {
+    "countryCode": "LU",
+    "country": "Luxembourg",
+    "city": "Dudelange",
+    "latitude": 49.49896240234375,
+    "longitude": 6.0852952003479
+  },
+  "https://openalex.org/I4210109672": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Madrid",
+    "latitude": 40.45741271972656,
+    "longitude": -3.86506986618042
+  },
+  "https://openalex.org/I136199984": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Cambridge",
+    "latitude": 42.3751,
+    "longitude": -71.10561
+  },
+  "https://openalex.org/I40120149": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Oxford",
+    "latitude": 51.75222,
+    "longitude": -1.25596
+  },
+  "https://openalex.org/I97018004": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Stanford",
+    "latitude": 37.42411,
+    "longitude": -122.16608
+  },
+  "https://openalex.org/I1174212": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Los Angeles",
+    "latitude": 34.05223,
+    "longitude": -118.24368
+  },
+  "https://openalex.org/I1330342723": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Rochester",
+    "latitude": 44.02163,
+    "longitude": -92.4699
+  },
+  "https://openalex.org/I28166907": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "latitude": 59.32938,
+    "longitude": 18.06871
+  },
+  "https://openalex.org/I133731052": {
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Helsinki",
+    "latitude": 60.16952,
+    "longitude": 24.93545
+  },
+  "https://openalex.org/I110200422": {
+    "countryCode": "BR",
+    "country": "Brazil",
+    "city": "Belo Horizonte",
+    "latitude": -19.92083,
+    "longitude": -43.93778
+  },
+  "https://openalex.org/I28022161": {
+    "countryCode": "SA",
+    "country": "Saudi Arabia",
+    "city": "Riyadh",
+    "latitude": 24.68773,
+    "longitude": 46.72185
+  },
+  "https://openalex.org/I70640408": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Tehran",
+    "latitude": 35.69439,
+    "longitude": 51.42151
+  },
+  "https://openalex.org/I48379061": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Tehran",
+    "latitude": 35.69439,
+    "longitude": 51.42151
+  },
+  "https://openalex.org/I84524832": {
+    "countryCode": "EG",
+    "country": "Egypt",
+    "city": "Alexandria",
+    "latitude": 31.20176,
+    "longitude": 29.91582
+  },
+  "https://openalex.org/I184834183": {
+    "countryCode": "EG",
+    "country": "Egypt",
+    "city": "Cairo",
+    "latitude": 30.06262969970703,
+    "longitude": 31.249670028686523
+  },
+  "https://openalex.org/I191240316": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Hull",
+    "latitude": 53.7446,
+    "longitude": -0.33525
+  },
+  "https://openalex.org/I32394136": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "latitude": 54.97328186035156,
+    "longitude": -1.6139600276947021
+  },
+  "https://openalex.org/I21376657": {
+    "countryCode": "EG",
+    "country": "Egypt",
+    "city": "Tanta",
+    "latitude": 30.78847,
+    "longitude": 31.00192
+  },
+  "https://openalex.org/I114972647": {
+    "countryCode": "JO",
+    "country": "Jordan",
+    "city": "Amman",
+    "latitude": 31.95522,
+    "longitude": 35.94503
+  },
+  "https://openalex.org/I207547235": {
+    "countryCode": "EG",
+    "country": "Egypt",
+    "city": "Banhā",
+    "latitude": 30.45977,
+    "longitude": 31.1842
+  },
+  "https://openalex.org/I120230055": {
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Poznan",
+    "latitude": 52.40692138671875,
+    "longitude": 16.929929733276367
+  },
+  "https://openalex.org/I199693650": {
+    "countryCode": "SA",
+    "country": "Saudi Arabia",
+    "city": "Makkah al Mukarramah",
+    "latitude": 21.320375442504883,
+    "longitude": 39.96794891357422
+  },
+  "https://openalex.org/I156216236": {
+    "countryCode": "SA",
+    "country": "Saudi Arabia",
+    "city": "Buraidah",
+    "latitude": 26.325990676879883,
+    "longitude": 43.974971771240234
+  },
+  "https://openalex.org/I29891158": {
+    "countryCode": "AE",
+    "country": "United Arab Emirates",
+    "city": "Sharjah",
+    "latitude": 25.337369918823242,
+    "longitude": 55.41205978393555
+  },
+  "https://openalex.org/I4210087348": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Tokyo",
+    "latitude": 35.6895,
+    "longitude": 139.69171
+  },
+  "https://openalex.org/I37048141": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "New Delhi",
+    "latitude": 28.62137,
+    "longitude": 77.2148
+  },
+  "https://openalex.org/I4210088963": {
+    "countryCode": "SA",
+    "country": "Saudi Arabia",
+    "city": "Ha'il",
+    "latitude": 27.521879196166992,
+    "longitude": 41.690731048583984
+  },
+  "https://openalex.org/I199702508": {
+    "countryCode": "SA",
+    "country": "Saudi Arabia",
+    "city": "Sakakah",
+    "latitude": 29.96974,
+    "longitude": 40.20641
+  },
+  "https://openalex.org/I60559429": {
+    "countryCode": "KZ",
+    "country": "Kazakhstan",
+    "city": "Astana",
+    "latitude": 51.1801,
+    "longitude": 71.44598
+  },
+  "https://openalex.org/I8764889": {
+    "countryCode": "ET",
+    "country": "Ethiopia",
+    "city": "Gonder",
+    "latitude": 12.6,
+    "longitude": 37.46667
+  },
+  "https://openalex.org/I919958821": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Kano",
+    "latitude": 12.00012,
+    "longitude": 8.51672
+  },
+  "https://openalex.org/I57092466": {
+    "countryCode": "ET",
+    "country": "Ethiopia",
+    "city": "Bahir Dar",
+    "latitude": 11.59364,
+    "longitude": 37.39077
+  },
+  "https://openalex.org/I4210127938": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Phoenix",
+    "latitude": 33.44837951660156,
+    "longitude": -112.07404327392578
+  },
+  "https://openalex.org/I40193446": {
+    "countryCode": "DZ",
+    "country": "Algeria",
+    "city": "Sétif",
+    "latitude": 36.19112014770508,
+    "longitude": 5.413730144500732
+  },
+  "https://openalex.org/I88694374": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Huntington",
+    "latitude": 38.41925,
+    "longitude": -82.44515
+  },
+  "https://openalex.org/I1293502524": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Loma Linda",
+    "latitude": 34.0525016784668,
+    "longitude": -117.26416778564453
+  },
+  "https://openalex.org/I204588832": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Karaj",
+    "latitude": 35.854095458984375,
+    "longitude": 50.9844856262207
+  },
+  "https://openalex.org/I146367977": {
+    "countryCode": "JO",
+    "country": "Jordan",
+    "city": "Amman",
+    "latitude": 31.95522,
+    "longitude": 35.94503
+  },
+  "https://openalex.org/I69768126": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Heslington",
+    "latitude": 53.94636154174805,
+    "longitude": -1.0491900444030762
+  },
+  "https://openalex.org/I116768543": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Zanjan",
+    "latitude": 36.67642,
+    "longitude": 48.49628
+  },
+  "https://openalex.org/I30887324": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Ibadan",
+    "latitude": 7.377560138702393,
+    "longitude": 3.905910015106201
+  },
+  "https://openalex.org/I6033180": {
+    "countryCode": "IQ",
+    "country": "Iraq",
+    "city": "Duhok",
+    "latitude": 36.86608,
+    "longitude": 42.9879
+  },
+  "https://openalex.org/I4390039303": {
+    "country": "United States",
+    "city": "Palo Alto",
+    "latitude": 37.44187927246094,
+    "longitude": -122.14302062988281
+  },
+  "https://openalex.org/I254651091": {
+    "countryCode": "GH",
+    "country": "Ghana",
+    "city": "Ho",
+    "latitude": 6.60084,
+    "longitude": 0.4713
+  },
+  "https://openalex.org/I4400600929": {
+    "country": "Nigeria",
+    "city": "Wukari",
+    "latitude": 7.96327018737793,
+    "longitude": 9.84766960144043
+  },
+  "https://openalex.org/I86959772": {
+    "countryCode": "IR",
+    "country": "Iran",
+    "city": "Rafsanjān",
+    "latitude": 30.4067,
+    "longitude": 55.9939
+  },
+  "https://openalex.org/I191378831": {
+    "countryCode": "KZ",
+    "country": "Kazakhstan",
+    "city": "Almaty",
+    "latitude": 43.25249,
+    "longitude": 76.9115
+  },
+  "https://openalex.org/I4210100069": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Chennai",
+    "latitude": 13.10066032409668,
+    "longitude": 80.14037322998047
+  },
+  "https://openalex.org/I4403928356": {
+    "country": "Iran",
+    "city": "Tehran",
+    "latitude": 35.69438934326172,
+    "longitude": 51.4215087890625
+  },
+  "https://openalex.org/I2801278263": {
+    "countryCode": "IQ",
+    "country": "Iraq",
+    "city": "Sulaymaniyah",
+    "latitude": 35.56496047973633,
+    "longitude": 45.432899475097656
+  },
+  "https://openalex.org/I4210163674": {
+    "countryCode": "BD",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "latitude": 23.80364227294922,
+    "longitude": 90.36200714111328
+  },
+  "https://openalex.org/I4405254834": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Abuja",
+    "latitude": 9.05785,
+    "longitude": 7.49508
+  },
+  "https://openalex.org/I129604602": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732
+  },
+  "https://openalex.org/I56590836": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Melbourne",
+    "latitude": -37.814,
+    "longitude": 144.96332
+  },
+  "https://openalex.org/I205349734": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Sapporo",
+    "latitude": 43.06667,
+    "longitude": 141.35
+  },
+  "https://openalex.org/I62916508": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Munich",
+    "latitude": 48.13743,
+    "longitude": 11.57549
+  },
+  "https://openalex.org/I118347636": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Canberra",
+    "latitude": -35.28346,
+    "longitude": 149.12807
+  },
+  "https://openalex.org/I7877124": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.52437,
+    "longitude": 13.41053
+  },
+  "https://openalex.org/I881427289": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "latitude": 57.70716,
+    "longitude": 11.96679
+  },
+  "https://openalex.org/I75951250": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.52437,
+    "longitude": 13.41053
+  },
+  "https://openalex.org/I63190737": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Buffalo",
+    "latitude": 42.88645,
+    "longitude": -78.87837
+  },
+  "https://openalex.org/I39343248": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.52437,
+    "longitude": 13.41053
+  },
+  "https://openalex.org/I904495901": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Bochum",
+    "latitude": 51.48165,
+    "longitude": 7.21648
+  },
+  "https://openalex.org/I126596746": {
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Krakow",
+    "latitude": 50.06143,
+    "longitude": 19.93658
+  },
+  "https://openalex.org/I173304897": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Granada",
+    "latitude": 37.18817,
+    "longitude": -3.60667
+  },
+  "https://openalex.org/I155781252": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Columbia",
+    "latitude": 34.00071,
+    "longitude": -81.03481
+  },
+  "https://openalex.org/I149213910": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Antwerp",
+    "latitude": 51.22047,
+    "longitude": 4.40026
+  },
+  "https://openalex.org/I24027795": {
+    "countryCode": "ZA",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "latitude": -26.20227,
+    "longitude": 28.04363
+  },
+  "https://openalex.org/I95023434": {
+    "countryCode": "ZA",
+    "country": "South Africa",
+    "city": "Durban",
+    "latitude": -29.8579,
+    "longitude": 31.0292
+  },
+  "https://openalex.org/I19700959": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Miami",
+    "latitude": 25.77427,
+    "longitude": -80.19366
+  },
+  "https://openalex.org/I91819753": {
+    "countryCode": "ID",
+    "country": "Indonesia",
+    "city": "Bandung",
+    "latitude": -6.92222,
+    "longitude": 107.60694
+  },
+  "https://openalex.org/I181631907": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Ibadan",
+    "latitude": 7.37756,
+    "longitude": 3.90591
+  },
+  "https://openalex.org/I2801112325": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "latitude": 57.70716,
+    "longitude": 11.96679
+  },
+  "https://openalex.org/I60342839": {
+    "countryCode": "QA",
+    "country": "Qatar",
+    "city": "Doha",
+    "latitude": 25.28545,
+    "longitude": 51.53096
+  },
+  "https://openalex.org/I201726411": {
+    "countryCode": "AE",
+    "country": "United Arab Emirates",
+    "city": "Al Ain",
+    "latitude": 24.19167,
+    "longitude": 55.76056
+  },
+  "https://openalex.org/I155028946": {
+    "countryCode": "NP",
+    "country": "Nepal",
+    "city": "Kathmandu",
+    "latitude": 27.70169,
+    "longitude": 85.3206
+  },
+  "https://openalex.org/I1292894508": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Buffalo",
+    "latitude": 42.88645,
+    "longitude": -78.87837
+  },
+  "https://openalex.org/I45711476": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Ile-Ife",
+    "latitude": 7.482399940490723,
+    "longitude": 4.560319900512695
+  },
+  "https://openalex.org/I156983542": {
+    "countryCode": "JO",
+    "country": "Jordan",
+    "city": "Irbid",
+    "latitude": 32.55556,
+    "longitude": 35.85
+  },
+  "https://openalex.org/I119443389": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Johnson City",
+    "latitude": 36.31344,
+    "longitude": -82.35347
+  },
+  "https://openalex.org/I49828101": {
+    "countryCode": "QA",
+    "country": "Qatar",
+    "city": "Doha",
+    "latitude": 25.28545,
+    "longitude": 51.53096
+  },
+  "https://openalex.org/I29894533": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Darwin",
+    "latitude": -12.46113,
+    "longitude": 130.84185
+  },
+  "https://openalex.org/I1288894424": {
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Ottawa",
+    "latitude": 45.41117,
+    "longitude": -75.69812
+  },
+  "https://openalex.org/I126824641": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Mysuru",
+    "latitude": 12.29791,
+    "longitude": 76.63925
+  },
+  "https://openalex.org/I55202024": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Sokoto",
+    "latitude": 13.062689781188965,
+    "longitude": 5.24321985244751
+  },
+  "https://openalex.org/I894372087": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Sagamu",
+    "latitude": 6.848499774932861,
+    "longitude": 3.6463301181793213
+  },
+  "https://openalex.org/I4210085939": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Darwin",
+    "latitude": -12.46113,
+    "longitude": 130.84185
+  },
+  "https://openalex.org/I145876445": {
+    "countryCode": "GH",
+    "country": "Ghana",
+    "city": "Winneba",
+    "latitude": 5.35113,
+    "longitude": -0.62313
+  },
+  "https://openalex.org/I923003605": {
+    "countryCode": "BD",
+    "country": "Bangladesh",
+    "city": "Jessore",
+    "latitude": 23.169710159301758,
+    "longitude": 89.21370697021484
+  },
+  "https://openalex.org/I2802286613": {
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Ottawa",
+    "latitude": 45.41117,
+    "longitude": -75.69812
+  },
+  "https://openalex.org/I94800806": {
+    "countryCode": "PS",
+    "country": "Palestine",
+    "city": "Birzeit",
+    "latitude": 31.96959,
+    "longitude": 35.19408
+  },
+  "https://openalex.org/I200433483": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Iwo",
+    "latitude": 7.63527,
+    "longitude": 4.18156
+  },
+  "https://openalex.org/I4387156178": {
+    "country": "Nigeria",
+    "city": "Dutse",
+    "latitude": 11.756179809570312,
+    "longitude": 9.338959693908691
+  },
+  "https://openalex.org/I4210118383": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732
+  },
+  "https://openalex.org/I4210092806": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Tokyo",
+    "latitude": 35.68949890136719,
+    "longitude": 139.69171142578125
+  },
+  "https://openalex.org/I4387155186": {
+    "country": "Nigeria",
+    "city": "Ondo",
+    "latitude": 7.093160152435303,
+    "longitude": 4.835279941558838
+  },
+  "https://openalex.org/I49433721": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "latitude": 6.45407,
+    "longitude": 3.39467
+  },
+  "https://openalex.org/I896053408": {
+    "countryCode": "AG",
+    "country": "Antigua and Barbuda",
+    "city": "St John's",
+    "latitude": 17.15614891052246,
+    "longitude": -61.79759216308594
+  },
+  "https://openalex.org/I4210108609": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Bern",
+    "latitude": 46.94405746459961,
+    "longitude": 7.434750080108643
+  },
+  "https://openalex.org/I4210118361": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Chittoor",
+    "latitude": 13.251304626464844,
+    "longitude": 79.11581420898438
+  },
+  "https://openalex.org/I4210139578": {
+    "countryCode": "NP",
+    "country": "Nepal",
+    "city": "Jumla",
+    "latitude": 29.283689498901367,
+    "longitude": 82.18321990966797
+  },
+  "https://openalex.org/I4210095046": {
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Oyo",
+    "latitude": 8.135833740234375,
+    "longitude": 4.232705116271973
+  },
+  "https://openalex.org/I74801974": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Tokyo",
+    "latitude": 35.6895,
+    "longitude": 139.69171
+  },
+  "https://openalex.org/I145311948": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Baltimore",
+    "latitude": 39.29038,
+    "longitude": -76.61219
+  },
+  "https://openalex.org/I154526488": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I78577930": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "New York",
+    "latitude": 40.71427,
+    "longitude": -74.00597
+  },
+  "https://openalex.org/I87216513": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "East Lansing",
+    "latitude": 42.73698,
+    "longitude": -84.48387
+  },
+  "https://openalex.org/I4210088668": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I84218800": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Davis",
+    "latitude": 38.54491,
+    "longitude": -121.74052
+  },
+  "https://openalex.org/I1283280774": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Boston",
+    "latitude": 42.35843,
+    "longitude": -71.05977
+  },
+  "https://openalex.org/I277688954": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Gif-sur-Yvette",
+    "latitude": 48.68333,
+    "longitude": 2.13333
+  },
+  "https://openalex.org/I4210097159": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I182534213": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Porto",
+    "latitude": 41.1485,
+    "longitude": -8.61097
+  },
+  "https://openalex.org/I141596103": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.72509,
+    "longitude": -9.1498
+  },
+  "https://openalex.org/I200777214": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.98376,
+    "longitude": 23.72784
+  },
+  "https://openalex.org/I204730241": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I83519826": {
+    "countryCode": "CN",
+    "country": "China",
+    "city": "Nanjing",
+    "latitude": 32.06167,
+    "longitude": 118.77778
+  },
+  "https://openalex.org/I139322472": {
+    "countryCode": "MY",
+    "country": "Malaysia",
+    "city": "George Town",
+    "latitude": 5.41123,
+    "longitude": 100.33543
+  },
+  "https://openalex.org/I2802934949": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Nijmegen",
+    "latitude": 51.842498779296875,
+    "longitude": 5.852779865264893
+  },
+  "https://openalex.org/I91656880": {
+    "countryCode": "CN",
+    "country": "China",
+    "city": "Shenyang",
+    "latitude": 41.79222,
+    "longitude": 123.43278
+  },
+  "https://openalex.org/I184693016": {
+    "countryCode": "TW",
+    "country": "Taiwan",
+    "city": "Taichung",
+    "latitude": 24.1469,
+    "longitude": 120.6839
+  },
+  "https://openalex.org/I41641357": {
+    "countryCode": "TR",
+    "country": "Türkiye",
+    "city": "Izmir",
+    "latitude": 38.41273,
+    "longitude": 27.13838
+  },
+  "https://openalex.org/I195731000": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Versailles",
+    "latitude": 48.80359,
+    "longitude": 2.13424
+  },
+  "https://openalex.org/I1302368450": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Washington",
+    "latitude": 38.89511,
+    "longitude": -77.03637
+  },
+  "https://openalex.org/I4210091279": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Villetaneuse",
+    "latitude": 48.95833,
+    "longitude": 2.34167
+  },
+  "https://openalex.org/I33858575": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Nagoya",
+    "latitude": 35.18147,
+    "longitude": 136.90641
+  },
+  "https://openalex.org/I4210126829": {
+    "countryCode": "TW",
+    "country": "Taiwan",
+    "city": "Taichung",
+    "latitude": 24.1469,
+    "longitude": 120.6839
+  },
+  "https://openalex.org/I4210114914": {
+    "countryCode": "CN",
+    "country": "China",
+    "city": "Shatin",
+    "latitude": 22.37969970703125,
+    "longitude": 114.20169830322266
+  },
+  "https://openalex.org/I26437253": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Örebro",
+    "latitude": 59.27412033081055,
+    "longitude": 15.206600189208984
+  },
+  "https://openalex.org/I200202764": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Tsukuba",
+    "latitude": 36.08333,
+    "longitude": 140.11667
+  },
+  "https://openalex.org/I1298060332": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Albany",
+    "latitude": 42.65258026123047,
+    "longitude": -73.75623321533203
+  },
+  "https://openalex.org/I65181880": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Sangāreddi",
+    "latitude": 17.62477,
+    "longitude": 78.08669
+  },
+  "https://openalex.org/I165441096": {
+    "countryCode": "TW",
+    "country": "Taiwan",
+    "city": "Hsinchu",
+    "latitude": 24.80361,
+    "longitude": 120.96861
+  },
+  "https://openalex.org/I4210153608": {
+    "countryCode": "MA",
+    "country": "Morocco",
+    "city": "Meknes",
+    "latitude": 33.89352,
+    "longitude": -5.54727
+  },
+  "https://openalex.org/I39705031": {
+    "countryCode": "KR",
+    "country": "South Korea",
+    "city": "Gyeongsan-si",
+    "latitude": 35.82333,
+    "longitude": 128.73778
+  },
+  "https://openalex.org/I4210103698": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Villejuif",
+    "latitude": 48.7939,
+    "longitude": 2.35992
+  },
+  "https://openalex.org/I4210133078": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I4387154308": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I4210113665": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Granada",
+    "latitude": 37.18817,
+    "longitude": -3.60667
+  },
+  "https://openalex.org/I67061984": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Kjeller",
+    "latitude": 59.97375,
+    "longitude": 11.04773
+  },
+  "https://openalex.org/I4387153084": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "London",
+    "latitude": 51.50853,
+    "longitude": -0.12574
+  },
+  "https://openalex.org/I165817395": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Boston",
+    "latitude": 42.35843,
+    "longitude": -71.05977
+  },
+  "https://openalex.org/I4405268573": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Porto",
+    "latitude": 41.1485,
+    "longitude": -8.61097
+  },
+  "https://openalex.org/I4391767661": {
+    "country": "China",
+    "city": "Nanjing",
+    "latitude": 32.061668395996094,
+    "longitude": 118.77777862548828
+  },
+  "https://openalex.org/I1336788258": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Sacramento",
+    "latitude": 38.58156967163086,
+    "longitude": -121.49440002441406
+  },
+  "https://openalex.org/I4210112450": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I4390039343": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Villejuif",
+    "latitude": 48.7939,
+    "longitude": 2.35992
+  },
+  "https://openalex.org/I4210154521": {
+    "countryCode": "KR",
+    "country": "South Korea",
+    "city": "Seoul",
+    "latitude": 37.566,
+    "longitude": 126.9784
+  },
+  "https://openalex.org/I4210137065": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.16944122314453,
+    "longitude": 33.34955596923828
+  },
+  "https://openalex.org/I1293800211": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Silver Spring",
+    "latitude": 38.99067,
+    "longitude": -77.02609
+  },
+  "https://openalex.org/I4210120027": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Sundbyberg",
+    "latitude": 59.36334228515625,
+    "longitude": 17.962648391723633
+  },
+  "https://openalex.org/I4387154494": {
+    "country": "Netherlands",
+    "city": "Leiden",
+    "latitude": 52.158329010009766,
+    "longitude": 4.493060111999512
+  },
+  "https://openalex.org/I45129253": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "London",
+    "latitude": 51.50853,
+    "longitude": -0.12574
+  },
+  "https://openalex.org/I52357470": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Columbus",
+    "latitude": 39.96118,
+    "longitude": -82.99879
+  },
+  "https://openalex.org/I47508984": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "London",
+    "latitude": 51.50853,
+    "longitude": -0.12574
+  },
+  "https://openalex.org/I141945490": {
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Vancouver",
+    "latitude": 49.24966,
+    "longitude": -123.11934
+  },
+  "https://openalex.org/I114027177": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Chapel Hill",
+    "latitude": 35.9132,
+    "longitude": -79.05584
+  },
+  "https://openalex.org/I180670191": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "San Francisco",
+    "latitude": 37.77493,
+    "longitude": -122.41942
+  },
+  "https://openalex.org/I204337017": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Aarhus",
+    "latitude": 56.15674,
+    "longitude": 10.21076
+  },
+  "https://openalex.org/I193662353": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Utrecht",
+    "latitude": 52.09083,
+    "longitude": 5.12222
+  },
+  "https://openalex.org/I187531555": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Lund",
+    "latitude": 55.70584,
+    "longitude": 13.19321
+  },
+  "https://openalex.org/I150468666": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Atlanta",
+    "latitude": 33.749,
+    "longitude": -84.38798
+  },
+  "https://openalex.org/I169381384": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Groningen",
+    "latitude": 53.21917,
+    "longitude": 6.56667
+  },
+  "https://openalex.org/I137902535": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Raleigh",
+    "latitude": 35.7721,
+    "longitude": -78.63861
+  },
+  "https://openalex.org/I145608581": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Coral Gables",
+    "latitude": 25.72149,
+    "longitude": -80.26838
+  },
+  "https://openalex.org/I32389192": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Birmingham",
+    "latitude": 33.52066,
+    "longitude": -86.80249
+  },
+  "https://openalex.org/I75027704": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Knoxville",
+    "latitude": 35.96064,
+    "longitude": -83.92074
+  },
+  "https://openalex.org/I92446798": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Fort Collins",
+    "latitude": 40.58526,
+    "longitude": -105.08442
+  },
+  "https://openalex.org/I131249849": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Corvallis",
+    "latitude": 44.56457,
+    "longitude": -123.26204
+  },
+  "https://openalex.org/I23923803": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Exeter",
+    "latitude": 50.72359848022461,
+    "longitude": -3.527509927749634
+  },
+  "https://openalex.org/I3018483916": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Utrecht",
+    "latitude": 52.09083,
+    "longitude": 5.12222
+  },
+  "https://openalex.org/I51713134": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Aurora",
+    "latitude": 39.72943,
+    "longitude": -104.83192
+  },
+  "https://openalex.org/I1334415907": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Groningen",
+    "latitude": 53.21917,
+    "longitude": 6.56667
+  },
+  "https://openalex.org/I142740786": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Louisville",
+    "latitude": 38.25424,
+    "longitude": -85.75941
+  },
+  "https://openalex.org/I98381234": {
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Oulu",
+    "latitude": 65.01236,
+    "longitude": 25.46816
+  },
+  "https://openalex.org/I55302922": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Galveston",
+    "latitude": 29.30135,
+    "longitude": -94.7977
+  },
+  "https://openalex.org/I21449261": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Brno",
+    "latitude": 49.19522,
+    "longitude": 16.60796
+  },
+  "https://openalex.org/I160606119": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Memphis",
+    "latitude": 35.14953,
+    "longitude": -90.04898
+  },
+  "https://openalex.org/I197681013": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Créteil",
+    "latitude": 48.79266,
+    "longitude": 2.46569
+  },
+  "https://openalex.org/I1288880153": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  },
+  "https://openalex.org/I102149020": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Charlotte",
+    "latitude": 35.22709,
+    "longitude": -80.84313
+  },
+  "https://openalex.org/I94658018": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Memphis",
+    "latitude": 35.14952850341797,
+    "longitude": -90.04898071289062
+  },
+  "https://openalex.org/I148297040": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Delft",
+    "latitude": 52.00667,
+    "longitude": 4.35556
+  },
+  "https://openalex.org/I4210095140": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Durham",
+    "latitude": 35.88383102416992,
+    "longitude": -78.88176727294922
+  },
+  "https://openalex.org/I7863295": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Radnor",
+    "latitude": 40.04622,
+    "longitude": -75.35991
+  },
+  "https://openalex.org/I118185606": {
+    "countryCode": "PK",
+    "country": "Pakistan",
+    "city": "Karachi",
+    "latitude": 24.8608,
+    "longitude": 67.0104
+  },
+  "https://openalex.org/I180297670": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Durham",
+    "latitude": 35.99403,
+    "longitude": -78.89862
+  },
+  "https://openalex.org/I42237331": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Lyon",
+    "latitude": 45.74846,
+    "longitude": 4.84671
+  },
+  "https://openalex.org/I205889620": {
+    "countryCode": "BD",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "latitude": 23.710399627685547,
+    "longitude": 90.40744018554688
+  },
+  "https://openalex.org/I4210138120": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Maisons-Alfort",
+    "latitude": 48.81171,
+    "longitude": 2.43945
+  },
+  "https://openalex.org/I4387155229": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Aveiro",
+    "latitude": 40.64575,
+    "longitude": -8.64643
+  },
+  "https://openalex.org/I4210103266": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Delft",
+    "latitude": 52.00667190551758,
+    "longitude": 4.355559825897217
+  },
+  "https://openalex.org/I4210159433": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Créteil",
+    "latitude": 48.792659759521484,
+    "longitude": 2.4656898975372314
+  },
+  "https://openalex.org/I168913471": {
+    "countryCode": "LB",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "latitude": 34.43352,
+    "longitude": 35.84415
+  },
+  "https://openalex.org/I4210128716": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Dessau",
+    "latitude": 51.83863830566406,
+    "longitude": 12.245550155639648
+  },
+  "https://openalex.org/I4210113999": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Brno",
+    "latitude": 49.195220947265625,
+    "longitude": 16.607959747314453
+  },
+  "https://openalex.org/I1332882736": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Oslo",
+    "latitude": 59.91273,
+    "longitude": 10.74609
+  },
+  "https://openalex.org/I3131980151": {
+    "countryCode": "BD",
+    "country": "Bangladesh",
+    "city": "Barishal",
+    "latitude": 22.70497,
+    "longitude": 90.37013
+  },
+  "https://openalex.org/I65137940": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Sacramento",
+    "latitude": 38.58156967163086,
+    "longitude": -121.49440002441406
+  },
+  "https://openalex.org/I4210094724": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Herning",
+    "latitude": 56.16778564453125,
+    "longitude": 10.20859146118164
+  },
+  "https://openalex.org/I3133455395": {
+    "countryCode": "PH",
+    "country": "Philippines",
+    "city": "Aborlan",
+    "latitude": 9.43361,
+    "longitude": 118.54879
+  },
+  "https://openalex.org/I4210153171": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.46625900268555,
+    "longitude": 13.318832397460938
+  },
+  "https://openalex.org/I60134161": {
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Nagoya",
+    "latitude": 35.18147,
+    "longitude": 136.90641
+  },
+  "https://openalex.org/I70931966": {
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Montreal",
+    "latitude": 45.50884,
+    "longitude": -73.58781
+  },
+  "https://openalex.org/I34352273": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Maastricht",
+    "latitude": 50.84833,
+    "longitude": 5.68889
+  },
+  "https://openalex.org/I1850255": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Basel",
+    "latitude": 47.55839,
+    "longitude": 7.57327
+  },
+  "https://openalex.org/I126744593": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Baltimore",
+    "latitude": 39.29038,
+    "longitude": -76.61219
+  },
+  "https://openalex.org/I76134821": {
+    "countryCode": "AT",
+    "country": "Austria",
+    "city": "Vienna",
+    "latitude": 48.20849,
+    "longitude": 16.37208
+  },
+  "https://openalex.org/I177969490": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Odense",
+    "latitude": 55.39594,
+    "longitude": 10.38831
+  },
+  "https://openalex.org/I1289490764": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Atlanta",
+    "latitude": 33.749,
+    "longitude": -84.38798
+  },
+  "https://openalex.org/I2802709434": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.675941467285156,
+    "longitude": 12.565529823303223
+  },
+  "https://openalex.org/I60858718": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Aveiro",
+    "latitude": 40.64575,
+    "longitude": -8.64643
+  },
+  "https://openalex.org/I2802567020": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.67594,
+    "longitude": 12.56553
+  },
+  "https://openalex.org/I170239107": {
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Adelaide",
+    "latitude": -34.92866,
+    "longitude": 138.59863
+  },
+  "https://openalex.org/I129043915": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Udine",
+    "latitude": 46.06930160522461,
+    "longitude": 13.237150192260742
+  },
+  "https://openalex.org/I27897274": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.89193,
+    "longitude": 12.51133
+  },
+  "https://openalex.org/I3006985408": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05107879638672,
+    "longitude": 14.50512981414795
+  },
+  "https://openalex.org/I165368041": {
+    "countryCode": "IS",
+    "country": "Iceland",
+    "city": "Reykjavik",
+    "latitude": 64.13548,
+    "longitude": -21.89541
+  },
+  "https://openalex.org/I2800387288": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Brussels",
+    "latitude": 50.85045,
+    "longitude": 4.34878
+  },
+  "https://openalex.org/I9073902": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Prague",
+    "latitude": 50.08804,
+    "longitude": 14.42076
+  },
+  "https://openalex.org/I154347574": {
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Rijeka",
+    "latitude": 45.32673,
+    "longitude": 14.44241
+  },
+  "https://openalex.org/I4210113529": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05108,
+    "longitude": 14.50513
+  },
+  "https://openalex.org/I39624965": {
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Helsinki",
+    "latitude": 60.16952133178711,
+    "longitude": 24.935449600219727
+  },
+  "https://openalex.org/I101527212": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.675941467285156,
+    "longitude": 12.565529823303223
+  },
+  "https://openalex.org/I158937107": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Allschwil",
+    "latitude": 47.55073928833008,
+    "longitude": 7.535990238189697
+  },
+  "https://openalex.org/I4210157468": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Nantes",
+    "latitude": 47.21725,
+    "longitude": -1.55336
+  },
+  "https://openalex.org/I32762134": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.983760833740234,
+    "longitude": 23.727840423583984
+  },
+  "https://openalex.org/I2799929701": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Trieste",
+    "latitude": 45.64953,
+    "longitude": 13.77678
+  },
+  "https://openalex.org/I2801133538": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.52437,
+    "longitude": 13.41053
+  },
+  "https://openalex.org/I201118511": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.17284,
+    "longitude": 33.35397
+  },
+  "https://openalex.org/I2802540905": {
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Jerusalem",
+    "latitude": 31.76904,
+    "longitude": 35.21633
+  },
+  "https://openalex.org/I2800920820": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Pavia",
+    "latitude": 45.19205,
+    "longitude": 9.15917
+  },
+  "https://openalex.org/I4210092468": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Atlanta",
+    "latitude": 33.84794235229492,
+    "longitude": -84.65877532958984
+  },
+  "https://openalex.org/I4210101141": {
+    "countryCode": "LU",
+    "country": "Luxembourg",
+    "city": "Strassen",
+    "latitude": 49.62056,
+    "longitude": 6.07333
+  },
+  "https://openalex.org/I206105734": {
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Lodz",
+    "latitude": 51.77058,
+    "longitude": 19.47395
+  },
+  "https://openalex.org/I4210092716": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Saint-Maurice",
+    "latitude": 48.82182,
+    "longitude": 2.42716
+  },
+  "https://openalex.org/I166775468": {
+    "countryCode": "SK",
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "latitude": 48.14815902709961,
+    "longitude": 17.106740951538086
+  },
+  "https://openalex.org/I4210142575": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Bacau",
+    "latitude": 46.554203033447266,
+    "longitude": 26.91409683227539
+  },
+  "https://openalex.org/I1320481043": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Brussels",
+    "latitude": 50.85045,
+    "longitude": 4.34878
+  },
+  "https://openalex.org/I4210165597": {
+    "countryCode": "AT",
+    "country": "Austria",
+    "city": "Vienna",
+    "latitude": 48.2546272277832,
+    "longitude": 16.483871459960938
+  },
+  "https://openalex.org/I2802112877": {
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Hadera",
+    "latitude": 32.44192123413086,
+    "longitude": 34.903900146484375
+  },
+  "https://openalex.org/I1310212576": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Parma",
+    "latitude": 44.79935073852539,
+    "longitude": 10.326180458068848
+  },
+  "https://openalex.org/I4210149617": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Almelo",
+    "latitude": 52.35667037963867,
+    "longitude": 6.662499904632568
+  },
+  "https://openalex.org/I4210118971": {
+    "countryCode": "SI",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05161666870117,
+    "longitude": 14.506612777709961
+  },
+  "https://openalex.org/I4210098658": {
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "latitude": 45.81444,
+    "longitude": 15.97798
+  },
+  "https://openalex.org/I1309171123": {
+    "countryCode": "SE",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "latitude": 59.866485595703125,
+    "longitude": 17.639902114868164
+  },
+  "https://openalex.org/I4210100464": {
+    "countryCode": "AT",
+    "country": "Austria",
+    "city": "Vienna",
+    "latitude": 48.20849,
+    "longitude": 16.37208
+  },
+  "https://openalex.org/I84560040": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.68120193481445,
+    "longitude": 12.58665657043457
+  },
+  "https://openalex.org/I4210092027": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Nantes",
+    "latitude": 47.21725,
+    "longitude": -1.55336
+  },
+  "https://openalex.org/I4210097567": {
+    "countryCode": "LB",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "latitude": 33.89332,
+    "longitude": 35.50157
+  },
+  "https://openalex.org/I4210093294": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Antwerp",
+    "latitude": 51.21221923828125,
+    "longitude": 4.39932107925415
+  },
+  "https://openalex.org/I4210157859": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.7362174987793,
+    "longitude": -9.144122123718262
+  },
+  "https://openalex.org/I35440088": {
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "latitude": 47.36667,
+    "longitude": 8.55
+  },
+  "https://openalex.org/I8087733": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Tübingen",
+    "latitude": 48.52266,
+    "longitude": 9.05222
+  },
+  "https://openalex.org/I108290504": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Pisa",
+    "latitude": 43.70853,
+    "longitude": 10.4036
+  },
+  "https://openalex.org/I4210089966": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "London",
+    "latitude": 51.50853,
+    "longitude": -0.12574
+  },
+  "https://openalex.org/I2801979204": {
+    "countryCode": "DK",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "latitude": 55.675941467285156,
+    "longitude": 12.565529823303223
+  },
+  "https://openalex.org/I56067802": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Rennes",
+    "latitude": 48.11109,
+    "longitude": -1.67431
+  },
+  "https://openalex.org/I122346577": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Modena",
+    "latitude": 44.64783,
+    "longitude": 10.92539
+  },
+  "https://openalex.org/I174878644": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Pátrai",
+    "latitude": 38.24443817138672,
+    "longitude": 21.734439849853516
+  },
+  "https://openalex.org/I132735039": {
+    "countryCode": "HU",
+    "country": "Hungary",
+    "city": "Debrecen",
+    "latitude": 47.53167,
+    "longitude": 21.62444
+  },
+  "https://openalex.org/I3018134672": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Munich",
+    "latitude": 48.13743,
+    "longitude": 11.57549
+  },
+  "https://openalex.org/I193615760": {
+    "countryCode": "TR",
+    "country": "Türkiye",
+    "city": "Izmir",
+    "latitude": 38.41273,
+    "longitude": 27.13838
+  },
+  "https://openalex.org/I142617266": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Rethymno",
+    "latitude": 35.36555,
+    "longitude": 24.48232
+  },
+  "https://openalex.org/I82284825": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Cranfield",
+    "latitude": 52.06869,
+    "longitude": -0.60884
+  },
+  "https://openalex.org/I12093191": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Stirling",
+    "latitude": 56.1190299987793,
+    "longitude": -3.9368200302124023
+  },
+  "https://openalex.org/I166182418": {
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Katowice",
+    "latitude": 50.2597,
+    "longitude": 19.02173
+  },
+  "https://openalex.org/I152518017": {
+    "countryCode": "RS",
+    "country": "Serbia",
+    "city": "Niš",
+    "latitude": 43.32472,
+    "longitude": 21.90333
+  },
+  "https://openalex.org/I162051807": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Bucharest",
+    "latitude": 44.43225,
+    "longitude": 26.10626
+  },
+  "https://openalex.org/I91123046": {
+    "countryCode": "LV",
+    "country": "Latvia",
+    "city": "Riga",
+    "latitude": 56.946,
+    "longitude": 24.10589
+  },
+  "https://openalex.org/I76245029": {
+    "countryCode": "MK",
+    "country": "North Macedonia",
+    "city": "Skopje",
+    "latitude": 41.99646,
+    "longitude": 21.43141
+  },
+  "https://openalex.org/I4210130874": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I24359323": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Berlin",
+    "latitude": 52.52437,
+    "longitude": 13.41053
+  },
+  "https://openalex.org/I138937732": {
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "latitude": 45.8144416809082,
+    "longitude": 15.97797966003418
+  },
+  "https://openalex.org/I98805295": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Mytilene",
+    "latitude": 39.10771942138672,
+    "longitude": 26.55529022216797
+  },
+  "https://openalex.org/I4210156109": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I348769827": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "London",
+    "latitude": 51.50853,
+    "longitude": -0.12574
+  },
+  "https://openalex.org/I4210116170": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Granada",
+    "latitude": 37.18817138671875,
+    "longitude": -3.6066699028015137
+  },
+  "https://openalex.org/I4210136145": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I188730046": {
+    "countryCode": "LT",
+    "country": "Lithuania",
+    "city": "Kaunas",
+    "latitude": 54.90156,
+    "longitude": 23.90909
+  },
+  "https://openalex.org/I4210108548": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Málaga",
+    "latitude": 36.72016,
+    "longitude": -4.42034
+  },
+  "https://openalex.org/I165283593": {
+    "countryCode": "FR",
+    "country": "France",
+    "city": "Rennes",
+    "latitude": 48.11109,
+    "longitude": -1.67431
+  },
+  "https://openalex.org/I4210164724": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Málaga",
+    "latitude": 36.72016,
+    "longitude": -4.42034
+  },
+  "https://openalex.org/I15477984": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Dundee",
+    "latitude": 56.46913146972656,
+    "longitude": -2.9748899936676025
+  },
+  "https://openalex.org/I4210123681": {
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "latitude": 45.8144416809082,
+    "longitude": 15.97797966003418
+  },
+  "https://openalex.org/I1289110261": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Belfast",
+    "latitude": 54.59682,
+    "longitude": -5.92541
+  },
+  "https://openalex.org/I148518341": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.17284,
+    "longitude": 33.35397
+  },
+  "https://openalex.org/I4210136939": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Prague",
+    "latitude": 50.08804,
+    "longitude": 14.42076
+  },
+  "https://openalex.org/I62325682": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Granada",
+    "latitude": 37.19022750854492,
+    "longitude": -3.594214916229248
+  },
+  "https://openalex.org/I4210089414": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Greifswald",
+    "latitude": 54.09311,
+    "longitude": 13.38786
+  },
+  "https://openalex.org/I4210131965": {
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Barcelona",
+    "latitude": 41.38879,
+    "longitude": 2.15899
+  },
+  "https://openalex.org/I1283489935": {
+    "countryCode": "AL",
+    "country": "Albania",
+    "city": "Tirana",
+    "latitude": 41.32749938964844,
+    "longitude": 19.818889617919922
+  },
+  "https://openalex.org/I4405257011": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Costa da Caparica",
+    "latitude": 38.64134,
+    "longitude": -9.23221
+  },
+  "https://openalex.org/I4210135933": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Prague",
+    "latitude": 50.08804,
+    "longitude": 14.42076
+  },
+  "https://openalex.org/I4210116739": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Bucharest",
+    "latitude": 44.43225,
+    "longitude": 26.10626
+  },
+  "https://openalex.org/I4210113172": {
+    "countryCode": "BE",
+    "country": "Belgium",
+    "city": "Namur",
+    "latitude": 50.46689987182617,
+    "longitude": 4.867459774017334
+  },
+  "https://openalex.org/I4210117916": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Modena",
+    "latitude": 44.64783,
+    "longitude": 10.92539
+  },
+  "https://openalex.org/I4210106773": {
+    "countryCode": "SK",
+    "country": "Slovakia",
+    "city": "Banská Bystrica",
+    "latitude": 48.16275405883789,
+    "longitude": 17.144996643066406
+  },
+  "https://openalex.org/I4210158043": {
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "latitude": 41.90129852294922,
+    "longitude": 12.489295959472656
+  },
+  "https://openalex.org/I4403386634": {
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.716670989990234,
+    "longitude": -9.133330345153809
+  },
+  "https://openalex.org/I4210127609": {
+    "countryCode": "EE",
+    "country": "Estonia",
+    "city": "Tallinn",
+    "latitude": 59.42692947387695,
+    "longitude": 24.739990234375
+  },
+  "https://openalex.org/I4210141646": {
+    "countryCode": "MK",
+    "country": "North Macedonia",
+    "city": "Skopje",
+    "latitude": 42.0081901550293,
+    "longitude": 21.38340950012207
+  },
+  "https://openalex.org/I130238516": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Minneapolis",
+    "latitude": 44.97997,
+    "longitude": -93.26384
+  },
+  "https://openalex.org/I33213144": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Gainesville",
+    "latitude": 29.65163,
+    "longitude": -82.32483
+  },
+  "https://openalex.org/I130769515": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "State College",
+    "latitude": 40.79339,
+    "longitude": -77.86
+  },
+  "https://openalex.org/I28407311": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "latitude": 53.48095,
+    "longitude": -2.23743
+  },
+  "https://openalex.org/I165932596": {
+    "countryCode": "SG",
+    "country": "Singapore",
+    "city": "Singapore",
+    "latitude": 1.28967,
+    "longitude": 103.85007
+  },
+  "https://openalex.org/I138006243": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Tucson",
+    "latitude": 32.22174,
+    "longitude": -110.92648
+  },
+  "https://openalex.org/I84884186": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "latitude": 54.97328,
+    "longitude": -1.61396
+  },
+  "https://openalex.org/I204778367": {
+    "countryCode": "NO",
+    "country": "Norway",
+    "city": "Trondheim",
+    "latitude": 63.43049,
+    "longitude": 10.39506
+  },
+  "https://openalex.org/I193531525": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Washington",
+    "latitude": 38.89511,
+    "longitude": -77.03637
+  },
+  "https://openalex.org/I190249584": {
+    "countryCode": "AT",
+    "country": "Austria",
+    "city": "Innsbruck",
+    "latitude": 47.26266,
+    "longitude": 11.39454
+  },
+  "https://openalex.org/I107672454": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Hanover",
+    "latitude": 43.70229,
+    "longitude": -72.28954
+  },
+  "https://openalex.org/I165951966": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "San Antonio",
+    "latitude": 29.42412,
+    "longitude": -98.49363
+  },
+  "https://openalex.org/I56085075": {
+    "countryCode": "EE",
+    "country": "Estonia",
+    "city": "Tartu",
+    "latitude": 58.38062,
+    "longitude": 26.72509
+  },
+  "https://openalex.org/I45438204": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "San Antonio",
+    "latitude": 29.42412,
+    "longitude": -98.49363
+  },
+  "https://openalex.org/I164936912": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "El Paso",
+    "latitude": 31.75872,
+    "longitude": -106.48693
+  },
+  "https://openalex.org/I11957088": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Houghton",
+    "latitude": 47.12186813354492,
+    "longitude": -88.56900787353516
+  },
+  "https://openalex.org/I36721946": {
+    "countryCode": "KW",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "latitude": 29.367,
+    "longitude": 47.97429
+  },
+  "https://openalex.org/I147962203": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Komotini",
+    "latitude": 41.119171142578125,
+    "longitude": 25.405349731445312
+  },
+  "https://openalex.org/I203474044": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.98376,
+    "longitude": 23.72784
+  },
+  "https://openalex.org/I94339441": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Bowling Green",
+    "latitude": 36.99032,
+    "longitude": -86.4436
+  },
+  "https://openalex.org/I208470662": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Cluj-Napoca",
+    "latitude": 46.76667022705078,
+    "longitude": 23.600000381469727
+  },
+  "https://openalex.org/I166088655": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Montclair",
+    "latitude": 40.825931549072266,
+    "longitude": -74.20903015136719
+  },
+  "https://openalex.org/I2801663869": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "latitude": 54.976863861083984,
+    "longitude": -1.6461999416351318
+  },
+  "https://openalex.org/I73142707": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.983760833740234,
+    "longitude": 23.727840423583984
+  },
+  "https://openalex.org/I2801120809": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Salford",
+    "latitude": 53.48771,
+    "longitude": -2.29042
+  },
+  "https://openalex.org/I4210160326": {
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Munich",
+    "latitude": 48.13743,
+    "longitude": 11.57549
+  },
+  "https://openalex.org/I4210137384": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Porto",
+    "latitude": 41.1485,
+    "longitude": -8.61097
+  },
+  "https://openalex.org/I1322597698": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Amsterdam",
+    "latitude": 52.37403,
+    "longitude": 4.88969
+  },
+  "https://openalex.org/I4210124950": {
+    "countryCode": "GB",
+    "country": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "latitude": 54.98664474487305,
+    "longitude": -1.6052860021591187
+  },
+  "https://openalex.org/I1295801184": {
+    "countryCode": "NL",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "latitude": 52.37403106689453,
+    "longitude": 4.889689922332764
+  },
+  "https://openalex.org/I4210118976": {
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Brno",
+    "latitude": 49.19522,
+    "longitude": 16.60796
+  },
+  "https://openalex.org/I4405257300": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.98376,
+    "longitude": 23.72784
+  },
+  "https://openalex.org/I4210097709": {
+    "countryCode": "PT",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "latitude": 38.71667,
+    "longitude": -9.13333
+  },
+  "https://openalex.org/I4210100616": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Cluj-Napoca",
+    "latitude": 46.76667,
+    "longitude": 23.6
+  },
+  "https://openalex.org/I4210150591": {
+    "countryCode": "IN",
+    "country": "India",
+    "city": "New Delhi",
+    "latitude": 28.62137,
+    "longitude": 77.2148
+  },
+  "https://openalex.org/I4387155365": {
+    "country": "Greece",
+    "city": "Agia Paraskevi",
+    "latitude": 39.142311096191406,
+    "longitude": 23.425079345703125
+  },
+  "https://openalex.org/I2801500240": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Columbia",
+    "latitude": 33.977500915527344,
+    "longitude": -80.96111297607422
+  },
+  "https://openalex.org/I4210087320": {
+    "countryCode": "RS",
+    "country": "Serbia",
+    "city": "Bor",
+    "latitude": 44.07487869262695,
+    "longitude": 22.095909118652344
+  },
+  "https://openalex.org/I4210090415": {
+    "countryCode": "RO",
+    "country": "Romania",
+    "city": "Târgu Mureş",
+    "latitude": 46.542449951171875,
+    "longitude": 24.557470321655273
+  },
+  "https://openalex.org/I94353236": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "latitude": 37.9860954284668,
+    "longitude": 23.72597885131836
+  },
+  "https://openalex.org/I4210155077": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.17531,
+    "longitude": 33.3642
+  },
+  "https://openalex.org/I1309016818": {
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Las Vegas",
+    "latitude": 36.15985107421875,
+    "longitude": -115.19136047363281
+  },
+  "https://openalex.org/I4210143945": {
+    "countryCode": "CY",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "latitude": 35.1469612121582,
+    "longitude": 33.313804626464844
+  },
+  "https://openalex.org/I4405259011": {
+    "countryCode": "NL",
+    "country": "The Netherlands",
+    "city": "Groningen",
+    "latitude": 53.21917,
+    "longitude": 6.56667
+  },
+  "https://openalex.org/I4210161294": {
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Marousi",
+    "latitude": 38.03889846801758,
+    "longitude": 23.802471160888672
+  }
+}

@@ -33,7 +33,7 @@ export default function ResearchFilters({
   const countries = [
     ...new Set(
       publications.flatMap((publication) =>
-        publication.studyLocations
+        (publication.authorLocations ?? [])
           .map((location) => location.country)
           .filter((country): country is string => Boolean(country)),
       ),
@@ -42,7 +42,7 @@ export default function ResearchFilters({
   const cities = [
     ...new Set(
       publications.flatMap((publication) =>
-        publication.studyLocations
+        (publication.authorLocations ?? [])
           .filter(
             (location) =>
               !filters.country || location.country === filters.country,
@@ -57,14 +57,11 @@ export default function ResearchFilters({
   );
   const regions = countValues(
     publications.flatMap((publication) => [
-      ...new Set(publication.studyLocations.map((location) => location.name)),
+      ...new Set((publication.authorLocations ?? []).map((location) => location.name)),
     ]),
   ).slice(0, 5);
   const unknown = publications.filter(
     (publication) => geographyStatus(publication) === "unknown",
-  ).length;
-  const global = publications.filter(
-    (publication) => geographyStatus(publication) === "non-geographic",
   ).length;
   const prefix = onClose ? "mobile-" : "desktop-";
 
@@ -176,7 +173,7 @@ export default function ResearchFilters({
       </section>
       <section className="filter-section">
         <label className="filter-label" htmlFor={`${prefix}country`}>
-          Study location
+          Author location
         </label>
         <select
           id={`${prefix}country`}
@@ -233,16 +230,13 @@ export default function ResearchFilters({
           onChange={(event) => update({ geography: event.target.value })}
         >
           <option value="">All publications</option>
-          <option value="located">Identified study locations</option>
-          <option value="unknown">Location not determined ({unknown})</option>
-          <option value="non-geographic">
-            Global / Non-geographic ({global})
-          </option>
+          <option value="located">Identified author locations</option>
+          <option value="unknown">Author locations unavailable ({unknown})</option>
         </select>
       </section>
       {regions.length > 0 && (
         <details className="filter-section region-section">
-          <summary>Most studied regions</summary>
+          <summary>Most represented locations</summary>
           <div className="region-list">
             {regions.map(([region, count]) => (
               <button

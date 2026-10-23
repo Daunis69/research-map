@@ -1,21 +1,26 @@
 import type { Publication } from "../../types/publication";
+import { enrichAuthorLocations } from "../authorLocations";
 
 /** Only work-specific source URLs identify a paper; a shared author profile does not. */
 export function sourceIdentityKeys(
-  publication: Pick<Publication, "source">,
+  publication: Pick<Publication, "source" | "alternateVersions">,
 ): string[] {
-  return Object.entries(publication.source).flatMap(([source, url]) => {
-    if (!url) return [];
-    const isWork =
-      source === "orcid"
-        ? /\/work\/\d+\/?$/.test(url)
-        : source === "openAlex"
-          ? /\/W\d+\/?$/.test(url)
-          : source === "ktisis"
-            ? /\/entities\/publication\/[^/]+\/?$/.test(url)
-            : /\/works\/10\./.test(url);
-    return isWork ? [`${source}:${url.replace(/\/$/, "")}`] : [];
-  });
+  const sources = [publication.source, ...(publication.alternateVersions ?? [])
+    .flatMap(version => [version.source, ...(version.sourceAliases ?? [])])];
+  return [...new Set(sources.flatMap(entries =>
+    Object.entries(entries).flatMap(([source, url]) => {
+      if (!url) return [];
+      const isWork =
+        source === "orcid"
+          ? /\/work\/\d+\/?$/.test(url)
+          : source === "openAlex"
+            ? /\/W\d+\/?$/.test(url)
+            : source === "ktisis"
+              ? /\/entities\/publication\/[^/]+\/?$/.test(url)
+              : /\/works\/10\./.test(url);
+      return isWork ? [`${source}:${url.replace(/\/$/, "")}`] : [];
+    }),
+  ))];
 }
 
 export type JsonRecord = Record<string, unknown>;
@@ -159,5 +164,5 @@ export function makePublication(
     discoveredAt: input.discoveredAt ?? now,
     updatedAt: input.updatedAt ?? now,
   };
-  return publication;
+  return enrichAuthorLocations(publication);
 }

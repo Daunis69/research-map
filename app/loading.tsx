@@ -6,7 +6,7 @@ export default function Loading() {
       aria-busy="true"
     >
       <h1>Research map</h1>
-      <p>Loading publications and study locations…</p>
+      <p>Loading publications and author locations…</p>
       <div className="loading-skeleton" />
       <div className="loading-skeleton short" />
     </main>

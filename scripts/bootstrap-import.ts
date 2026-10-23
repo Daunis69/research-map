@@ -3,7 +3,7 @@ import { normalizeOpenAlexWork } from "../lib/publications/openalex";
 import { normalizeKtisisItem } from "../lib/publications/ktisis";
 import { normalizeOrcidSummaries } from "../lib/publications/orcid";
 import { deduplicatePublications } from "../lib/publications/deduplicate";
-import { enrichPublication } from "../lib/locationExtractor";
+import { enrichAuthorLocations } from "../lib/authorLocations";
 import { deriveTopics } from "../lib/topics";
 import {
   hasCorroboratedOpenAlexAuthorship,
@@ -49,7 +49,7 @@ async function main() {
   ])
     .filter((work) => !isExcludedPublication(work))
     .map((publication) =>
-      enrichPublication({ ...publication, topics: deriveTopics(publication) }),
+      enrichAuthorLocations({ ...publication, topics: deriveTopics(publication) }),
     );
   const dataset: PublicationDataset = {
     publications,
@@ -150,7 +150,7 @@ async function main() {
       "Seven large primary-profile Global Burden of Disease collaborations have OpenAlex authorship lists truncated at 100. Their author-profile index association is retained; full author lists may be added by subsequent Crossref enrichment.",
       "Crossref initial enrichment succeeded for 11 of 80 attempted known DOIs; other attempts were unavailable. Runtime enrichment now respects the current single concurrent request public-pool limit with pacing and a 45-second budget, and retries unfinished enrichment on later syncs.",
       "ORCID works can be self-maintained or incomplete; missing fields stay missing until another source supplies metadata.",
-      "Study geography is inferred conservatively from article text and never from author or publisher affiliations. Unknown locations remain visible in the list and timeline.",
+      "Author locations use all available institutions attached to each paper. Missing affiliations remain unmapped; truncated author lists are labelled incomplete.",
     ],
     apiDocumentation: [
       "https://help.openalex.org/api/paging/",
@@ -167,11 +167,11 @@ async function main() {
   console.log(
     JSON.stringify({
       total: publications.length,
-      located: publications.filter((p) => p.studyLocations.length).length,
+      located: publications.filter((p) => p.authorLocations?.length).length,
       countries: [
         ...new Set(
           publications
-            .flatMap((p) => p.studyLocations.map((l) => l.country))
+            .flatMap((p) => (p.authorLocations ?? []).map((l) => l.country))
             .filter(Boolean),
         ),
       ],

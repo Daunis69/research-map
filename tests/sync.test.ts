@@ -1,5 +1,13 @@
 import test from "node:test";
+import * as syncLogic from "../lib/syncLogic";
 import assert from "node:assert/strict";
+
+test("an affiliation snapshot over 2MB round-trips through a cache value under 2MB", () => {
+  const dataset = { publications: [{ title: "affiliation metadata ".repeat(130000) }], fetchedAt: "2026-10-14", sources: [] };
+  const encoded = syncLogic.encodeCachedDataset?.(dataset as unknown as import("../types/publication").PublicationDataset);
+  assert.ok(encoded && Buffer.byteLength(encoded) < 2_000_000);
+  assert.deepEqual(syncLogic.decodeCachedDataset?.(encoded!), dataset);
+});
 import {
   compareDatasets,
   failedRefreshDataset,
@@ -7,6 +15,7 @@ import {
   needsRefresh,
 } from "@/lib/syncLogic";
 import type { Publication, PublicationDataset } from "@/types/publication";
+import { deduplicatePublications } from "../lib/publications/deduplicate";
 
 const paper: Publication = {
   id: "fixture-1",
@@ -20,6 +29,16 @@ const paper: Publication = {
   updatedAt: "2026-01-01T00:00:00.000Z",
 };
 const timestamp = "2026-02-01T00:00:00.000Z";
+
+test("a final article replacing a known preprint counts as an update rather than a new publication", () => {
+  const preprint = { ...paper, id: "doi:10.2139/ssrn.123", doi: "10.2139/ssrn.123", journal: "SSRN Electronic Journal", authors: ["Jane Smith"] };
+  const final = { ...preprint, id: "doi:10.1234/final", doi: "10.1234/final", journal: "Water Research" };
+  const incoming = deduplicatePublications([preprint, final]);
+  const result = compareDatasets([preprint], incoming, timestamp);
+  assert.equal(result.newPublications, 0);
+  assert.equal(result.updatedPublications, 1);
+  assert.equal(result.publications[0].discoveredAt, preprint.discoveredAt);
+});
 
 test("ORCID author enrichment counts as an update even when fallback identity changes", () => {
   const old = {

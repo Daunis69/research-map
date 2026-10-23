@@ -1,0 +1,39 @@
+[
+  {
+    "preferredDoi": "10.1016/j.envint.2025.109985",
+    "alternateDois": ["10.2139/ssrn.5433788"],
+    "alternateSourceUrls": ["https://openalex.org/W7130267617"],
+    "note": "Shaping the future of human biomonitoring: the final title adds the HBM acronym; the author lists identify the same work. The RCAAP copy retains only the subtitle."
+  },
+  {
+    "preferredDoi": "10.1016/j.envint.2025.109601",
+    "alternateDois": ["10.2139/ssrn.5178675"],
+    "note": "MIR-HBM guidance preprint and final guidance: revised title, matching author team and scope."
+  },
+  {
+    "preferredDoi": "10.1002/cnr2.2000",
+    "alternateDois": ["10.22541/au.169003067.76211531/v1"],
+    "note": "Temporal trends of cancer incidence in Cyprus: Authorea preprint and final article; the title replaces during with parentheses."
+  },
+  {
+    "preferredDoi": "10.1016/j.isci.2022.105847",
+    "alternateDois": ["10.2139/ssrn.4096552", "10.18332/popmed/164917"],
+    "note": "CIRCA-CHEM crossover trial: preprint and final paper use different titles and author order, with the same seven-author team and intervention. The Population Medicine conference abstract repeats the final title."
+  },
+  {
+    "preferredDoi": "10.7717/peerj.6851",
+    "alternateDois": ["10.1101/401927"],
+    "note": "Limassol urban exposome proof-of-concept: matching nine-author team, drinking-water and quality-of-life study, methods and results in the preprint and final abstracts."
+  },
+  {
+    "preferredDoi": "10.1016/s1474-8177(07)05028-0",
+    "alternateDois": ["10.1016/s1474-8177(07)5028-0"],
+    "note": "The same 2007 Makris and O'Connor book chapter; one provider omits the leading zero in the DOI and Chapter 28 from the title."
+  },
+  {
+    "preferredDoi": "10.1093/annweh/wxaf074",
+    "alternateDois": [],
+    "alternateSourceUrls": ["https://openalex.org/W7139679966"],
+    "note": "BASIC Guide: the RCAAP copy retains only the subtitle; the author team matches the final paper."
+  }
+]

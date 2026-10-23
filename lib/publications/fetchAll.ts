@@ -31,7 +31,7 @@ export async function fetchAllPublications(
   overrides: Partial<SourceLoaders> = {},
 ): Promise<PublicationDataset> {
   const loaders: SourceLoaders = {
-    openAlex: () => fetchOpenAlexPublications(),
+    openAlex: () => fetchOpenAlexPublications({}, previous),
     orcid: () => fetchOrcidPublications(),
     ktisis: () => fetchKtisisPublications(),
     crossref: (publications) => enrichWithCrossref(publications),

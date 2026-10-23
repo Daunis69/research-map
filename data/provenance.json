@@ -161,13 +161,12 @@
     }
   ],
   "secondaryProfileRules": "Accept only work-level raw ORCID/CUT affiliation or at least two coauthors independently present in authority-linked Ktisis publications. Current two genuine 2026 health articles carry work-level CUT affiliation. The HBM review has Maryam Zare Jeddi and Karen S. Galea; both occur in Ktisis-verified papers.",
-  "corpusScope": "Includes articles, reviews, preprints, books/chapters, dissertations, conference papers/abstracts and corrections present in verified sources. Supplementary files, datasets, software, awards, talks, committee memberships and teaching records are excluded. Distinct preprint/final DOIs are kept separately.",
+  "corpusScope": "Includes articles, reviews, preprints, books/chapters, dissertations, conference papers/abstracts and corrections present in verified sources. Supplementary files, datasets, software, awards, talks, committee memberships and teaching records are excluded. The bundled import preserves original records; runtime deduplication combines versions of the same work and prefers the final article, retaining alternate identities. Reviewed title changes are recorded in data/publication-versions.json.",
   "limitations": [
     "Complete pagination means complete records returned by these APIs on the import date, not a guarantee that every publication is indexed.",
     "Seven large primary-profile Global Burden of Disease collaborations have OpenAlex authorship lists truncated at 100. Their author-profile index association is retained; full author lists may be added by subsequent Crossref enrichment.",
     "Crossref initial enrichment succeeded for 11 of 80 attempted known DOIs; other attempts were unavailable. Runtime enrichment now respects the current single concurrent request public-pool limit with pacing and a 45-second budget, and retries unfinished enrichment on later syncs.",
-    "ORCID works can be self-maintained or incomplete; missing fields stay missing until another source supplies metadata.",
-    "Study geography is inferred conservatively from article text and never from author or publisher affiliations. Unknown locations remain visible in the list and timeline."
+    "ORCID works can be self-maintained or incomplete; missing fields stay missing until another source supplies metadata."
   ],
   "apiDocumentation": [
     "https://help.openalex.org/api/paging/",
@@ -206,5 +205,16 @@
       }
     ],
     "note": "An authorized POST to the built production server refreshed all sources and persisted this snapshot. Exact source-record identity merges ORCID summary/detail records when missing authors become available."
+  },
+  "affiliationMapping": {
+    "updatedAt": "2026-10-14T07:21:55.060Z",
+    "basis": "All available authors' institutions attached to each publication, not current author profiles or study-area text.",
+    "sourceHarvest": "2026-10-07T11:29:17.927Z",
+    "institutionRecords": 445,
+    "publicationsWithLocations": 191,
+    "limitations": [
+      "OpenAlex caps author lists at 100; large collaborations and missing affiliations are labelled incomplete.",
+      "Institution coordinates are representative organisation locations; fallback country markers are labelled separately."
+    ]
   }
 }

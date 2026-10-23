@@ -66,10 +66,13 @@ export default function PublicationDetail({
           <section className="detail-section">
             <h3>
               <MapPin size={16} aria-hidden="true" />
-              Study geography
+              Author affiliations
             </h3>
-            {publication.studyLocations.length ? (
-              publication.studyLocations.map((location, index) => (
+            {publication.affiliationsIncomplete && (
+              <p className="unknown-note">Affiliation coverage is incomplete. The available author–institution links are shown below; some authors or affiliations may be missing.</p>
+            )}
+            {(publication.authorLocations ?? []).length ? (
+              (publication.authorLocations ?? []).map((location, index) => (
                 <div
                   className="evidence-card"
                   key={`${location.name}-${index}`}
@@ -87,6 +90,9 @@ export default function PublicationDetail({
                         : `${location.confidence} confidence`}
                     </span>
                   </div>
+                  <p>{location.precision === "country" ? "Country-level location" : "Institution location"}</p>
+                  {location.institutions.length > 0 && <p><strong>Institutions:</strong> {location.institutions.join("; ")}</p>}
+                  {location.authors.length > 0 && <p><strong>Authors:</strong> {location.authors.join("; ")}</p>}
                   <p>
                     {location.evidence ||
                       "No supporting evidence was included in the source metadata."}
@@ -95,9 +101,17 @@ export default function PublicationDetail({
               ))
             ) : (
               <p className="unknown-note">
-                {locationLabel(publication)}. No study-location marker has been
-                assigned to this publication.
+                {locationLabel(publication)}. No usable author affiliation
+                location was supplied by the connected metadata sources.
               </p>
+            )}
+            {(publication.authorAffiliations?.length ?? 0) > 0 && (
+              <details className="source-details">
+                <summary>All reported author affiliations</summary>
+                <ul>{publication.authorAffiliations?.map((affiliation, index) => (
+                  <li key={index}>{affiliation.author} — {affiliation.institution ?? "Institution not identified"}{affiliation.countryCode ? ` (${affiliation.countryCode})` : ""}</li>
+                ))}</ul>
+              </details>
             )}
           </section>
           <section className="detail-section">

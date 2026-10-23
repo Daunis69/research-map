@@ -1,30 +1,68 @@
-import type { Publication } from "../../types/publication";
+import type { AuthorAffiliation, Publication, PublicationVersion } from "../../types/publication";
 import {
   fallbackKey,
   normalizeDoi,
+  normalizeText,
   publicationId,
   sourceIdentityKeys,
   uniqueStrings,
 } from "./normalize";
+import {
+  comparePublicationVersions,
+  differentPublicationVersions,
+  publicationDois,
+  publicationVersions,
+  samePublicationVersions,
+} from "./versions";
 
 const quality = (p: Publication) =>
   p.source.openAlex ? 4 : p.source.ktisis ? 3 : p.source.crossref ? 2 : 1;
 
+const authorKey = (name: string) => normalizeText(name.includes(",") ? name.split(",").reverse().join(" ") : name);
+const affiliationKey = (a: AuthorAffiliation) => `${a.authorId ?? authorKey(a.author)}|${a.institutionId ?? a.institution?.toLowerCase() ?? ""}|${a.countryCode ?? ""}`;
+
 export function mergePublications(a: Publication, b: Publication): Publication {
-  const [preferred, other] = quality(a) >= quality(b) ? [a, b] : [b, a];
-  const abstract =
+  const versionPreference = comparePublicationVersions(a, b);
+  const preferA = versionPreference > 0 || (versionPreference === 0 &&
+    (quality(a) > quality(b) || (quality(a) === quality(b) && a.updatedAt >= b.updatedAt)));
+  const [preferred, other] = preferA ? [a, b] : [b, a];
+  const differentVersion = differentPublicationVersions(a, b);
+  const abstract = differentVersion ? preferred.abstract :
     (a.abstract?.length ?? 0) >= (b.abstract?.length ?? 0)
       ? a.abstract
       : b.abstract;
+  const affiliations = new Map<string, AuthorAffiliation>();
+  const otherAffiliations = differentVersion ? [] : other.authorAffiliations ?? [];
+  const primary = preferred.authorAffiliations ?? otherAffiliations;
+  const primaryAuthors = new Set(primary.map(link => authorKey(link.author)));
+  const oldByKey = new Map(otherAffiliations.map(link => [affiliationKey(link), link]));
+  const supplements = otherAffiliations.filter(link => {
+    const sameProvider = Boolean(link.sourceUrl && Object.values(preferred.source).includes(link.sourceUrl));
+    return !primaryAuthors.has(authorKey(link.author)) && (preferred.affiliationsIncomplete !== false || !sameProvider);
+  });
+  // A refreshed author relationship replaces the older one; only matching
+  // relationships inherit resolved geography. Missing/truncated records retain
+  // earlier links for uncovered authors, and other providers may fill gaps.
+  for (const affiliation of [...supplements, ...primary]) {
+    const key = affiliationKey(affiliation);
+    const defined = Object.fromEntries(Object.entries(affiliation).filter(([, value]) => value !== undefined));
+    affiliations.set(key, { ...oldByKey.get(key), ...affiliations.get(key), ...defined } as AuthorAffiliation);
+  }
+  const authors = differentVersion && preferred.authors.length ? preferred.authors : a.authors.length >= b.authors.length ? a.authors : b.authors;
+  const authorCount = differentVersion ? preferred.authorCount ?? authors.length : Math.max(a.authorCount ?? a.authors.length, b.authorCount ?? b.authors.length);
+  const covered = new Set([...affiliations.values()].map(link => authorKey(link.author)));
   const merged: Publication = {
     ...other,
     ...preferred,
-    doi: normalizeDoi(a.doi) ?? normalizeDoi(b.doi),
+    doi: normalizeDoi(preferred.doi) ?? normalizeDoi(other.doi),
     year: preferred.year ?? other.year,
     journal: preferred.journal || other.journal,
     abstract,
     publicationUrl: preferred.publicationUrl || other.publicationUrl,
-    authors: a.authors.length >= b.authors.length ? a.authors : b.authors,
+    authors,
+    authorAffiliations: affiliations.size ? [...affiliations.values()] : differentVersion ? preferred.authorAffiliations : preferred.authorAffiliations ?? other.authorAffiliations,
+    authorCount,
+    affiliationsIncomplete: preferred.affiliationsIncomplete === true || authorCount > authors.length || authors.some(author => !covered.has(authorKey(author))),
     topics: uniqueStrings([...preferred.topics, ...other.topics]),
     keywords: uniqueStrings([
       ...(preferred.keywords ?? []),
@@ -34,7 +72,7 @@ export function mergePublications(a: Publication, b: Publication): Publication {
       a.citationCount === undefined && b.citationCount === undefined
         ? undefined
         : Math.max(a.citationCount ?? 0, b.citationCount ?? 0),
-    source: { ...other.source, ...preferred.source },
+    source: differentVersion ? preferred.source : { ...other.source, ...preferred.source },
     studyLocations: a.studyLocations.length
       ? a.studyLocations
       : b.studyLocations,
@@ -46,6 +84,26 @@ export function mergePublications(a: Publication, b: Publication): Publication {
     updatedAt: a.updatedAt > b.updatedAt ? a.updatedAt : b.updatedAt,
   };
   merged.id = publicationId(merged);
+  const versions = new Map<string, PublicationVersion>();
+  for (const version of [...publicationVersions(other), ...publicationVersions(preferred)]) {
+    const key = normalizeDoi(version.doi) ? `doi:${normalizeDoi(version.doi)}` : version.id;
+    if (key === merged.id) continue;
+    const existing = versions.get(key);
+    if (!existing) {
+      versions.set(key, version);
+      continue;
+    }
+    const source = { ...existing.source, ...version.source };
+    const sourceKey = (value: Publication["source"]) => JSON.stringify(Object.entries(value).sort(([a], [b]) => a.localeCompare(b)));
+    const aliases = new Map(
+      [existing.source, ...(existing.sourceAliases ?? []), version.source, ...(version.sourceAliases ?? [])]
+        .map(value => [sourceKey(value), value]),
+    );
+    aliases.delete(sourceKey(source));
+    versions.set(key, { ...existing, ...version, source,
+      sourceAliases: aliases.size ? [...aliases.values()] : undefined });
+  }
+  merged.alternateVersions = versions.size ? [...versions.values()].sort((a, b) => a.id.localeCompare(b.id)) : undefined;
   return merged;
 }
 
@@ -65,11 +123,11 @@ function deduplicatePass(publications: Publication[]): Publication[] {
         .flatMap((identity) => sourceIndex.get(identity) ?? [])
         .find(
           (candidate) =>
-            !doi || !output[candidate].doi || output[candidate].doi === doi,
+            !doi || !output[candidate].doi || publicationDois(output[candidate]).includes(doi),
         );
     }
     if (index === undefined) {
-      // Different DOIs can identify a preprint and its final article: never collapse them by title.
+      // A DOI-less metadata copy can still be recognized by its original fallback key.
       index = titleIndex
         .get(key)
         ?.find(
@@ -78,11 +136,15 @@ function deduplicatePass(publications: Publication[]): Publication[] {
         );
     }
     if (index === undefined) {
+      const match = output.findIndex(candidate => samePublicationVersions(input, candidate));
+      if (match !== -1) index = match;
+    }
+    if (index === undefined) {
       index = output.length;
       output.push({ ...input, doi, id: publicationId(input) });
     } else output[index] = mergePublications(output[index], input);
-    if (doi) doiIndex.set(doi, index);
-    for (const identity of sourceIdentityKeys(input)) {
+    for (const knownDoi of publicationDois(output[index])) doiIndex.set(knownDoi, index);
+    for (const identity of sourceIdentityKeys(output[index])) {
       const sources = sourceIndex.get(identity) ?? [];
       if (!sources.includes(index)) sources.push(index);
       sourceIndex.set(identity, sources);
