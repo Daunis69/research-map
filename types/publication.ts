@@ -35,9 +35,16 @@ export interface Publication {
     crossref?: string;
     ktisis?: string;
   };
+  /** Other records of this same work, retained so later imports cannot recreate duplicates. */
+  alternateVersions?: PublicationVersion[];
   discoveredAt: string;
   updatedAt: string;
 }
+
+export type PublicationVersion = Pick<
+  Publication,
+  "id" | "title" | "year" | "doi" | "journal" | "publicationUrl" | "source"
+> & { sourceAliases?: Publication["source"][] };
 
 export interface AuthorAffiliation {
   author: string;

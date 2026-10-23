@@ -47,7 +47,7 @@ The application uses Next.js 16 App Router, strict TypeScript, React, Tailwind C
 ```text
 OpenAlex + ORCID + author-linked Ktisis records
                   ↓
-      normalize / deduplicate by DOI
+      normalize / combine duplicate versions
                   ↓
        Crossref enriches known DOIs
                   ↓
@@ -192,7 +192,7 @@ Run `npm test` and `npm run build`, commit the correction, and deploy. Overrides
 - **No automatic updates on Vercel:** confirm the private Blob connection, Production `CRON_SECRET`, cron schedule and function logs. Preview deployments do not receive normal production cron invocations. Credentials added after deployment need a redeploy.
 - **Upstream API returns 429/403:** wait and check provider policies/quota. Configure an optional OpenAlex key. Existing publications remain available during a failure.
 - **Map tiles fail:** the list and timeline still work. Check network access to the OpenStreetMap tile host and do not remove attribution.
-- **Unexpected duplicate:** DOI is the primary key. Without DOI, normalized title, year and first author identify the work. Different DOIs are kept distinct, including preprints and final versions. Inspect the source metadata before changing merge rules.
+- **Unexpected duplicate:** DOI and work-specific source identities identify metadata copies. Matching normalized titles with corroborating authors and publication dates within three years combine versions of the same work, including preprints and conference abstracts. The final article is preferred. Reviewed title changes and truncated repository copies are linked by DOI or exact work URL in `data/publication-versions.json`; alternate record identities are retained to prevent duplicates on later imports. Corrections and distinct follow-up studies remain separate; similar titles alone do not merge papers. These rules apply to existing stored snapshots as well as new imports, so the list, timeline, map and totals use the same unique records.
 
 ## References
 

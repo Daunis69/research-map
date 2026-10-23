@@ -16,7 +16,11 @@ import {
 import { hasBlobStorage, readSnapshot, writeSnapshot } from "@/lib/storage";
 
 export const DATASET_TAG = "makris-publications-v1";
-export const seedDataset = seed as PublicationDataset;
+const importedDataset = seed as PublicationDataset;
+export const seedDataset: PublicationDataset = {
+  ...importedDataset,
+  publications: deduplicatePublications(importedDataset.publications),
+};
 
 export interface SyncResult {
   success: boolean;

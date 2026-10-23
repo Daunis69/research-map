@@ -161,7 +161,7 @@
     }
   ],
   "secondaryProfileRules": "Accept only work-level raw ORCID/CUT affiliation or at least two coauthors independently present in authority-linked Ktisis publications. Current two genuine 2026 health articles carry work-level CUT affiliation. The HBM review has Maryam Zare Jeddi and Karen S. Galea; both occur in Ktisis-verified papers.",
-  "corpusScope": "Includes articles, reviews, preprints, books/chapters, dissertations, conference papers/abstracts and corrections present in verified sources. Supplementary files, datasets, software, awards, talks, committee memberships and teaching records are excluded. Distinct preprint/final DOIs are kept separately.",
+  "corpusScope": "Includes articles, reviews, preprints, books/chapters, dissertations, conference papers/abstracts and corrections present in verified sources. Supplementary files, datasets, software, awards, talks, committee memberships and teaching records are excluded. The bundled import preserves original records; runtime deduplication combines versions of the same work and prefers the final article, retaining alternate identities. Reviewed title changes are recorded in data/publication-versions.json.",
   "limitations": [
     "Complete pagination means complete records returned by these APIs on the import date, not a guarantee that every publication is indexed.",
     "Seven large primary-profile Global Burden of Disease collaborations have OpenAlex authorship lists truncated at 100. Their author-profile index association is retained; full author lists may be added by subsequent Crossref enrichment.",

@@ -2,6 +2,7 @@ import { createHash, timingSafeEqual } from "node:crypto";
 import { gzipSync, gunzipSync } from "node:zlib";
 import type { Publication, PublicationDataset } from "@/types/publication";
 import { fallbackKey, sourceIdentityKeys } from "@/lib/publications/normalize";
+import { publicationVersions } from "@/lib/publications/versions";
 
 /** Next's data-cache item limit is 2MB; affiliations compress well as JSON. */
 export function encodeCachedDataset(dataset: PublicationDataset): string {
@@ -36,7 +37,7 @@ export function compareDatasets(
   incoming: Publication[],
   timestamp: string,
 ) {
-  const known = new Map(previous.map((p) => [p.id, p]));
+  const known = new Map(previous.flatMap(p => publicationVersions(p).map(version => [version.id, p] as const)));
   const knownSources = new Map(
     previous.flatMap((p) =>
       sourceIdentityKeys(p).map((key) => [key, p] as const),
@@ -50,7 +51,7 @@ export function compareDatasets(
   const publications = incoming.map((publication) => {
     // Learning a DOI upgrades the identity of an existing work, not a new discovery.
     const old =
-      known.get(publication.id) ??
+      publicationVersions(publication).map(version => known.get(version.id)).find(Boolean) ??
       (publication.doi
         ? withoutDoi.get(fallbackKey(publication))
         : undefined) ??
