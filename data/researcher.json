@@ -1,8 +1,25 @@
 {
   "name": "Konstantinos C. Makris",
-  "title": "Professor of Environmental Health",
+  "title": "Full Professor of Environmental Health",
   "institution": "Cyprus University of Technology",
-  "department": "Department of Rehabilitation Sciences",
+  "department": "Cyprus International Institute for Environmental and Public Health",
+  "school": "School of Health Sciences",
+  "laboratoryRoles": [
+    "Precision Exposomics and Health Laboratory (CLOTHO Lab), Director",
+    "Water and Health Lab, Director (past)"
+  ],
+  "laboratoryUrl": "https://exposomics.cut.ac.cy/",
+  "visitingAppointment": {
+    "title": "Visiting Full Professor",
+    "department": "Department of Medicine",
+    "school": "Faculty of Health Sciences",
+    "institution": "Aristotle University of Thessaloniki",
+    "address": "University Campus, 54124, Thessaloniki, Hellas"
+  },
+  "membership": {
+    "name": "European Exposome Alliance",
+    "url": "https://europeanexposomeforum.eu/"
+  },
   "orcid": "0000-0001-5251-8619",
   "openAlexId": "A5059194195",
   "openAlexAuthorIds": ["A5059194195", "A5129952756"],

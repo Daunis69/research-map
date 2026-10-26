@@ -21,6 +21,8 @@ import type { Publication, PublicationDataset } from "@/types/publication";
 import ResearchFilters from "@/components/filters/ResearchFilters";
 import PublicationCard from "@/components/publications/PublicationCard";
 import PublicationDetail from "@/components/publications/PublicationDetail";
+import ResearcherAffiliations from "@/components/ResearcherAffiliations";
+import researcher from "@/data/researcher.json";
 import {
   countValues,
   filterPublications,
@@ -225,10 +227,11 @@ export default function ResearchExplorer({
         <section className="hero" aria-labelledby="page-title">
           <div className="hero-copy">
             <h1 id="page-title">Professor Konstantinos C. Makris</h1>
-            <p className="researcher-line">Cyprus University of Technology</p>
+            <p className="researcher-line">{researcher.title} · {researcher.institution}</p>
             <p className="hero-description">
               Explore publications by author location, topic and year.
             </p>
+            <ResearcherAffiliations />
           </div>
         </section>
         <section className="metrics" aria-label="Collection statistics">
