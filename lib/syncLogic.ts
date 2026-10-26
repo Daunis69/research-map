@@ -1,8 +1,26 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { gzipSync, gunzipSync } from "node:zlib";
-import type { Publication, PublicationDataset } from "@/types/publication";
+import type { Publication, PublicationDataset, SourceStatus } from "@/types/publication";
 import { fallbackKey, sourceIdentityKeys } from "@/lib/publications/normalize";
 import { publicationVersions } from "@/lib/publications/versions";
+
+export function getSyncConfigurationIssues(configuration: {
+  onVercel: boolean;
+  hasStorage: boolean;
+  hasCronSecret: boolean;
+}): SourceStatus[] {
+  if (!configuration.onVercel) return [];
+  const issues: SourceStatus[] = [];
+  if (!configuration.hasStorage) issues.push({
+    source: "Automatic updates", status: "error", count: 0,
+    message: "The owner needs to connect a private Blob store.",
+  });
+  if (!configuration.hasCronSecret) issues.push({
+    source: "Scheduled updates", status: "error", count: 0,
+    message: "The owner needs to configure CRON_SECRET in the Production environment and redeploy to authorize daily refreshes.",
+  });
+  return issues;
+}
 
 /** Next's data-cache item limit is 2MB; affiliations compress well as JSON. */
 export function encodeCachedDataset(dataset: PublicationDataset): string {
