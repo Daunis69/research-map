@@ -4,6 +4,14 @@ import type { Publication, PublicationDataset, SourceStatus } from "@/types/publ
 import { fallbackKey, sourceIdentityKeys } from "@/lib/publications/normalize";
 import { publicationVersions } from "@/lib/publications/versions";
 
+export function describeSyncError(error: unknown, secrets: readonly (string | undefined)[] = []): string {
+  let message = error instanceof Error ? error.message : "Unknown synchronization error";
+  for (const secret of secrets) {
+    if (secret) message = message.replaceAll(secret, "[redacted]");
+  }
+  return message.replace(/https?:\/\/[^\s"'<>]+/gi, "[url]").slice(0, 400);
+}
+
 export function getSyncConfigurationIssues(configuration: {
   onVercel: boolean;
   hasStorage: boolean;
