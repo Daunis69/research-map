@@ -1,4 +1,39 @@
-import type { Publication, StudyLocation } from "@/types/publication";
+import type { Publication, PublicationDataset, StudyLocation } from "@/types/publication";
+
+export function getCollectionStatus(dataset: PublicationDataset, now = Date.now()) {
+  const failed = (source: string) => dataset.sources.some(item => item.source === source && item.status === "error");
+  if (failed("Automatic updates")) return {
+    label: "Updates not configured",
+    description: "This site is showing a saved collection. The owner needs to configure persistent storage before automatic updates can be saved.",
+    warning: true,
+  };
+  if (failed("Scheduled updates")) return {
+    label: "Daily updates not configured",
+    description: "The daily refresh is not configured. Page visits can still request a refresh when persistent storage is available.",
+    warning: true,
+  };
+  const checked = Date.parse(dataset.fetchedAt);
+  if (!Number.isFinite(checked) || now - checked >= 86_400_000) return {
+    label: "Refresh overdue",
+    description: "The collection has not had a successful check within the last 24 hours. Saved publications remain available while refreshes are retried.",
+    warning: true,
+  };
+  if (dataset.isFallback) return {
+    label: "Saved collection",
+    description: "A saved collection is being served. Its source date is shown above; it may not include the newest publications.",
+    warning: true,
+  };
+  if (dataset.sources.some(source => source.status === "error")) return {
+    label: "Some sources unavailable",
+    description: "The collection was checked recently, but some metadata sources could not be refreshed. Previously imported publications are retained.",
+    warning: true,
+  };
+  return {
+    label: "Collection up to date",
+    description: "The collection was checked within the last 24 hours without reported source failures.",
+    warning: false,
+  };
+}
 
 export type View = "map" | "timeline" | "publications";
 export type Sort = "newest" | "oldest" | "title" | "citations";

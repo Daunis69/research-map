@@ -30,6 +30,21 @@ const paper: Publication = {
 };
 const timestamp = "2026-02-01T00:00:00.000Z";
 
+test("Vercel update diagnostics identify missing storage and cron authorization independently", () => {
+  const cases = [
+    { onVercel: true, hasStorage: false, hasCronSecret: false, expected: ["Automatic updates", "Scheduled updates"] },
+    { onVercel: true, hasStorage: true, hasCronSecret: false, expected: ["Scheduled updates"] },
+    { onVercel: true, hasStorage: false, hasCronSecret: true, expected: ["Automatic updates"] },
+    { onVercel: true, hasStorage: true, hasCronSecret: true, expected: [] },
+    { onVercel: false, hasStorage: false, hasCronSecret: false, expected: [] },
+  ];
+  for (const { expected, ...configuration } of cases) {
+    const issues = syncLogic.getSyncConfigurationIssues?.(configuration);
+    assert.deepEqual(issues?.map(issue => issue.source), expected);
+    assert.ok(issues?.every(issue => issue.status === "error"));
+  }
+});
+
 test("a final article replacing a known preprint counts as an update rather than a new publication", () => {
   const preprint = { ...paper, id: "doi:10.2139/ssrn.123", doi: "10.2139/ssrn.123", journal: "SSRN Electronic Journal", authors: ["Jane Smith"] };
   const final = { ...preprint, id: "doi:10.1234/final", doi: "10.1234/final", journal: "Water Research" };

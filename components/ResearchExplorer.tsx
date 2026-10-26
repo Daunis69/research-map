@@ -27,6 +27,7 @@ import {
   countValues,
   filterPublications,
   geographyStatus,
+  getCollectionStatus,
   hasCoordinates,
   type ExplorerFilters,
   type Sort,
@@ -181,9 +182,7 @@ export default function ResearchExplorer({
         year: "numeric",
         timeZone: "UTC",
       }).format(new Date(dataset.fetchedAt));
-  const sourceFailure = dataset.sources.some(
-    (source) => source.status === "error",
-  );
+  const collectionStatus = getCollectionStatus(dataset);
   const emptyState = (
     <div className="empty-state">
       <Search size={30} strokeWidth={1.4} aria-hidden="true" />
@@ -264,14 +263,10 @@ export default function ResearchExplorer({
           </div>
           <div className="collection-status">
             <span
-              className={`status-dot ${dataset.isFallback || sourceFailure ? "status-amber" : ""}`}
+              className={`status-dot ${collectionStatus.warning ? "status-amber" : ""}`}
             />
             <div>
-              <strong>
-                {dataset.isFallback
-                  ? "Saved collection"
-                  : "Updated automatically"}
-              </strong>
+              <strong>{collectionStatus.label}</strong>
               <span>Checked {syncDate}</span>
             </div>
           </div>
@@ -605,7 +600,7 @@ export default function ResearchExplorer({
         <details className="source-details" id="methodology">
           <summary>
             <span
-              className={`status-dot ${dataset.isFallback || sourceFailure ? "status-amber" : ""}`}
+              className={`status-dot ${collectionStatus.warning ? "status-amber" : ""}`}
             />
             Sources & author-location methodology{" "}
             <ChevronRight size={14} aria-hidden="true" />
@@ -619,9 +614,8 @@ export default function ResearchExplorer({
               affiliations are clearly labelled.
             </p>
             <p>
-              {dataset.isFallback
-                ? "A saved collection is being served while live metadata is unavailable. Its source date is shown above; it may not include the newest publications."
-                : "The collection is checked automatically. Source counts describe fetched records before merging and deduplication."}
+              {collectionStatus.description} Source counts overlap and are not
+              added to the publication total.
             </p>
             <ul>
               {dataset.sources.map((source, index) => (

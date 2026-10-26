@@ -3,14 +3,14 @@ import { unstable_cache } from "next/cache";
 import { after } from "next/server";
 import { readSnapshot, hasBlobStorage } from "@/lib/storage";
 import { DATASET_TAG, seedDataset, syncPublications } from "@/lib/sync";
-import { decodeCachedDataset, encodeCachedDataset, needsRefresh } from "@/lib/syncLogic";
+import { decodeCachedDataset, encodeCachedDataset, getSyncConfigurationIssues, needsRefresh } from "@/lib/syncLogic";
 import { enrichAuthorLocations } from "@/lib/authorLocations";
 import type { PublicationDataset } from "@/types/publication";
 import { isExcludedPublication } from "@/lib/publications/eligibility";
 import { deduplicatePublications } from "@/lib/publications/deduplicate";
 
 const cachedSnapshot = unstable_cache(
-  async () => encodeCachedDataset((await readSnapshot())?.dataset ?? seedDataset),
+  async () => encodeCachedDataset((await readSnapshot())?.dataset ?? { ...seedDataset, isFallback: true }),
   ["makris-author-affiliations-gzip-v3", seedDataset.fetchedAt, String(seedDataset.publications.length)],
   { revalidate: 300, tags: [DATASET_TAG] },
 );
@@ -36,15 +36,11 @@ export async function getPublicationDataset(): Promise<PublicationDataset> {
       }
     });
   }
-  const sources = [...dataset.sources];
-  if (process.env.VERCEL && !hasBlobStorage()) {
-    sources.push({
-      source: "Automatic updates",
-      status: "error",
-      count: 0,
-      message: "The owner needs to connect a private Blob store.",
-    });
-  }
+  const sources = [...dataset.sources, ...getSyncConfigurationIssues({
+    onVercel: Boolean(process.env.VERCEL),
+    hasStorage: hasBlobStorage(),
+    hasCronSecret: Boolean(process.env.CRON_SECRET),
+  })];
   // Apply current checked-in overrides on every read, including to an older Blob snapshot.
   return {
     ...dataset,
