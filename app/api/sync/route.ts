@@ -22,9 +22,12 @@ export async function GET(request: Request) {
   }
   try {
     return Response.json(await syncPublications(), { headers });
-  } catch {
+  } catch (error) {
     console.error(
       "Publication synchronization failed. Previous data was preserved. Check source availability and storage configuration.",
+      error instanceof Error
+        ? { name: error.name, type: error.constructor.name }
+        : { name: "UnknownError" },
     );
     return Response.json(
       {
