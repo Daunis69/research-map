@@ -3,7 +3,7 @@ import researcher from "@/data/researcher.json";
 
 export default function ResearcherAffiliations() {
   return (
-    <details className="researcher-affiliations">
+    <details className="researcher-affiliations" open>
       <summary>
         <ChevronRight size={14} aria-hidden="true" />
         Affiliations and memberships

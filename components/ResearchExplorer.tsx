@@ -231,7 +231,6 @@ export default function ResearchExplorer({
             <p className="hero-description">
               Explore publications by author location, topic and year.
             </p>
-            <ResearcherAffiliations />
           </div>
         </section>
         <section className="metrics" aria-label="Collection statistics">
@@ -654,11 +653,14 @@ export default function ResearchExplorer({
         </details>
       </main>
       <footer className="site-footer">
-        <span>
-          Konstantinos C. Makris <span className="footer-divider">/</span>{" "}
-          Scientific Research Map
-        </span>
-        <span>Collection checked {syncDate}</span>
+        <ResearcherAffiliations />
+        <div className="footer-bottom">
+          <span>
+            Konstantinos C. Makris <span className="footer-divider">/</span>{" "}
+            Scientific Research Map
+          </span>
+          <span>Collection checked {syncDate}</span>
+        </div>
       </footer>
       <dialog
         ref={filterDialog}
