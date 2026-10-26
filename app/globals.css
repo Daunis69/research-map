@@ -48,6 +48,24 @@ main { max-width: 1800px; margin: 0 auto; }
 h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); letter-spacing: -1px; line-height: 1.25; }
 .researcher-line { margin-top: 9px; font-size: 13px; color: var(--muted); }
 .hero-description { margin-top: 15px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.researcher-affiliations { margin-bottom: 20px; }
+.researcher-affiliations summary { display: flex; align-items: center; gap: 6px; width: fit-content; padding: 5px 0; color: var(--accent); font-size: 12px; cursor: pointer; list-style: none; }
+.researcher-affiliations summary::-webkit-details-marker { display: none; }
+.researcher-affiliations[open] summary > svg { transform: rotate(90deg); }
+.affiliations-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, .85fr); gap: 28px; margin-top: 14px; padding: 21px 0 3px; border-top: 1px solid var(--line); max-width: 1200px; }
+.affiliations-grid > section { min-width: 0; font-size: 12px; line-height: 1.8; color: var(--muted); overflow-wrap: anywhere; }
+.affiliation-logo { display: flex; align-items: center; height: 90px; margin-bottom: 16px; }
+.affiliation-logo img { display: block; width: auto; height: auto; max-width: min(100%, 210px); max-height: 90px; object-fit: contain; }
+.affiliations-grid h2 { margin-bottom: 7px; color: var(--ink); font-size: 13px; font-weight: 500; line-height: 1.5; }
+.affiliations-grid .affiliation-role { margin-bottom: 6px; color: var(--body); }
+.affiliations-grid ul { margin: 0 0 7px; padding: 0; list-style: none; }
+.affiliations-grid li + li { margin-top: 3px; }
+.affiliations-grid a { display: inline-flex; align-items: center; gap: 5px; margin-top: 9px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) {
+  .researcher-line { line-height: 1.7; }
+  .affiliations-grid { grid-template-columns: 1fr; gap: 22px; }
+  .affiliation-logo { height: auto; }
+}
 .metrics { margin: 0 4%; padding: 0 0 26px; display: flex; align-items: center; gap: 34px; }
 .metric > div { display: flex; align-items: baseline; gap: 8px; }
 .metric strong { font-weight: 500; font-size: 22px; color: var(--ink); line-height: 1.2; letter-spacing: -.6px; }
@@ -202,7 +220,8 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
 .source-detail-content li strong { display: block; font-size: 12px; color: var(--ink); font-weight: 500; }
 .source-detail-content li span { display: flex; gap: 5px; align-items: center; font-size: 11px; margin-top: 3px; }
 .source-detail-content li p { font-size: 10px; margin-top: 5px; overflow-wrap: anywhere; }
-.site-footer { margin: 0 4%; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 20px 0 25px; font-size: 10px; color: var(--muted); }
+.site-footer { margin: 0 4%; border-top: 1px solid var(--line); padding: 20px 0 25px; font-size: 10px; color: var(--muted); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid var(--line); padding-top: 16px; }
 .footer-divider { padding: 0 8px; color: #b4bdb7; }
 
 .publication-dialog { border: 1px solid var(--line); border-radius: 8px; padding: 0; margin: auto; width: min(720px, calc(100% - 30px)); max-height: 90dvh; color: var(--body); background: white; box-shadow: 0 18px 70px #20392c25; overscroll-behavior: contain; }
@@ -356,7 +375,8 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
   .source-details summary { font-size: 10px; }
   .source-detail-content { padding-top: 10px; font-size: 11px; }
   .source-detail-content ul { grid-template-columns: 1fr; gap: 8px; }
-  .site-footer { margin: 0 5%; padding: 19px 0; flex-direction: column; align-items: flex-start; gap: 9px; font-size: 9px; }
+  .site-footer { margin: 0 5%; padding: 19px 0; font-size: 9px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 9px; }
   .footer-divider { padding: 0 4px; }
   .publications-view, .timeline-view { padding: 24px 4px; min-height: 500px; }
   .view-heading { gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
