@@ -54,6 +54,8 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
 .researcher-affiliations[open] summary > svg { transform: rotate(90deg); }
 .affiliations-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, .85fr); gap: 28px; margin-top: 14px; padding: 21px 0 3px; border-top: 1px solid var(--line); max-width: 1200px; }
 .affiliations-grid > section { min-width: 0; font-size: 12px; line-height: 1.8; color: var(--muted); overflow-wrap: anywhere; }
+.affiliation-logo { display: flex; align-items: center; height: 90px; margin-bottom: 16px; }
+.affiliation-logo img { display: block; width: auto; height: auto; max-width: min(100%, 210px); max-height: 90px; object-fit: contain; }
 .affiliations-grid h2 { margin-bottom: 7px; color: var(--ink); font-size: 13px; font-weight: 500; line-height: 1.5; }
 .affiliations-grid .affiliation-role { margin-bottom: 6px; color: var(--body); }
 .affiliations-grid ul { margin: 0 0 7px; padding: 0; list-style: none; }
@@ -62,6 +64,7 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
 @media (max-width: 760px) {
   .researcher-line { line-height: 1.7; }
   .affiliations-grid { grid-template-columns: 1fr; gap: 22px; }
+  .affiliation-logo { height: auto; }
 }
 .metrics { margin: 0 4%; padding: 0 0 26px; display: flex; align-items: center; gap: 34px; }
 .metric > div { display: flex; align-items: baseline; gap: 8px; }

@@ -1,4 +1,5 @@
 import { ArrowUpRight, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import researcher from "@/data/researcher.json";
 
 export default function ResearcherAffiliations() {
@@ -10,6 +11,9 @@ export default function ResearcherAffiliations() {
       </summary>
       <div className="affiliations-grid">
         <section aria-labelledby="primary-affiliation-title">
+          <div className="affiliation-logo">
+            <Image src="/logos/cyprus-university.png" alt="" width={147} height={56} unoptimized />
+          </div>
           <h2 id="primary-affiliation-title">{researcher.institution}</h2>
           <p className="affiliation-role">{researcher.title}</p>
           <ul>
@@ -22,6 +26,9 @@ export default function ResearcherAffiliations() {
           </a>
         </section>
         <section aria-labelledby="visiting-affiliation-title">
+          <div className="affiliation-logo">
+            <Image src="/logos/aristotle-medicine.png" alt="" width={191} height={180} unoptimized />
+          </div>
           <h2 id="visiting-affiliation-title">{researcher.visitingAppointment.institution}</h2>
           <p className="affiliation-role">{researcher.visitingAppointment.title}</p>
           <p>{researcher.visitingAppointment.department}</p>
@@ -29,6 +36,9 @@ export default function ResearcherAffiliations() {
           <p>{researcher.visitingAppointment.address}</p>
         </section>
         <section aria-labelledby="membership-title">
+          <div className="affiliation-logo">
+            <Image src="/logos/exposome-alliance.png" alt="" width={1200} height={516} unoptimized />
+          </div>
           <h2 id="membership-title">{researcher.membership.name}</h2>
           <p className="affiliation-role">Member of the {researcher.membership.name}</p>
           <a href={researcher.membership.url} target="_blank" rel="noopener noreferrer">
