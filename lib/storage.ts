@@ -54,6 +54,8 @@ export async function readSnapshot(): Promise<StoredSnapshot | null> {
     const result = await get(BLOB_PATH, {
       access: "private",
       useCache: false,
+      // Compressed downloads return weak ETags, which Blob rejects for conditional writes.
+      headers: { "Accept-Encoding": "identity" },
       abortSignal: AbortSignal.timeout(15000),
     });
     if (!result) return null;
