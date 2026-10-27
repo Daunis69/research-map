@@ -1,5 +1,6 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
 import type { Publication } from "@/types/publication";
+import CitationBadge from "@/components/citations/CitationBadge";
 import {
   doiUrl,
   geographyStatus,
@@ -31,6 +32,7 @@ export default function PublicationCard({
       <p className="paper-journal">
         {publication.journal ?? "Journal not provided"}
       </p>
+      <CitationBadge publication={publication} />
       {!compact && (
         <p className="paper-authors">
           {publication.authors.slice(0, 4).join(", ") || "Authors not provided"}

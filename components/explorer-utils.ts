@@ -1,4 +1,5 @@
 import type { Publication, PublicationDataset, StudyLocation } from "@/types/publication";
+import { getCitationCount } from "@/lib/citations";
 
 export function getCollectionStatus(dataset: PublicationDataset, now = Date.now()) {
   const failed = (source: string) => dataset.sources.some(item => item.source === source && item.status === "error");
@@ -35,7 +36,7 @@ export function getCollectionStatus(dataset: PublicationDataset, now = Date.now(
   };
 }
 
-export type View = "map" | "timeline" | "publications";
+export type View = "map" | "timeline" | "publications" | "citations";
 export type Sort = "newest" | "oldest" | "title" | "citations";
 export interface ExplorerFilters {
   q: string;
@@ -141,7 +142,7 @@ export function filterPublications(
     .sort((a, b) => {
       if (filters.sort === "title") return a.title.localeCompare(b.title);
       if (filters.sort === "citations")
-        return (b.citationCount ?? -1) - (a.citationCount ?? -1);
+        return (getCitationCount(b) ?? -1) - (getCitationCount(a) ?? -1) || a.title.localeCompare(b.title);
       if (a.year === null)
         return b.year === null ? a.title.localeCompare(b.title) : 1;
       if (b.year === null) return -1;

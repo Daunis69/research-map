@@ -57,6 +57,7 @@ function contentFingerprint(publication: Publication): string {
     discoveredAt: undefined,
     updatedAt: undefined,
     publicationDates: dateContent(publication.publicationDates),
+    citationMetrics: publication.citationMetrics ? { ...publication.citationMetrics, checkedAt: undefined } : undefined,
     alternateVersions: publication.alternateVersions?.map(version => ({
       ...version,
       publicationDates: dateContent(version.publicationDates),

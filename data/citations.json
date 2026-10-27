@@ -1,0 +1,7194 @@
+{
+  "fetchedAt": "2026-10-27T12:37:23.239Z",
+  "records": [
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W123640460",
+      "doi": "10.2134/jeq2008.0316",
+      "total": 64,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 6
+          },
+          {
+            "year": 2017,
+            "citations": 5
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 7
+          },
+          {
+            "year": 2021,
+            "citations": 5
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1494837323",
+      "doi": "10.1016/s1474-8177(07)05028-0",
+      "total": 29,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1518608386",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1531053505",
+      "doi": "10.1016/s1474-8177(07)05015-2",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1543461227",
+      "doi": "10.1016/s1474-8177(07)05034-6",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1666521314",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1767804104",
+      "doi": "10.1080/10934529.2015.1047674",
+      "total": 27,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1905435458",
+      "doi": "10.1016/j.envint.2015.09.011",
+      "total": 129,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 10
+          },
+          {
+            "year": 2017,
+            "citations": 13
+          },
+          {
+            "year": 2018,
+            "citations": 16
+          },
+          {
+            "year": 2019,
+            "citations": 9
+          },
+          {
+            "year": 2020,
+            "citations": 15
+          },
+          {
+            "year": 2021,
+            "citations": 13
+          },
+          {
+            "year": 2022,
+            "citations": 11
+          },
+          {
+            "year": 2023,
+            "citations": 15
+          },
+          {
+            "year": 2024,
+            "citations": 10
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 6
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1924480834",
+      "doi": "10.15386/cjmed-518",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1964026804",
+      "doi": "10.1016/j.envpol.2009.12.011",
+      "total": 74,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 6
+          },
+          {
+            "year": 2013,
+            "citations": 6
+          },
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 4
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 10
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 6
+          },
+          {
+            "year": 2023,
+            "citations": 5
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 5
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1965607140",
+      "doi": "10.1007/s00244-009-9318-7",
+      "total": 37,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 6
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1967083885",
+      "doi": "10.1007/s10661-014-3928-x",
+      "total": 16,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1968758146",
+      "doi": "10.1080/10590501.2012.681487",
+      "total": 61,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 8
+          },
+          {
+            "year": 2014,
+            "citations": 6
+          },
+          {
+            "year": 2015,
+            "citations": 6
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 4
+          },
+          {
+            "year": 2021,
+            "citations": 5
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1969152364",
+      "doi": "10.2134/jeq2007.0479",
+      "total": 89,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 8
+          },
+          {
+            "year": 2013,
+            "citations": 8
+          },
+          {
+            "year": 2014,
+            "citations": 11
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 8
+          },
+          {
+            "year": 2017,
+            "citations": 6
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 7
+          },
+          {
+            "year": 2021,
+            "citations": 8
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1972787538",
+      "doi": "10.1007/s11356-009-0132-6",
+      "total": 11,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1973214469",
+      "doi": "10.1021/es800476p",
+      "total": 25,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 3
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 5
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1973772972",
+      "doi": "10.1007/s11356-009-0281-7",
+      "total": 21,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1974467560",
+      "doi": "10.1016/j.scitotenv.2014.04.072",
+      "total": 25,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 5
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1974921363",
+      "doi": "10.1007/s13762-012-0106-y",
+      "total": 18,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1975711634",
+      "doi": "10.1080/00103620500303574",
+      "total": 20,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1980890275",
+      "doi": "10.1016/j.envpol.2009.01.019",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1981290070",
+      "doi": "10.1016/j.chemosphere.2013.06.028",
+      "total": 8,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1985746638",
+      "doi": "10.1016/j.scitotenv.2013.11.045",
+      "total": 13,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1986945445",
+      "doi": "10.1007/s00244-006-0147-7",
+      "total": 20,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1991718806",
+      "doi": "10.1021/es061227i",
+      "total": 4,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1996051486",
+      "doi": "10.1016/j.envint.2006.09.004",
+      "total": 71,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 5
+          },
+          {
+            "year": 2014,
+            "citations": 9
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1997055529",
+      "doi": "10.1080/10934529.2015.981111",
+      "total": 37,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 7
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W1999278497",
+      "doi": "10.1016/j.jchromb.2013.11.060",
+      "total": 23,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2014,
+            "citations": 6
+          },
+          {
+            "year": 2015,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2000452765",
+      "doi": "10.1080/10643389.2013.790746",
+      "total": 145,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 6
+          },
+          {
+            "year": 2018,
+            "citations": 9
+          },
+          {
+            "year": 2019,
+            "citations": 12
+          },
+          {
+            "year": 2020,
+            "citations": 14
+          },
+          {
+            "year": 2021,
+            "citations": 12
+          },
+          {
+            "year": 2022,
+            "citations": 13
+          },
+          {
+            "year": 2023,
+            "citations": 25
+          },
+          {
+            "year": 2024,
+            "citations": 13
+          },
+          {
+            "year": 2025,
+            "citations": 17
+          },
+          {
+            "year": 2026,
+            "citations": 10
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2008327969",
+      "doi": "10.1016/j.envint.2011.08.007",
+      "total": 59,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 4
+          },
+          {
+            "year": 2013,
+            "citations": 7
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 7
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2008750035",
+      "doi": "10.1038/jes.2012.104",
+      "total": 26,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 6
+          },
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2011604491",
+      "doi": "10.1016/j.envint.2010.11.003",
+      "total": 22,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2019801953",
+      "doi": "10.1016/j.scitotenv.2014.03.075",
+      "total": 21,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2022417906",
+      "doi": "10.1016/j.watres.2011.10.001",
+      "total": 31,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 8
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2025304159",
+      "doi": "10.1021/es049161j",
+      "total": 168,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 10
+          },
+          {
+            "year": 2014,
+            "citations": 10
+          },
+          {
+            "year": 2015,
+            "citations": 10
+          },
+          {
+            "year": 2016,
+            "citations": 10
+          },
+          {
+            "year": 2017,
+            "citations": 4
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 8
+          },
+          {
+            "year": 2020,
+            "citations": 21
+          },
+          {
+            "year": 2021,
+            "citations": 10
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 10
+          },
+          {
+            "year": 2024,
+            "citations": 8
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2025554823",
+      "doi": "10.1007/s11104-009-9992-2",
+      "total": 66,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 5
+          },
+          {
+            "year": 2017,
+            "citations": 4
+          },
+          {
+            "year": 2018,
+            "citations": 4
+          },
+          {
+            "year": 2019,
+            "citations": 6
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 6
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2027710271",
+      "doi": "10.1016/j.jcis.2005.02.011",
+      "total": 60,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 4
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 5
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2027942290",
+      "doi": "10.1016/j.envpol.2006.06.035",
+      "total": 79,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 8
+          },
+          {
+            "year": 2013,
+            "citations": 10
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 6
+          },
+          {
+            "year": 2016,
+            "citations": 7
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 8
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2028207992",
+      "doi": "10.1016/j.envres.2014.09.015",
+      "total": 11,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2028328770",
+      "doi": "10.1007/s11104-007-9278-5",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2029966343",
+      "doi": "10.1016/j.ecoenv.2015.02.033",
+      "total": 200,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 6
+          },
+          {
+            "year": 2016,
+            "citations": 12
+          },
+          {
+            "year": 2017,
+            "citations": 19
+          },
+          {
+            "year": 2018,
+            "citations": 21
+          },
+          {
+            "year": 2019,
+            "citations": 19
+          },
+          {
+            "year": 2020,
+            "citations": 21
+          },
+          {
+            "year": 2021,
+            "citations": 27
+          },
+          {
+            "year": 2022,
+            "citations": 31
+          },
+          {
+            "year": 2023,
+            "citations": 17
+          },
+          {
+            "year": 2024,
+            "citations": 9
+          },
+          {
+            "year": 2025,
+            "citations": 13
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2030633721",
+      "doi": "10.2478/bimo-2014-0009",
+      "total": 10,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2039804417",
+      "doi": "10.2134/jeq2007.0416",
+      "total": 40,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2047033108",
+      "doi": "10.1016/j.jece.2015.01.008",
+      "total": 19,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 4
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2047565946",
+      "doi": "10.1007/s10653-012-9450-6",
+      "total": 9,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2048763931",
+      "doi": "10.1016/j.jcis.2005.06.091",
+      "total": 28,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2049666384",
+      "doi": "10.1016/j.chemosphere.2005.11.054",
+      "total": 135,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 10
+          },
+          {
+            "year": 2013,
+            "citations": 14
+          },
+          {
+            "year": 2014,
+            "citations": 8
+          },
+          {
+            "year": 2015,
+            "citations": 11
+          },
+          {
+            "year": 2016,
+            "citations": 8
+          },
+          {
+            "year": 2017,
+            "citations": 4
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 8
+          },
+          {
+            "year": 2020,
+            "citations": 6
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 10
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2051659735",
+      "doi": "10.1016/j.scitotenv.2013.08.012",
+      "total": 10,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2055847537",
+      "doi": "10.1016/j.envres.2014.10.018",
+      "total": 24,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 4
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2056292260",
+      "doi": "10.1039/b714389c",
+      "total": 10,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2057243850",
+      "doi": "10.1016/j.scitotenv.2014.10.071",
+      "total": 72,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 11
+          },
+          {
+            "year": 2020,
+            "citations": 8
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 8
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 12
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2057896589",
+      "doi": "10.1097/01.ede.0000391883.72578.86",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2064010577",
+      "doi": "10.1016/j.jcis.2007.02.078",
+      "total": 44,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2064658051",
+      "doi": "10.1021/es404220z",
+      "total": 46,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2014,
+            "citations": 6
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 8
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 10
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 6
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2065554250",
+      "doi": "10.1016/j.ijheh.2012.07.001",
+      "total": 14,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2065805483",
+      "doi": "10.2134/jeq2006.0162",
+      "total": 80,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 5
+          },
+          {
+            "year": 2013,
+            "citations": 5
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 4
+          },
+          {
+            "year": 2021,
+            "citations": 9
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2071524978",
+      "doi": "10.1016/j.jhydrol.2012.10.013",
+      "total": 22,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 3
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 4
+          },
+          {
+            "year": 2019,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2072560762",
+      "doi": "10.1007/s00128-006-1063-2",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2074378633",
+      "doi": "10.2166/wst.2010.549",
+      "total": 29,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 3
+          },
+          {
+            "year": 2013,
+            "citations": 8
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2076398734",
+      "doi": "10.1016/j.envpol.2006.06.020",
+      "total": 70,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 6
+          },
+          {
+            "year": 2013,
+            "citations": 4
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2017,
+            "citations": 9
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 8
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2083200558",
+      "doi": "10.1016/j.jhazmat.2009.06.102",
+      "total": 43,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 3
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 6
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 6
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2092937392",
+      "doi": "10.1021/es0480769",
+      "total": 157,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 9
+          },
+          {
+            "year": 2013,
+            "citations": 12
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2015,
+            "citations": 17
+          },
+          {
+            "year": 2016,
+            "citations": 12
+          },
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2020,
+            "citations": 7
+          },
+          {
+            "year": 2021,
+            "citations": 7
+          },
+          {
+            "year": 2022,
+            "citations": 7
+          },
+          {
+            "year": 2023,
+            "citations": 6
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2107884621",
+      "doi": "10.1007/s00244-006-0170-8",
+      "total": 32,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 5
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2125120176",
+      "doi": "10.2166/wh.2013.068",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2126679442",
+      "doi": "10.1186/1476-069x-10-50",
+      "total": 247,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 7
+          },
+          {
+            "year": 2013,
+            "citations": 11
+          },
+          {
+            "year": 2014,
+            "citations": 13
+          },
+          {
+            "year": 2015,
+            "citations": 17
+          },
+          {
+            "year": 2016,
+            "citations": 9
+          },
+          {
+            "year": 2017,
+            "citations": 22
+          },
+          {
+            "year": 2018,
+            "citations": 10
+          },
+          {
+            "year": 2019,
+            "citations": 14
+          },
+          {
+            "year": 2020,
+            "citations": 22
+          },
+          {
+            "year": 2021,
+            "citations": 21
+          },
+          {
+            "year": 2022,
+            "citations": 35
+          },
+          {
+            "year": 2023,
+            "citations": 20
+          },
+          {
+            "year": 2024,
+            "citations": 22
+          },
+          {
+            "year": 2025,
+            "citations": 11
+          },
+          {
+            "year": 2026,
+            "citations": 11
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2128452274",
+      "doi": "10.1016/j.jcis.2004.05.001",
+      "total": 83,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 5
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 7
+          },
+          {
+            "year": 2016,
+            "citations": 9
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2128555382",
+      "doi": "10.1016/j.geoderma.2006.03.027",
+      "total": 45,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 2
+          },
+          {
+            "year": 2014,
+            "citations": 1
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 6
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 6
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2129378931",
+      "doi": "10.1016/j.envpol.2009.06.006",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2134640707",
+      "doi": "10.1186/1471-2458-12-334",
+      "total": 32,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 6
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2015,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 4
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2137679832",
+      "doi": "10.1016/j.envpol.2005.08.075",
+      "total": 99,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 2
+          },
+          {
+            "year": 2013,
+            "citations": 8
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 7
+          },
+          {
+            "year": 2016,
+            "citations": 8
+          },
+          {
+            "year": 2017,
+            "citations": 5
+          },
+          {
+            "year": 2018,
+            "citations": 9
+          },
+          {
+            "year": 2019,
+            "citations": 12
+          },
+          {
+            "year": 2020,
+            "citations": 6
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 10
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2146091205",
+      "doi": "10.1039/b908162c",
+      "total": 28,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 1
+          },
+          {
+            "year": 2013,
+            "citations": 1
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 1
+          },
+          {
+            "year": 2016,
+            "citations": 6
+          },
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2149805359",
+      "doi": "10.1016/j.envpol.2006.10.047",
+      "total": 39,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 4
+          },
+          {
+            "year": 2013,
+            "citations": 5
+          },
+          {
+            "year": 2014,
+            "citations": 2
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2162388543",
+      "doi": "10.1016/j.chemosphere.2009.11.034",
+      "total": 119,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2012,
+            "citations": 8
+          },
+          {
+            "year": 2013,
+            "citations": 11
+          },
+          {
+            "year": 2014,
+            "citations": 5
+          },
+          {
+            "year": 2015,
+            "citations": 9
+          },
+          {
+            "year": 2016,
+            "citations": 7
+          },
+          {
+            "year": 2017,
+            "citations": 6
+          },
+          {
+            "year": 2018,
+            "citations": 8
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 11
+          },
+          {
+            "year": 2021,
+            "citations": 6
+          },
+          {
+            "year": 2022,
+            "citations": 11
+          },
+          {
+            "year": 2023,
+            "citations": 9
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2182700307",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2278391166",
+      "doi": "10.1007/s10661-015-4957-9",
+      "total": 8,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 3
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2290919198",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2309447989",
+      "doi": "10.1016/j.scitotenv.2015.10.031",
+      "total": 49,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2017,
+            "citations": 7
+          },
+          {
+            "year": 2018,
+            "citations": 4
+          },
+          {
+            "year": 2019,
+            "citations": 5
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 7
+          },
+          {
+            "year": 2023,
+            "citations": 8
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2323958423",
+      "doi": "10.1021/es304038k",
+      "total": 70,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 4
+          },
+          {
+            "year": 2014,
+            "citations": 4
+          },
+          {
+            "year": 2015,
+            "citations": 3
+          },
+          {
+            "year": 2016,
+            "citations": 4
+          },
+          {
+            "year": 2017,
+            "citations": 5
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 10
+          },
+          {
+            "year": 2020,
+            "citations": 6
+          },
+          {
+            "year": 2021,
+            "citations": 8
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 5
+          },
+          {
+            "year": 2024,
+            "citations": 7
+          },
+          {
+            "year": 2026,
+            "citations": 6
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2330546596",
+      "doi": "10.1021/es5027079",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2368817138",
+      "doi": "10.1016/j.envint.2016.04.012",
+      "total": 25,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2396760010",
+      "total": 16,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2540670544",
+      "doi": "10.1371/journal.pone.0155237",
+      "total": 88,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 10
+          },
+          {
+            "year": 2018,
+            "citations": 15
+          },
+          {
+            "year": 2019,
+            "citations": 15
+          },
+          {
+            "year": 2020,
+            "citations": 10
+          },
+          {
+            "year": 2021,
+            "citations": 8
+          },
+          {
+            "year": 2022,
+            "citations": 10
+          },
+          {
+            "year": 2023,
+            "citations": 8
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 5
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2549359049",
+      "doi": "10.1016/j.puhe.2016.10.027",
+      "total": 21,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2568219145",
+      "doi": "10.1016/j.chemosphere.2017.01.043",
+      "total": 33,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 5
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 4
+          },
+          {
+            "year": 2021,
+            "citations": 7
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2597500268",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2625521340",
+      "doi": "10.1021/acs.jproteome.6b01061",
+      "total": 11,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2732200743",
+      "doi": "10.1016/j.jes.2017.06.031",
+      "total": 17,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2743363383",
+      "doi": "10.1016/j.scitotenv.2017.06.230",
+      "total": 21,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2754056008",
+      "doi": "10.3390/ijerph14091059",
+      "total": 83,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 9
+          },
+          {
+            "year": 2019,
+            "citations": 6
+          },
+          {
+            "year": 2020,
+            "citations": 8
+          },
+          {
+            "year": 2021,
+            "citations": 11
+          },
+          {
+            "year": 2022,
+            "citations": 12
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 16
+          },
+          {
+            "year": 2025,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 8
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2761583534",
+      "doi": "10.1093/eurpub/ckx170",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2766919502",
+      "doi": "10.1038/jes.2017.27",
+      "total": 16,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 6
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2771413253",
+      "doi": "10.1016/j.envint.2017.12.013",
+      "total": 20,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2019,
+            "citations": 6
+          },
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2775203744",
+      "doi": "10.1016/j.jchromb.2017.11.045",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2801705291",
+      "doi": "10.1016/j.scitotenv.2018.04.329",
+      "total": 55,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 7
+          },
+          {
+            "year": 2020,
+            "citations": 3
+          },
+          {
+            "year": 2021,
+            "citations": 7
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 8
+          },
+          {
+            "year": 2024,
+            "citations": 11
+          },
+          {
+            "year": 2025,
+            "citations": 11
+          },
+          {
+            "year": 2026,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2807690497",
+      "doi": "10.1038/s41598-018-26498-y",
+      "total": 68,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 2
+          },
+          {
+            "year": 2019,
+            "citations": 5
+          },
+          {
+            "year": 2020,
+            "citations": 4
+          },
+          {
+            "year": 2021,
+            "citations": 10
+          },
+          {
+            "year": 2022,
+            "citations": 17
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 10
+          },
+          {
+            "year": 2025,
+            "citations": 13
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2921475163",
+      "doi": "10.5271/sjweh.3804",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2940030835",
+      "doi": "10.1007/s11306-019-1519-0",
+      "total": 24,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2017,
+            "citations": 1
+          },
+          {
+            "year": 2019,
+            "citations": 4
+          },
+          {
+            "year": 2020,
+            "citations": 5
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2945025974",
+      "doi": "10.7717/peerj.6851",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2951771534",
+      "doi": "10.1007/s00216-019-01925-9",
+      "total": 19,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 7
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2954652115",
+      "doi": "10.1111/cob.12328",
+      "total": 52,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2016,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 10
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 13
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2972243525",
+      "doi": "10.1371/journal.pone.0219420",
+      "total": 43,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 7
+          },
+          {
+            "year": 2022,
+            "citations": 10
+          },
+          {
+            "year": 2023,
+            "citations": 11
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 5
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2981522373",
+      "doi": "10.1097/01.ee9.0000607384.23377.5a",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2981703627",
+      "doi": "10.1097/01.ee9.0000608732.36531.e1",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2982011615",
+      "doi": "10.1097/01.ee9.0000608728.28907.8f",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2990521806",
+      "doi": "10.1007/s40726-019-00130-7",
+      "total": 73,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 15
+          },
+          {
+            "year": 2022,
+            "citations": 15
+          },
+          {
+            "year": 2023,
+            "citations": 9
+          },
+          {
+            "year": 2024,
+            "citations": 11
+          },
+          {
+            "year": 2025,
+            "citations": 14
+          },
+          {
+            "year": 2026,
+            "citations": 7
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2990883819",
+      "doi": "10.1289/isee.2013.o-1-23-01",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2991165019",
+      "doi": "10.1289/isesisee.2018.p02.3390",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2991214304",
+      "doi": "10.1289/isee.2013.p-2-13-11",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2991243342",
+      "doi": "10.1289/isee.2013.p-1-22-14",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2994314858",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2997341308",
+      "doi": "10.1002/9781119300762.wsts0162",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2998691784",
+      "doi": "10.1016/j.envres.2019.109065",
+      "total": 5,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2999183050",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W2999609260",
+      "doi": "10.1289/ehp4495",
+      "total": 177,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 24
+          },
+          {
+            "year": 2021,
+            "citations": 23
+          },
+          {
+            "year": 2022,
+            "citations": 29
+          },
+          {
+            "year": 2023,
+            "citations": 34
+          },
+          {
+            "year": 2024,
+            "citations": 23
+          },
+          {
+            "year": 2025,
+            "citations": 28
+          },
+          {
+            "year": 2026,
+            "citations": 15
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3024734233",
+      "doi": "10.19191/ep19.4.a03.070",
+      "total": 9,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 2
+          },
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3029414949",
+      "doi": "10.1089/thy.2019.0353",
+      "total": 92,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 14
+          },
+          {
+            "year": 2022,
+            "citations": 14
+          },
+          {
+            "year": 2023,
+            "citations": 24
+          },
+          {
+            "year": 2024,
+            "citations": 17
+          },
+          {
+            "year": 2025,
+            "citations": 15
+          },
+          {
+            "year": 2026,
+            "citations": 7
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3043659630",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3092072914",
+      "doi": "10.1016/j.envres.2020.110262",
+      "total": 23,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 6
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3092430158",
+      "doi": "10.1093/eurpub/ckaa165.1015",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3093539755",
+      "doi": "10.1371/journal.pone.0239835",
+      "total": 22,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 6
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3094425493",
+      "doi": "10.1017/s1368980020004267",
+      "total": 38,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 4
+          },
+          {
+            "year": 2022,
+            "citations": 5
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 8
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3103483631",
+      "doi": "10.1016/j.envint.2020.106246",
+      "total": 47,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2020,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 7
+          },
+          {
+            "year": 2022,
+            "citations": 10
+          },
+          {
+            "year": 2023,
+            "citations": 5
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 14
+          },
+          {
+            "year": 2026,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3118727168",
+      "doi": "10.1016/j.eclinm.2021.100721",
+      "total": 14,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 6
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3131220293",
+      "doi": "10.1016/j.envres.2021.110901",
+      "total": 19,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 4
+          },
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W313845386",
+      "doi": "10.1089/ees.2013.0480",
+      "total": 22,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2014,
+            "citations": 3
+          },
+          {
+            "year": 2015,
+            "citations": 2
+          },
+          {
+            "year": 2016,
+            "citations": 2
+          },
+          {
+            "year": 2018,
+            "citations": 3
+          },
+          {
+            "year": 2019,
+            "citations": 1
+          },
+          {
+            "year": 2020,
+            "citations": 2
+          },
+          {
+            "year": 2021,
+            "citations": 3
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3145348119",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3170999639",
+      "doi": "10.1289/isee.2020.virtual.p-0432",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3179682873",
+      "doi": "10.1093/annweh/wxab039",
+      "total": 10,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3193445456",
+      "doi": "10.1289/isee.2021.p-508",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3194399766",
+      "doi": "10.1289/isee.2021.p-391",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3195040614",
+      "doi": "10.1289/isee.2021.p-402",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3195223469",
+      "doi": "10.29392/001c.25469",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3195273826",
+      "doi": "10.1289/isee.2021.o-to-094",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3195784400",
+      "doi": "10.1289/isee.2021.o-lt-096",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3203392861",
+      "doi": "10.1002/bies.202100159",
+      "total": 15,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 6
+          },
+          {
+            "year": 2023,
+            "citations": 3
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3210206771",
+      "doi": "10.3389/fpubh.2021.693332",
+      "total": 18,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 3
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3211570343",
+      "doi": "10.1038/s41598-021-01180-y",
+      "total": 11,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 5
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W3217009364",
+      "doi": "10.1016/j.envint.2021.107008",
+      "total": 15,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 7
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 3
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4200531227",
+      "doi": "10.3390/ijerph182413133",
+      "total": 8,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4224129050",
+      "doi": "10.1016/j.envres.2022.113316",
+      "total": 52,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 12
+          },
+          {
+            "year": 2024,
+            "citations": 13
+          },
+          {
+            "year": 2025,
+            "citations": 17
+          },
+          {
+            "year": 2026,
+            "citations": 6
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4224240893",
+      "doi": "10.1089/thy.2019.0353.correx",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4224290844",
+      "doi": "10.3390/nu14081559",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4224319651",
+      "doi": "10.3390/toxics10040181",
+      "total": 9,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4225281590",
+      "doi": "10.1016/j.heliyon.2022.e09354",
+      "total": 33,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 8
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 10
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4231722985",
+      "doi": "10.1111/j.1541-4337.2012.00204.x",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4252091664",
+      "doi": "10.1111/1541-4337.12009",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2013,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4281493354",
+      "doi": "10.1038/s41598-022-12459-z",
+      "total": 19,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 4
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4281734518",
+      "doi": "10.3390/ijerph19116787",
+      "total": 74,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 19
+          },
+          {
+            "year": 2023,
+            "citations": 19
+          },
+          {
+            "year": 2024,
+            "citations": 15
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 10
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4282577730",
+      "doi": "10.3390/toxics10060313",
+      "total": 32,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 6
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 6
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4289860950",
+      "doi": "10.3390/toxics10080451",
+      "total": 25,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 7
+          },
+          {
+            "year": 2024,
+            "citations": 7
+          },
+          {
+            "year": 2025,
+            "citations": 5
+          },
+          {
+            "year": 2026,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4292189634",
+      "doi": "10.3390/toxics10080470",
+      "total": 27,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 4
+          },
+          {
+            "year": 2023,
+            "citations": 9
+          },
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4293276539",
+      "doi": "10.1016/s0140-6736(22)01438-6",
+      "total": 958,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 37
+          },
+          {
+            "year": 2023,
+            "citations": 249
+          },
+          {
+            "year": 2024,
+            "citations": 269
+          },
+          {
+            "year": 2025,
+            "citations": 268
+          },
+          {
+            "year": 2026,
+            "citations": 134
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4294343733",
+      "doi": "10.3390/cli10090129",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4307458095",
+      "doi": "10.1016/j.envres.2022.114675",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4308455798",
+      "doi": "10.1016/j.ijheh.2022.114046",
+      "total": 42,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2023,
+            "citations": 12
+          },
+          {
+            "year": 2024,
+            "citations": 10
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 9
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4309461278",
+      "doi": "10.3390/ijerph192215195",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4311206000",
+      "doi": "10.1186/s12889-022-14468-z",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4312088643",
+      "doi": "10.1016/j.isci.2022.105847",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 2
+          },
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4319744513",
+      "doi": "10.1016/j.ijheh.2023.114119",
+      "total": 175,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 21
+          },
+          {
+            "year": 2024,
+            "citations": 53
+          },
+          {
+            "year": 2025,
+            "citations": 49
+          },
+          {
+            "year": 2026,
+            "citations": 48
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4320065787",
+      "doi": "10.1289/isee.2022.p-0811",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4376115812",
+      "doi": "10.1002/cdt3.70",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4381435333",
+      "doi": "10.1016/j.envint.2023.108048",
+      "total": 16,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2023,
+            "citations": 1
+          },
+          {
+            "year": 2024,
+            "citations": 7
+          },
+          {
+            "year": 2025,
+            "citations": 6
+          },
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4381617031",
+      "doi": "10.1088/2752-5309/ace076",
+      "total": 12,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 9
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4381799391",
+      "doi": "10.1016/s0140-6736(23)01301-6",
+      "total": 4721,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2018,
+            "citations": 1
+          },
+          {
+            "year": 2021,
+            "citations": 1
+          },
+          {
+            "year": 2022,
+            "citations": 2
+          },
+          {
+            "year": 2023,
+            "citations": 162
+          },
+          {
+            "year": 2024,
+            "citations": 1250
+          },
+          {
+            "year": 2025,
+            "citations": 1973
+          },
+          {
+            "year": 2026,
+            "citations": 1332
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4386475762",
+      "doi": "10.1016/j.envres.2023.117001",
+      "total": 13,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 5
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 6
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4388721514",
+      "doi": "10.1093/exposome/osad009",
+      "total": 27,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 6
+          },
+          {
+            "year": 2025,
+            "citations": 10
+          },
+          {
+            "year": 2026,
+            "citations": 11
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4391042126",
+      "doi": "10.1093/exposome/osae001",
+      "total": 96,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 17
+          },
+          {
+            "year": 2025,
+            "citations": 44
+          },
+          {
+            "year": 2026,
+            "citations": 35
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4392660992",
+      "doi": "10.1016/j.ekir.2024.03.002",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4392888585",
+      "doi": "10.1016/j.envres.2024.118710",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4394781169",
+      "doi": "10.1093/exposome/osae004",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 3
+          },
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4394894573",
+      "doi": "10.1016/s0140-6736(24)00757-8",
+      "total": 5081,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 480
+          },
+          {
+            "year": 2025,
+            "citations": 2810
+          },
+          {
+            "year": 2026,
+            "citations": 1791
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4395480049",
+      "doi": "10.1016/j.cdnut.2024.103764",
+      "total": 6,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 4
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4396946025",
+      "doi": "10.1016/s0140-6736(24)00933-4",
+      "total": 2860,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 300
+          },
+          {
+            "year": 2025,
+            "citations": 1550
+          },
+          {
+            "year": 2026,
+            "citations": 1010
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4397031731",
+      "doi": "10.1016/j.scitotenv.2024.173332",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4399571641",
+      "doi": "10.1002/cnr2.2000",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4400514102",
+      "doi": "10.1038/s41598-024-66956-4",
+      "total": 47,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 24
+          },
+          {
+            "year": 2026,
+            "citations": 21
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4401075584",
+      "doi": "10.12688/wellcomeopenres.21558.1",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4401165124",
+      "doi": "10.1289/isee.2024.1818",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4402387661",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4405176415",
+      "doi": "10.1016/s0140-6736(24)01821-x",
+      "total": 100,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 2
+          },
+          {
+            "year": 2025,
+            "citations": 67
+          },
+          {
+            "year": 2026,
+            "citations": 31
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4405239206",
+      "doi": "10.3390/cli12120216",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4405365402",
+      "doi": "10.1016/j.envint.2024.109208",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4408110706",
+      "doi": "10.1016/s0140-6736(25)00397-6",
+      "total": 474,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 171
+          },
+          {
+            "year": 2026,
+            "citations": 303
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4408110765",
+      "doi": "10.1016/s0140-6736(25)00355-1",
+      "total": 1142,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2022,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 421
+          },
+          {
+            "year": 2026,
+            "citations": 720
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4409204976",
+      "doi": "10.1016/j.jncc.2025.01.006",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4411080902",
+      "doi": "10.1371/journal.pone.0326641",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4411089171",
+      "doi": "10.1016/j.nexres.2025.100486",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4411329725",
+      "doi": "10.1016/j.envint.2025.109601",
+      "total": 18,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 8
+          },
+          {
+            "year": 2026,
+            "citations": 10
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4412630802",
+      "doi": "10.1016/j.xgen.2025.100952",
+      "total": 9,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 1
+          },
+          {
+            "year": 2026,
+            "citations": 8
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4412798831",
+      "doi": "10.1016/j.envint.2025.109682",
+      "total": 7,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 2
+          },
+          {
+            "year": 2026,
+            "citations": 5
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4412820690",
+      "doi": "10.1080/09603123.2025.2540476",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4414590999",
+      "doi": "10.1016/s0140-6736(25)01635-6",
+      "total": 329,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2024,
+            "citations": 1
+          },
+          {
+            "year": 2025,
+            "citations": 17
+          },
+          {
+            "year": 2026,
+            "citations": 311
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4415091769",
+      "doi": "10.1016/s0140-6736(25)01637-x",
+      "total": 890,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2025,
+            "citations": 46
+          },
+          {
+            "year": 2026,
+            "citations": 844
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4417098019",
+      "doi": "10.1016/j.envint.2025.109985",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W4417363860",
+      "doi": "10.1530/etj-25-0335",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7117233116",
+      "doi": "10.1093/annweh/wxaf074",
+      "total": 3,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 3
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7117388309",
+      "doi": "10.1093/exposome/osaf019",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7128400437",
+      "doi": "10.1007/s00431-025-06736-y",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7133204163",
+      "doi": "10.1080/09603123.2026.2638885",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7147238709",
+      "doi": "10.1186/s12889-026-27121-w",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7161957524",
+      "doi": "10.1016/j.jncc.2026.04.007",
+      "total": 2,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 2
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7165820549",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7167224361",
+      "doi": "10.1186/s12989-026-00694-5",
+      "total": 1,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": [
+          {
+            "year": 2026,
+            "citations": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7204534919",
+      "doi": "10.3390/nu18172820",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    },
+    {
+      "source": "OpenAlex",
+      "workId": "https://openalex.org/W7211985925",
+      "doi": "10.21203/rs.3.rs-10572106/v1",
+      "total": 0,
+      "checkedAt": "2026-10-27T12:37:23.239Z",
+      "yearly": {
+        "from": 2012,
+        "through": 2026,
+        "counts": []
+      }
+    }
+  ]
+}

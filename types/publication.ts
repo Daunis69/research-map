@@ -31,6 +31,8 @@ export interface Publication {
   studyLocations: StudyLocation[];
   geographyStatus?: "located" | "unknown" | "non-geographic";
   citationCount?: number;
+  /** Verified citations for this canonical work; missing data is not zero. */
+  citationMetrics?: CitationMetrics;
   source: {
     openAlex?: string;
     orcid?: string;
@@ -59,6 +61,20 @@ export interface PublicationDateMetadata {
   onlineCheckedAt?: string;
   sourceUrl: string;
   checkedAt: string;
+}
+
+export interface CitationMetrics {
+  source: "OpenAlex";
+  workId: string;
+  doi?: string;
+  total: number;
+  checkedAt: string;
+  /** Citations received by calendar year, independently of publication year. */
+  yearly?: {
+    from: number;
+    through: number;
+    counts: { year: number; citations: number }[];
+  };
 }
 
 export interface AuthorAffiliation {

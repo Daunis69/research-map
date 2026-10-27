@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, Check, FileText, MapPin, X } from "lucide-react";
 import type { Publication } from "@/types/publication";
+import PublicationCitations from "@/components/citations/PublicationCitations";
 import {
   doiUrl,
   locationLabel,
@@ -49,12 +50,6 @@ export default function PublicationDetail({
           </div>
           <div className="detail-year">
             {publication.year ?? "Year unavailable"}
-            {publication.citationCount !== undefined && (
-              <span>
-                {publication.citationCount.toLocaleString()} citations in source
-                metadata
-              </span>
-            )}
           </div>
           <h2 id="detail-title">{publication.title}</h2>
           <p className="detail-authors">
@@ -63,6 +58,7 @@ export default function PublicationDetail({
           <p className="detail-journal">
             {publication.journal ?? "Journal metadata unavailable"}
           </p>
+          <PublicationCitations publication={publication} />
           <section className="detail-section">
             <h3>
               <MapPin size={16} aria-hidden="true" />

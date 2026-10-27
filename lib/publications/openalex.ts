@@ -1,6 +1,7 @@
 import researcher from "../../data/researcher.json";
 import institutionData from "../../data/institutions.json";
 import { enrichAuthorLocations } from "../authorLocations";
+import { parseOpenAlexCitations } from "../citations";
 import { validCoordinates } from "../geocode";
 import type { AuthorAffiliation, Publication } from "../../types/publication";
 import { fetchJson, type FetchOptions } from "./http";
@@ -60,6 +61,7 @@ export function normalizeOpenAlexWork(
   const title = plainText(work.title) ?? plainText(work.display_name);
   if (!title || !isPublicationContent(title, text(work.type))) return null;
   const doi = normalizeDoi(work.doi);
+  const citationMetrics = parseOpenAlexCitations(work, now);
   const authorships = array(work.authorships);
   const authorAffiliations: AuthorAffiliation[] = authorships.flatMap((value) => {
     const authorship = record(value);
@@ -121,10 +123,8 @@ export function normalizeOpenAlexWork(
       keywords: uniqueStrings(
         array(work.keywords).map((keyword) => record(keyword).display_name),
       ),
-      citationCount:
-        typeof work.cited_by_count === "number"
-          ? Math.max(0, work.cited_by_count)
-          : undefined,
+      citationMetrics,
+      citationCount: citationMetrics?.total,
       source: { openAlex: safeUrl(work.id) },
     },
     now,
@@ -227,7 +227,7 @@ export async function fetchOpenAlexPublications(
     url.searchParams.set("cursor", cursor);
     url.searchParams.set(
       "select",
-      "id,doi,title,type,publication_year,authorships,is_authors_truncated,primary_location,abstract_inverted_index,topics,keywords,cited_by_count",
+      "id,doi,title,type,publication_year,authorships,is_authors_truncated,primary_location,abstract_inverted_index,topics,keywords,cited_by_count,counts_by_year",
     );
     const response = record(await fetchJson(url, options, headers));
     if (!Array.isArray(response.results))

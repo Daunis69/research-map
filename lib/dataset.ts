@@ -8,6 +8,7 @@ import { enrichAuthorLocations } from "@/lib/authorLocations";
 import type { PublicationDataset } from "@/types/publication";
 import { isExcludedPublication } from "@/lib/publications/eligibility";
 import { deduplicatePublications } from "@/lib/publications/deduplicate";
+import { withBundledCitations } from "@/lib/citationSnapshot";
 
 const cachedSnapshot = unstable_cache(
   async () => encodeCachedDataset((await readSnapshot())?.dataset ?? { ...seedDataset, isFallback: true }),
@@ -45,7 +46,7 @@ export async function getPublicationDataset(): Promise<PublicationDataset> {
   return {
     ...dataset,
     sources,
-    publications: deduplicatePublications([...dataset.publications, ...seedDataset.publications])
+    publications: withBundledCitations(deduplicatePublications([...dataset.publications, ...seedDataset.publications]))
       .filter((p) => !isExcludedPublication(p))
       .map((p) => enrichAuthorLocations(p)),
   };

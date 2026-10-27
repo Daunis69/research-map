@@ -1,10 +1,10 @@
 # Makris Scientific Research Map
 
-A responsive publication atlas for **Professor Konstantinos C. Makris, Cyprus University of Technology**. Explore the same dataset through an interactive author-location map, a chronological timeline, and a searchable publication list. Filters are shareable in the URL.
+A responsive publication atlas for **Professor Konstantinos C. Makris, Cyprus University of Technology**. Explore the same dataset through an interactive author-location map, a chronological timeline, a searchable publication list, and citation statistics. Filters are shareable in the URL.
 
 Map points represent **the institutions of all available authors listed on each publication**. Institution coordinates are used when available; country-level markers are labelled as approximate. Papers without usable affiliations remain in the list and timeline as **Author locations unavailable**. Publication details show authors, institutions and incomplete affiliation coverage.
 
-Search covers titles, authors, journals, topics, keywords and reported institutions. Filters cover publication years, author countries/cities, topics and affiliation availability. The publication list can be sorted by date, title or source citation count. Header statistics describe the whole collection; result counts reflect the active filters.
+Search covers titles, authors, journals, topics, keywords and reported institutions. Filters cover publication years, author countries/cities, topics and affiliation availability. The publication list can be sorted by date, title or verified OpenAlex citation count, with unavailable counts last. Header statistics describe the whole collection; result counts reflect the active filters.
 
 ## Publication counts and duplicate versions
 
@@ -25,6 +25,24 @@ Copies are matched by normalized DOI, exact work-specific source identity, or ti
 The map, timeline, publication list and header totals use the same unique collection. A paper can appear at several author locations, so adding marker counts will double-count some papers. Source status counts overlap: OpenAlex, ORCID and Ktisis report their own retained records, while Crossref reports known DOIs enriched. Their counts are not the collection total. Google Scholar is linked for reference; it does not supply this application's dataset or counts.
 
 Publication years use the journal issue/print year when publisher-deposited Crossref metadata supplies it, with the available publication year as a fallback. The online-first year is retained separately in `publicationDates.onlineYear`. Date evidence belongs to its own DOI, so a preprint cannot change the final article's year, and newer OpenAlex metadata cannot replace a verified issue year with an earlier online-first year. Each date keeps its own observation timestamp when a later response omits that field. Stored date-check timestamps are excluded from publication-change counts.
+
+## Citations
+
+The **Citations** tab shows all-time totals, citations received in each calendar year, and papers ranked by the selected citation year or all time. Each publication card also shows its citation count; opening a paper displays its annual history and the date it was checked. Citation years describe when a paper was cited. Publication-year and other filters select the papers included in the statistics, while a separate citation-year selector chooses the reporting year. Full-collection totals remain visible when a filter is active.
+
+Counts come from **OpenAlex**, not Google Scholar, and may differ between those indexes. The 27 October 2026 citation baseline matched **205 of the live collection's 232 publications**, with **22,076 all-time citations**. The other **27** were unavailable. These are dated snapshot figures; automatic refreshes can change both counts and coverage. Unknown data is displayed as unavailable and excluded from sums; a verified zero is shown as zero.
+
+Annual counts use OpenAlex's `counts_by_year`. [OpenAlex documents citation bins from 2012](https://help.openalex.org/data/common-attributes/); years outside the stored coverage are unavailable. Lifetime totals can exceed the annual sum because earlier citations are not included in that history. A citation received before a journal's issue year can still appear, for example when the article was available online earlier. Totals sum citations to unique canonical works, rather than counting unique citing papers across the collection. Separate preprint and journal counts are not added together.
+
+`data/citations.json` supplies verified DOI/work-scoped baseline counts to older snapshots and local imports. The daily publication refresh also checks known DOI or OpenAlex work identifiers in bounded batches. A newer complete observation replaces the old one, including downward corrections; a failed lookup retains the last checked figures. Citation-check timestamps alone do not mark a publication as changed. The existing Production `OPENALEX_API_KEY` stays server-only.
+
+To update the bundled citation baseline from the checked-in bibliography:
+
+```sh
+npx tsx scripts/update-citations.ts
+```
+
+An optional first argument supplies another saved publication dataset, such as a verified snapshot of the live collection. This command updates citation metadata only; it does not discover or remove publications.
 
 ## Quick start
 
@@ -93,7 +111,7 @@ OpenAlex + ORCID + author-linked Ktisis records
                   ↓
       compressed Next.js Data Cache
                   ↓
-        Map / Timeline / Publications
+    Map / Timeline / Publications / Citations
 ```
 
 Important files:
@@ -102,6 +120,8 @@ Important files:
 | ------------------------------ | --------------------------------- |
 | Shared data contract           | `types/publication.ts`            |
 | Bundled starting collection    | `data/publications.json`          |
+| Citation baseline and calculations | `data/citations.json`, `lib/citations.ts` |
+| Citation refresh and interface | `lib/publications/citationSync.ts`, `components/citations/` |
 | Source requests and merging    | `lib/publications/`               |
 | Reviewed versions and exclusions | `data/publication-versions.json`, `data/publication-exclusions.json` |
 | Author location derivation     | `lib/authorLocations.ts`           |

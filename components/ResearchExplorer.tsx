@@ -13,6 +13,7 @@ import {
   FileText,
   Globe2,
   MapPin,
+  Quote,
   Search,
   SlidersHorizontal,
   X,
@@ -22,6 +23,7 @@ import ResearchFilters from "@/components/filters/ResearchFilters";
 import PublicationCard from "@/components/publications/PublicationCard";
 import PublicationDetail from "@/components/publications/PublicationDetail";
 import ResearcherAffiliations from "@/components/ResearcherAffiliations";
+import CitationsView from "@/components/citations/CitationsView";
 import researcher from "@/data/researcher.json";
 import {
   countValues,
@@ -61,7 +63,7 @@ export default function ResearchExplorer({
   const [railLimit, setRailLimit] = useState(12);
   const filterDialog = useRef<HTMLDialogElement>(null);
   const view = (
-    ["map", "timeline", "publications"].includes(params.get("view") ?? "")
+    ["map", "timeline", "publications", "citations"].includes(params.get("view") ?? "")
       ? params.get("view")
       : "map"
   ) as View;
@@ -90,7 +92,7 @@ export default function ResearchExplorer({
       ),
     [dataset.publications, serializedFilters],
   );
-  const update = (values: Record<string, string | null>) => {
+  const update = (values: Record<string, string | null>, addHistory = false) => {
     const next = new URLSearchParams(window.location.search);
     Object.entries(values).forEach(([key, value]) =>
       value ? next.set(key, value) : next.delete(key),
@@ -98,7 +100,7 @@ export default function ResearchExplorer({
     // Next.js integrates native history with useSearchParams. Filtering this
     // already-loaded dataset needs no server round trip, even while dragging a slider.
     startTransition(() =>
-      window.history.replaceState(
+      window.history[addHistory ? "pushState" : "replaceState"](
         null,
         "",
         `${pathname}${next.size ? `?${next.toString()}` : ""}`,
@@ -292,12 +294,13 @@ export default function ResearchExplorer({
                       label: "Publications",
                       icon: FileText,
                     },
+                    { id: "citations", label: "Citations", icon: Quote },
                   ] as const
                 ).map(({ id, label, icon: Icon }) => (
                   <button
                     key={id}
                     aria-current={view === id ? "page" : undefined}
-                    onClick={() => update({ view: id === "map" ? null : id })}
+                    onClick={() => update({ view: id === "map" ? null : id }, true)}
                     className={view === id ? "active" : ""}
                   >
                     <Icon size={16} aria-hidden="true" />
@@ -572,7 +575,17 @@ export default function ResearchExplorer({
                 )}
               </section>
             )}
-            <div className="geography-note">
+            {view === "citations" && (
+              <CitationsView
+                key={`${serializedFilters}:${params.get("citationYear") ?? ""}`}
+                publications={filtered}
+                allPublications={dataset.publications}
+                citationYear={params.get("citationYear") ?? ""}
+                onYearChange={(year) => update({ citationYear: year }, true)}
+                onSelect={setSelectedPublication}
+              />
+            )}
+            {view !== "citations" && <div className="geography-note">
               <p>
                 {unknown}{" "}
                 with author locations unavailable
@@ -594,7 +607,7 @@ export default function ResearchExplorer({
               >
                 View unmapped <ArrowRight size={13} aria-hidden="true" />
               </button>
-            </div>
+            </div>}
           </div>
         </section>
         <details className="source-details" id="methodology">

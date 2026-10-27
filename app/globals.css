@@ -168,6 +168,10 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
 .paper-journal { font-size: 12px; line-height: 1.6; color: var(--muted); margin-top: 8px; }
 .publication-card-compact .paper-journal { font-size: 10px; margin-top: 7px; }
 .paper-authors { font-size: 12px; color: var(--muted); line-height: 1.7; margin-top: 5px; }
+.paper-citations { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin-top: 9px; color: var(--accent); font-size: 11px; line-height: 1.6; }
+.paper-citations a { display: inline-flex; align-items: center; gap: 2px; color: var(--muted); margin-left: 3px; font-size: 10px; }
+.paper-citations a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.publication-card-compact .paper-citations { font-size: 10px; margin-top: 7px; }
 .paper-location { display: flex; align-items: flex-start; gap: 5px; font-size: 11px; line-height: 1.5; color: var(--accent); margin-top: 10px; }
 .paper-location svg { margin-top: 1px; }
 .publication-card-compact .paper-location { font-size: 10px; }
@@ -244,6 +248,15 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
 .confidence-low { background: #f3eadd; color: #8e6b39; }
 .unknown-note, .detail-abstract { font-size: 12px; line-height: 1.9; color: var(--body); white-space: pre-line; }
 .detail-tags > span { font-size: 11px; }
+.detail-citation-total { display: flex; align-items: baseline; flex-wrap: wrap; gap: 9px; margin-bottom: 12px; }
+.detail-citation-total strong { color: var(--ink); font-size: 29px; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -.7px; }
+.detail-citation-total > span { font-size: 12px; color: var(--muted); }
+.detail-citation-total .text-link { margin-left: auto; font-size: 11px; }
+.citation-history { display: grid; grid-template-columns: repeat(auto-fit, minmax(52px, 1fr)); gap: 6px; margin: 13px 0 10px; }
+.citation-history > div { background: var(--soft); padding: 10px 5px; border-radius: 3px; text-align: center; }
+.citation-history dt { color: var(--muted); font-size: 10px; }
+.citation-history dd { color: var(--accent); font-size: 13px; margin: 7px 0 0; font-variant-numeric: tabular-nums; }
+.detail-citations .citation-note + .citation-note { margin-top: 8px; }
 .detail-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
 .detail-doi { font-size: 11px; color: var(--muted); margin-top: 12px; overflow-wrap: anywhere; }
 .detail-sources { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 24px; display: flex; gap: 15px; align-items: center; justify-content: space-between; font-size: 11px; color: var(--muted); }
@@ -411,6 +424,93 @@ h1 { font-weight: 500; color: var(--ink); font-size: clamp(25px, 2.6vw, 37px); l
   .metric div > span { font-size: 8px; }
   .map-heading { gap: 8px; }
   .map-heading p { font-size: 9px; }
+}
+
+/* Citation years describe when papers were cited, independently of cohort filters. */
+.citations-view { padding: 28px; min-width: 0; min-height: 650px; }
+.citations-heading { margin-bottom: 14px; }
+.citations-heading .eyebrow { font-size: 9px; letter-spacing: .8px; margin-bottom: 9px; }
+.citation-year-select { display: flex; align-items: center; gap: 9px; font-size: 11px; color: var(--muted); }
+.citation-year-select select { min-width: 105px; }
+.citation-scope { font-size: 12px; color: var(--muted); line-height: 1.8; max-width: 680px; }
+.citation-scope strong { font-weight: 500; color: var(--body); }
+.citation-stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 23px 0 15px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+.citation-stat { display: flex; flex-direction: column; gap: 10px; padding: 20px 18px; min-width: 0; }
+.citation-stat + .citation-stat { border-left: 1px solid var(--line); }
+.citation-stat > span { font-size: 11px; color: var(--muted); line-height: 1.5; }
+.citation-stat > strong { color: var(--ink); font-size: clamp(23px, 2.6vw, 34px); font-weight: 500; letter-spacing: -.8px; font-variant-numeric: tabular-nums; line-height: 1.3; overflow-wrap: anywhere; }
+.citation-stat em { color: var(--muted); font-size: 15px; font-style: normal; letter-spacing: 0; white-space: nowrap; }
+.citation-stat small { font-size: 10px; color: var(--muted); line-height: 1.7; }
+.citation-overall { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; color: var(--body); line-height: 1.8; margin-bottom: 8px; }
+.citation-overall svg { color: var(--accent); margin-top: 3px; }
+.citation-overall strong { font-weight: 500; color: var(--ink); }
+.citation-note { color: var(--muted); font-size: 10px; line-height: 1.8; }
+.citation-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 32px; }
+.citation-section-heading h3 { font-size: 14px; font-weight: 500; color: var(--ink); }
+.citation-section-heading p { font-size: 11px; color: var(--muted); line-height: 1.7; margin-top: 6px; }
+.citation-section-heading .text-link { font-size: 11px; white-space: nowrap; }
+.citation-chart-scroll { max-width: 100%; overflow-x: auto; margin-top: 18px; padding: 6px 2px 4px; scrollbar-width: thin; }
+.citation-chart { display: flex; gap: 7px; min-width: 510px; height: 190px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.citation-chart button { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0; flex: 1; min-width: 28px; color: var(--muted); font-size: 9px; font-variant-numeric: tabular-nums; }
+.citation-bar-count { color: var(--accent); font-size: 9px; }
+.citation-bar-track { height: 128px; width: 100%; display: flex; align-items: flex-end; justify-content: center; }
+.citation-bar { width: 70%; max-width: 35px; background: #8aa69b; border-radius: 2px 2px 0 0; }
+.citation-chart button:hover .citation-bar, .citation-chart button.active .citation-bar { background: var(--accent); }
+.citation-chart button.active { color: var(--accent); font-weight: 600; }
+.citation-bar-unavailable .citation-bar { background: #dce3df; }
+.citation-bar-unavailable .citation-bar-count { color: var(--muted); }
+.citation-year-data { margin: 12px 0; }
+.citation-year-data > summary { width: fit-content; color: var(--accent); font-size: 11px; cursor: pointer; padding: 5px 0; }
+.citation-table-scroll { max-width: 100%; overflow-x: auto; scrollbar-width: thin; }
+.citation-table-scroll table { width: 100%; border-collapse: collapse; font-size: 11px; text-align: left; }
+.citation-table-scroll th, .citation-table-scroll td { padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.6; }
+.citation-table-scroll thead { color: var(--muted); background: var(--soft); }
+.citation-table-scroll th { font-weight: 500; }
+.citation-year-data table { max-width: 530px; margin: 12px 0; }
+.citation-year-data td { font-variant-numeric: tabular-nums; }
+.citation-ranking-heading { margin-top: 34px; margin-bottom: 16px; }
+.citation-coverage { font-size: 10px; color: var(--muted); white-space: nowrap; }
+.citation-paper-table { min-width: 390px; table-layout: fixed; }
+.citation-paper-table .citation-rank { width: 32px; padding-left: 5px; padding-right: 4px; color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+.citation-paper-table tbody th { padding-top: 17px; padding-bottom: 17px; font-size: 12px; color: var(--ink); overflow-wrap: anywhere; }
+.citation-paper-table .citation-number { width: 85px; text-align: right; font-variant-numeric: tabular-nums; }
+.citation-paper-table thead .citation-number { font-size: 10px; }
+.citation-paper-table .citation-number > span { display: block; font-size: 9px; margin-top: 2px; }
+.citation-paper-table tbody .citation-number { padding-top: 18px; font-size: 16px; color: var(--accent); }
+.citation-paper-table tbody .citation-unavailable { font-size: 10px; color: var(--muted); }
+.citation-paper-meta { font-size: 10px; line-height: 1.7; color: var(--muted); margin-top: 7px; font-weight: 400; }
+.citation-source-link { display: inline-flex; align-items: center; gap: 3px; margin-top: 6px; font-size: 10px; color: var(--accent); font-weight: 400; }
+.citation-source-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.citation-empty { background: var(--soft); padding: 25px 18px; border-radius: 4px; margin: 18px 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+@media (max-width: 1240px) {
+  .results-toolbar { flex-wrap: wrap; }
+  .view-tabs { min-height: 58px; flex-wrap: wrap; }
+  .toolbar-right { min-height: 38px; margin-left: auto; }
+}
+@media (max-width: 600px) {
+  .results-toolbar { padding: 0 4px; gap: 0 12px; }
+  .view-tabs { flex-basis: 100%; justify-content: space-between; gap: 0 12px; min-height: 54px; }
+  .view-tabs button { min-height: 54px; white-space: nowrap; }
+  .toolbar-right { width: 100%; justify-content: space-between; padding: 9px 0; border-top: 1px solid var(--line); }
+  .citations-view { padding: 25px 4px; min-height: 500px; }
+  .citations-heading { flex-wrap: wrap; gap: 18px; }
+  .citation-year-select { font-size: 10px; }
+  .citation-scope { font-size: 11px; }
+  .citation-stat-grid { grid-template-columns: 1fr; margin-top: 19px; }
+  .citation-stat { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 15px; padding: 15px; }
+  .citation-stat + .citation-stat { border-left: 0; border-top: 1px solid var(--line); }
+  .citation-stat > span { align-self: center; }
+  .citation-stat > strong { grid-column: 2; grid-row: 1 / 3; align-self: center; font-size: 26px; text-align: right; }
+  .citation-stat small { grid-column: 1; font-size: 9px; }
+  .citation-stat em { font-size: 12px; }
+  .citation-section-heading { flex-wrap: wrap; margin-top: 27px; }
+  .citation-section-heading h3 { font-size: 13px; }
+  .citation-section-heading p { font-size: 10px; }
+  .citation-ranking-heading { gap: 9px; }
+  .citation-paper-table th, .citation-paper-table td { padding-left: 7px; padding-right: 7px; }
+  .citation-paper-table tbody th { font-size: 11px; }
+  .citation-paper-table .citation-number { width: 75px; }
+  .citation-paper-table .citation-rank { width: 24px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -14,12 +14,14 @@ import {
   needsRefresh,
 } from "@/lib/syncLogic";
 import { hasBlobStorage, readSnapshot, writeSnapshot } from "@/lib/storage";
+import { withBundledCitations } from "@/lib/citationSnapshot";
+import { refreshPublicationCitations } from "@/lib/publications/citationSync";
 
 export const DATASET_TAG = "makris-publications-v1";
 const importedDataset = seed as PublicationDataset;
 export const seedDataset: PublicationDataset = {
   ...importedDataset,
-  publications: deduplicatePublications(importedDataset.publications),
+  publications: withBundledCitations(deduplicatePublications(importedDataset.publications)),
 };
 
 export interface SyncResult {
@@ -65,6 +67,14 @@ async function performSync(onlyIfStale: boolean): Promise<SyncResult> {
     revalidateTag(DATASET_TAG, { expire: 0 });
     throw error;
   }
+  const citations = await refreshPublicationCitations(incoming.publications);
+  incoming.publications = citations.publications;
+  incoming.sources.push({
+    source: "OpenAlex citations", status: citations.failed ? "error" : "ok", count: citations.checked,
+    message: citations.failed
+      ? `Citation checks failed for ${citations.failed} known works; previously checked counts are retained.`
+      : "Exact DOI/work citation lookups completed. Unindexed papers remain unavailable.",
+  });
   const result = compareDatasets(
     previous.publications.map((p) => enrichAuthorLocations(p)),
     incoming.publications.map((p) => enrichAuthorLocations(p)),
