@@ -1,4 +1,4 @@
-import { isAuthorized } from "@/lib/syncLogic";
+import { describeSyncError, isAuthorized } from "@/lib/syncLogic";
 import { syncPublications } from "@/lib/sync";
 
 export const runtime = "nodejs";
@@ -22,9 +22,20 @@ export async function GET(request: Request) {
   }
   try {
     return Response.json(await syncPublications(), { headers });
-  } catch {
+  } catch (error) {
     console.error(
       "Publication synchronization failed. Previous data was preserved. Check source availability and storage configuration.",
+      error instanceof Error
+        ? {
+            name: error.name,
+            reason: describeSyncError(error, [
+              process.env.CRON_SECRET,
+              process.env.BLOB_READ_WRITE_TOKEN,
+              process.env.VERCEL_OIDC_TOKEN,
+              process.env.OPENALEX_API_KEY,
+            ]),
+          }
+        : { name: "UnknownError" },
     );
     return Response.json(
       {

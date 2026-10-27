@@ -30,6 +30,16 @@ const paper: Publication = {
 };
 const timestamp = "2026-02-01T00:00:00.000Z";
 
+test("refresh diagnostics retain the error reason without exposing credentials or URLs", () => {
+  const diagnostic = syncLogic.describeSyncError?.(
+    new Error("ETag mismatch for https://storage.example.test/file?token=private-key; credential private-key"),
+    ["private-key", undefined, ""],
+  );
+  assert.ok(diagnostic?.includes("ETag mismatch"));
+  assert.ok(!diagnostic.includes("private-key"));
+  assert.ok(!diagnostic.includes("https://"));
+});
+
 test("Vercel update diagnostics identify missing storage and cron authorization independently", () => {
   const cases = [
     { onVercel: true, hasStorage: false, hasCronSecret: false, expected: ["Automatic updates", "Scheduled updates"] },
