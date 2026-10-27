@@ -24,6 +24,8 @@ Copies are matched by normalized DOI, exact work-specific source identity, or ti
 
 The map, timeline, publication list and header totals use the same unique collection. A paper can appear at several author locations, so adding marker counts will double-count some papers. Source status counts overlap: OpenAlex, ORCID and Ktisis report their own retained records, while Crossref reports known DOIs enriched. Their counts are not the collection total. Google Scholar is linked for reference; it does not supply this application's dataset or counts.
 
+Publication years use the journal issue/print year when publisher-deposited Crossref metadata supplies it, with the available publication year as a fallback. The online-first year is retained separately in `publicationDates.onlineYear`. Date evidence belongs to its own DOI, so a preprint cannot change the final article's year, and newer OpenAlex metadata cannot replace a verified issue year with an earlier online-first year. Each date keeps its own observation timestamp when a later response omits that field. Stored date-check timestamps are excluded from publication-change counts.
+
 ## Quick start
 
 Install Node.js 22 LTS or newer, open a terminal in this folder, and run:
@@ -157,6 +159,8 @@ The server checks the dataset age when a page is requested. At 24 hours old, a s
 Sources are requested independently with `Promise.allSettled`, timeouts and limited retries. An unavailable provider does not prevent successful sources from updating the collection. Crossref enriches up to 40 eligible known DOIs per run, within a 45-second budget; remaining records are queued for later runs. Provider errors are logged server-side; visitors receive readable source status. The checked date records the latest successful collection sync, which can include partial source failures.
 
 When Crossref has no record for a DOI, the importer checks its registration agency. A matching DOI confirmed as registered with another agency, such as mEDRA, is retained with its existing metadata and reported separately from failures. An unknown agency, failed agency check, mismatched DOI or missing Crossref-owned record still reports a lookup failure.
+
+Successful Crossref metadata is revisited after 30 days to discover later journal issue assignments. Never-checked and older records are processed first within the existing 40-DOI batch limit. The five reported online-first/issue-year mismatches have also been backfilled in the bundled import, so older saved snapshots receive their corrected years when combined with it.
 
 ### Manually synchronize
 

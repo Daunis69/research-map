@@ -21,8 +21,8 @@ function reviewedGroups(p: Publication): string[] {
 }
 
 export function publicationVersions(p: Publication): PublicationVersion[] {
-  const { id, title, year, doi, journal, publicationUrl, source } = p;
-  return [{ id, title, year, doi: normalizeDoi(doi), journal, publicationUrl, source }, ...(p.alternateVersions ?? [])];
+  const { id, title, year, publicationDates, doi, journal, publicationUrl, source } = p;
+  return [{ id, title, year, publicationDates, doi: normalizeDoi(doi), journal, publicationUrl, source }, ...(p.alternateVersions ?? [])];
 }
 
 export function publicationDois(p: Publication): string[] {

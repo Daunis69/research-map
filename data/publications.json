@@ -3286,7 +3286,7 @@
     },
     {
       "title": "An introduction to BASIC Guide: human biomonitoring and surveillance of chemical exposure in occupational settings",
-      "year": 2025,
+      "year": 2026,
       "authors": [
         "Maryam Zare Jeddi",
         "Kate Jones",
@@ -4643,7 +4643,15 @@
           "precision": "institution",
           "evidence": "Institution location from affiliation metadata attached to this publication."
         }
-      ]
+      ],
+      "publicationDates": {
+        "doi": "10.1093/annweh/wxaf074",
+        "year": 2026,
+        "printYear": 2026,
+        "onlineYear": 2025,
+        "sourceUrl": "https://api.crossref.org/works/10.1093%2Fannweh%2Fwxaf074",
+        "checkedAt": "2026-10-27T11:25:41.168Z"
+      }
     },
     {
       "title": "Bridging theory to practice: the development of a basic guide for conducting chemical-specific biomonitoring in practice",
@@ -11061,7 +11069,7 @@
     },
     {
       "title": "EUthyroid2: The next step towards the elimination of iodine deficiency and preventable iodine-related disorders in Europe and beyond",
-      "year": 2025,
+      "year": 2026,
       "authors": [
         "Henry Völzke",
         "Vivien Henck",
@@ -11934,7 +11942,15 @@
           "precision": "institution",
           "evidence": "Institution location from affiliation metadata attached to this publication."
         }
-      ]
+      ],
+      "publicationDates": {
+        "doi": "10.1530/etj-25-0335",
+        "year": 2026,
+        "printYear": 2026,
+        "onlineYear": 2025,
+        "sourceUrl": "https://api.crossref.org/works/10.1530%2Fetj-25-0335",
+        "checkedAt": "2026-10-27T11:25:41.575Z"
+      }
     },
     {
       "title": "Global, regional, and national prevalence of adult overweight and obesity, 1990–2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021",
@@ -18241,7 +18257,7 @@
     },
     {
       "title": "Methodological advances in designing a longitudinal urban exposome study: the UrbanX exposome study for the city of Paris within the CONSTANCES cohort",
-      "year": 2025,
+      "year": 2026,
       "authors": [
         "Nadine Haddad",
         "Émeline Lequy",
@@ -18636,11 +18652,19 @@
           "precision": "institution",
           "evidence": "Institution location from affiliation metadata attached to this publication."
         }
-      ]
+      ],
+      "publicationDates": {
+        "doi": "10.1093/exposome/osaf019",
+        "year": 2026,
+        "printYear": 2026,
+        "onlineYear": 2025,
+        "sourceUrl": "https://api.crossref.org/works/10.1093%2Fexposome%2Fosaf019",
+        "checkedAt": "2026-10-27T11:25:41.984Z"
+      }
     },
     {
       "title": "Perceptions of health professionals on the health impacts of climate change: a nationwide cross-sectional survey in Greece",
-      "year": 2025,
+      "year": 2026,
       "authors": [
         "Christina-Maria Kravvari",
         "Andreas Anestis",
@@ -18848,11 +18872,19 @@
           "precision": "institution",
           "evidence": "Institution location from affiliation metadata attached to this publication."
         }
-      ]
+      ],
+      "publicationDates": {
+        "doi": "10.1080/09603123.2025.2540476",
+        "year": 2026,
+        "printYear": 2026,
+        "onlineYear": 2025,
+        "sourceUrl": "https://api.crossref.org/works/10.1080%2F09603123.2025.2540476",
+        "checkedAt": "2026-10-27T11:25:42.383Z"
+      }
     },
     {
       "title": "Shaping the future of human biomonitoring (HBM): progress, strategy, and global vision from ISES Europe and the HBM Global Network",
-      "year": 2025,
+      "year": 2026,
       "authors": [
         "Maryam Zare Jeddi",
         "Nancy B. Hopf",
@@ -20080,7 +20112,15 @@
           "precision": "institution",
           "evidence": "Institution location from affiliation metadata attached to this publication."
         }
-      ]
+      ],
+      "publicationDates": {
+        "doi": "10.1016/j.envint.2025.109985",
+        "year": 2026,
+        "printYear": 2026,
+        "onlineYear": 2025,
+        "sourceUrl": "https://doi.org/10.1016/j.envint.2025.109985",
+        "checkedAt": "2026-10-27T11:25:42.785Z"
+      }
     },
     {
       "title": "Shaping the Future of Human Biomonitoring: Progress, Strategy, and Global Vision from ISES Europe and the HBM Global Network",

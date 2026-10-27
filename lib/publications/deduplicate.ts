@@ -14,6 +14,7 @@ import {
   publicationVersions,
   samePublicationVersions,
 } from "./versions";
+import { mergePublicationDates } from "./dates";
 
 const quality = (p: Publication) =>
   p.source.openAlex ? 4 : p.source.ktisis ? 3 : p.source.crossref ? 2 : 1;
@@ -27,6 +28,8 @@ export function mergePublications(a: Publication, b: Publication): Publication {
     (quality(a) > quality(b) || (quality(a) === quality(b) && a.updatedAt >= b.updatedAt)));
   const [preferred, other] = preferA ? [a, b] : [b, a];
   const differentVersion = differentPublicationVersions(a, b);
+  const doi = normalizeDoi(preferred.doi) ?? normalizeDoi(other.doi);
+  const publicationDates = mergePublicationDates(doi, preferred.publicationDates, differentVersion ? undefined : other.publicationDates);
   const abstract = differentVersion ? preferred.abstract :
     (a.abstract?.length ?? 0) >= (b.abstract?.length ?? 0)
       ? a.abstract
@@ -54,8 +57,9 @@ export function mergePublications(a: Publication, b: Publication): Publication {
   const merged: Publication = {
     ...other,
     ...preferred,
-    doi: normalizeDoi(preferred.doi) ?? normalizeDoi(other.doi),
-    year: preferred.year ?? other.year,
+    doi,
+    year: publicationDates?.printYear ?? publicationDates?.year ?? preferred.year ?? other.year,
+    publicationDates,
     journal: preferred.journal || other.journal,
     abstract,
     publicationUrl: preferred.publicationUrl || other.publicationUrl,

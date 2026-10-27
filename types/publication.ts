@@ -13,6 +13,8 @@ export interface Publication {
   id: string;
   title: string;
   year: number | null;
+  /** Publisher date evidence for this DOI; journal issue/print year is preferred. */
+  publicationDates?: PublicationDateMetadata;
   authors: string[];
   /** Affiliations attached to this work, never an author's current profile. */
   authorAffiliations?: AuthorAffiliation[];
@@ -43,8 +45,21 @@ export interface Publication {
 
 export type PublicationVersion = Pick<
   Publication,
-  "id" | "title" | "year" | "doi" | "journal" | "publicationUrl" | "source"
+  "id" | "title" | "year" | "publicationDates" | "doi" | "journal" | "publicationUrl" | "source"
 > & { sourceAliases?: Publication["source"][] };
+
+export interface PublicationDateMetadata {
+  doi: string;
+  year: number | null;
+  printYear?: number;
+  onlineYear?: number;
+  /** Per-field observation times survive later responses that omit that field. */
+  yearCheckedAt?: string;
+  printCheckedAt?: string;
+  onlineCheckedAt?: string;
+  sourceUrl: string;
+  checkedAt: string;
+}
 
 export interface AuthorAffiliation {
   author: string;

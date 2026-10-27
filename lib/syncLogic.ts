@@ -1,6 +1,6 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { gzipSync, gunzipSync } from "node:zlib";
-import type { Publication, PublicationDataset, SourceStatus } from "@/types/publication";
+import type { Publication, PublicationDataset, PublicationDateMetadata, SourceStatus } from "@/types/publication";
 import { fallbackKey, sourceIdentityKeys } from "@/lib/publications/normalize";
 import { publicationVersions } from "@/lib/publications/versions";
 
@@ -49,10 +49,18 @@ export function isAuthorized(
 }
 
 function contentFingerprint(publication: Publication): string {
+  const dateContent = (date: PublicationDateMetadata | undefined) => date ? {
+    ...date, checkedAt: undefined, yearCheckedAt: undefined, printCheckedAt: undefined, onlineCheckedAt: undefined,
+  } : undefined;
   const content = {
     ...publication,
     discoveredAt: undefined,
     updatedAt: undefined,
+    publicationDates: dateContent(publication.publicationDates),
+    alternateVersions: publication.alternateVersions?.map(version => ({
+      ...version,
+      publicationDates: dateContent(version.publicationDates),
+    })),
   };
   return JSON.stringify(content);
 }

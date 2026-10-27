@@ -22,8 +22,8 @@ export function normalizeCrossrefWork(
   const title = plainText(array(work.title)[0]);
   if (!title) return null;
   const dates = [
-    work.published,
     work["published-print"],
+    work.published,
     work["published-online"],
     work.issued,
   ];
@@ -34,6 +34,9 @@ export function normalizeCrossrefWork(
       )
       .find((year) => year !== null) ?? null;
   const doi = normalizeDoi(work.DOI);
+  const printYear = normalizeYear(array(array(record(work["published-print"])["date-parts"])[0])[0]);
+  const onlineYear = normalizeYear(array(array(record(work["published-online"])["date-parts"])[0])[0]);
+  const timestamp = now ?? new Date().toISOString();
   const authorEntries = array(work.author).map(value => {
     const author = record(value);
     return { value: author, name: plainText(author.name ?? [author.given, author.family].filter(part => typeof part === "string").join(" ")) };
@@ -54,6 +57,13 @@ export function normalizeCrossrefWork(
       title,
       year,
       doi,
+      publicationDates: doi ? {
+        doi, year, printYear: printYear ?? undefined, onlineYear: onlineYear ?? undefined,
+        sourceUrl: `https://api.crossref.org/works/${encodeURIComponent(doi)}`, checkedAt: timestamp,
+        yearCheckedAt: year !== null ? timestamp : undefined,
+        printCheckedAt: printYear !== null ? timestamp : undefined,
+        onlineCheckedAt: onlineYear !== null ? timestamp : undefined,
+      } : undefined,
       authors: uniqueStrings(
         array(work.author).map((value) => {
           const author = record(value);
@@ -79,7 +89,7 @@ export function normalizeCrossrefWork(
           : undefined,
       },
     },
-    now,
+    timestamp,
   );
 }
 
@@ -94,11 +104,14 @@ export async function enrichWithCrossref(
   maximum = 40,
 ): Promise<CrossrefResult> {
   // Only DOI identities already established by a verified author source enter this queue.
-  // Old successes are retained in the snapshot, so remaining works are enriched on later runs.
+  // Revisit old successes: an online-first article may later receive an issue year.
+  const cutoff = Date.now() - 30 * 86_400_000;
+  const checkedAt = (publication: Publication) => Date.parse(publication.publicationDates?.checkedAt ?? "") || 0;
   const pending = publications
-    .filter((publication) => publication.doi && (!publication.source.crossref || publication.authorAffiliations === undefined))
+    .filter((publication) => publication.doi && (!publication.source.crossref || publication.authorAffiliations === undefined || checkedAt(publication) < cutoff))
     .sort(
       (a, b) =>
+        checkedAt(a) - checkedAt(b) ||
         Number(!b.abstract || !b.authors.length) -
           Number(!a.abstract || !a.authors.length) ||
         (b.year ?? 0) - (a.year ?? 0),
