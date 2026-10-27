@@ -1,5 +1,5 @@
 import "server-only";
-import { get, put } from "@vercel/blob";
+import { BlobPreconditionFailedError, get, head, put } from "@vercel/blob";
 import { createHash, randomUUID } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -54,15 +54,23 @@ export async function readSnapshot(): Promise<StoredSnapshot | null> {
     const result = await get(BLOB_PATH, {
       access: "private",
       useCache: false,
-      // Compressed downloads return weak ETags, which Blob rejects for conditional writes.
-      headers: { "Accept-Encoding": "identity" },
       abortSignal: AbortSignal.timeout(15000),
     });
     if (!result) return null;
     if (!result.stream) throw new Error("Snapshot stream unavailable");
+    // Keep downloads compressed and obtain the strong revision from metadata.
+    // Verify both reads refer to the same version before allowing a conditional write.
+    const [text, metadata] = await Promise.all([
+      new Response(result.stream).text(),
+      head(BLOB_PATH, { abortSignal: AbortSignal.timeout(15000) }),
+    ]);
+    if (
+      !metadata.etag || metadata.etag.startsWith("W/") ||
+      result.blob.etag.replace(/^W\//, "") !== metadata.etag
+    ) throw new BlobPreconditionFailedError();
     return {
-      dataset: parseDataset(await new Response(result.stream).text()),
-      etag: result.blob.etag,
+      dataset: parseDataset(text),
+      etag: metadata.etag,
     };
   }
   if (process.env.VERCEL) return null;
