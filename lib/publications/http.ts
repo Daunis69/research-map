@@ -5,6 +5,14 @@ export interface FetchOptions {
   signal?: AbortSignal;
 }
 
+export class MetadataHttpError extends Error {
+  constructor(public readonly status: number) {
+    // URLs can contain credentials; only expose the HTTP status.
+    super(`Metadata service returned HTTP ${status}`);
+    this.name = "MetadataHttpError";
+  }
+}
+
 export async function fetchJson(
   url: string | URL,
   options: FetchOptions = {},
@@ -41,7 +49,7 @@ export async function fetchJson(
           continue;
         }
         // Do not include the URL: it may contain a server-only API key.
-        throw new Error(`Metadata service returned HTTP ${response.status}`);
+        throw new MetadataHttpError(response.status);
       }
       return (await response.json()) as unknown;
     } catch (error) {

@@ -156,6 +156,8 @@ The server checks the dataset age when a page is requested. At 24 hours old, a s
 
 Sources are requested independently with `Promise.allSettled`, timeouts and limited retries. An unavailable provider does not prevent successful sources from updating the collection. Crossref enriches up to 40 eligible known DOIs per run, within a 45-second budget; remaining records are queued for later runs. Provider errors are logged server-side; visitors receive readable source status. The checked date records the latest successful collection sync, which can include partial source failures.
 
+When Crossref has no record for a DOI, the importer checks its registration agency. A matching DOI confirmed as registered with another agency, such as mEDRA, is retained with its existing metadata and reported separately from failures. An unknown agency, failed agency check, mismatched DOI or missing Crossref-owned record still reports a lookup failure.
+
 ### Manually synchronize
 
 With the server running and `CRON_SECRET` configured, call:

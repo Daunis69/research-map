@@ -1,6 +1,6 @@
 import type { Publication, SourceStatus } from "../../types/publication";
 import { findKnownPlace } from "../geocode";
-import { fetchJson, mapConcurrent, type FetchOptions } from "./http";
+import { fetchJson, mapConcurrent, MetadataHttpError, type FetchOptions } from "./http";
 import {
   array,
   makePublication,
@@ -10,6 +10,7 @@ import {
   plainText,
   record,
   safeUrl,
+  text,
   uniqueStrings,
 } from "./normalize";
 
@@ -118,21 +119,39 @@ export async function enrichWithCrossref(
     );
     if (process.env.OPENALEX_EMAIL)
       url.searchParams.set("mailto", process.env.OPENALEX_EMAIL);
-    const response = await fetchJson(url, {
+    const requestOptions = {
       ...options,
       signal,
       timeoutMs: options.timeoutMs ?? 8000,
       retries: options.retries ?? 1,
-    });
+    };
+    let response: unknown;
+    try {
+      response = await fetchJson(url, requestOptions);
+    } catch (error) {
+      if (!(error instanceof MetadataHttpError) || error.status !== 404) throw error;
+      // A valid DOI may be registered with mEDRA, DataCite, or another agency.
+      // Verify ownership before treating a missing Crossref record as inapplicable.
+      if (!options.fetchImpl) await new Promise(resolve => setTimeout(resolve, 250));
+      const agencyUrl = new URL(url);
+      agencyUrl.pathname += "/agency";
+      const agencyResponse = await fetchJson(agencyUrl, requestOptions);
+      const agencyId = text(nested(agencyResponse, "message", "agency", "id"));
+      if (normalizeDoi(nested(agencyResponse, "message", "DOI")) === publication.doi && agencyId && agencyId !== "crossref") {
+        return { kind: "outside-crossref" as const };
+      }
+      throw error;
+    }
     const work = normalizeCrossrefWork(nested(response, "message"));
     if (!work || work.doi !== publication.doi)
       throw new Error("Crossref did not return the requested DOI identity");
-    return work;
+    return { kind: "enriched" as const, publication: work };
   });
   const enriched = results.flatMap((result) =>
-    result.status === "fulfilled" ? [result.value] : [],
+    result.status === "fulfilled" && result.value.kind === "enriched" ? [result.value.publication] : [],
   );
-  const failed = results.length - enriched.length;
+  const outsideCrossref = results.filter(result => result.status === "fulfilled" && result.value.kind === "outside-crossref").length;
+  const failed = results.length - enriched.length - outsideCrossref;
   return {
     publications: enriched,
     status: {
@@ -140,7 +159,7 @@ export async function enrichWithCrossref(
       status: failed ? "error" : candidates.length ? "ok" : "skipped",
       count: enriched.length,
       message: candidates.length
-        ? `${enriched.length} known DOIs enriched; ${failed} unavailable; ${Math.max(0, pending.length - candidates.length)} queued for a later sync.`
+        ? `${enriched.length} known DOIs enriched; ${outsideCrossref} registered outside Crossref; ${failed} unavailable; ${Math.max(0, pending.length - candidates.length)} queued for a later sync.`
         : "Known DOI metadata is already enriched, or no DOI is available.",
     },
   };

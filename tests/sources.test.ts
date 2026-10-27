@@ -255,6 +255,62 @@ test("Crossref only enriches a previously known DOI and rejects a mismatched res
   assert.equal(normalizeCrossrefWork({ title: ["Missing date"] })?.year, null);
 });
 
+test("a verified non-Crossref DOI remains in the collection without a source outage", async () => {
+  const medra = { ...paper("Verified mEDRA publication"), doi: "10.19191/ep19.4.a03.070" };
+  const known = { ...paper("Crossref publication"), doi: "10.1234/known" };
+  const mock: typeof fetch = async (input) => {
+    const url = new URL(String(input));
+    if (url.pathname.endsWith("/agency")) return json({ message: { DOI: medra.doi, agency: { id: "medra" } } });
+    if (decodeURIComponent(url.pathname).includes(medra.doi)) return new Response("Resource not found.", { status: 404 });
+    return json({ message: { DOI: known.doi, title: [known.title] } });
+  };
+  const dataset = await fetchAllPublications([], {
+    openAlex: async () => [known, medra], orcid: async () => [], ktisis: async () => [],
+    crossref: (publications) => enrichWithCrossref(publications, { fetchImpl: mock, retries: 0 }),
+  });
+  assert.equal(dataset.publications.length, 2);
+  assert.ok(dataset.publications.some(p => p.doi === medra.doi && !p.source.crossref));
+  const status = dataset.sources.find(source => source.source === "Crossref");
+  assert.equal(status?.status, "ok");
+  assert.equal(status.count, 1);
+  assert.match(status.message ?? "", /1 registered outside Crossref/);
+});
+
+test("a Crossref-owned missing DOI is still reported as unavailable", async () => {
+  const known = { ...paper("Missing Crossref record"), doi: "10.1234/missing" };
+  const mock: typeof fetch = async (input) => String(input).includes("/agency")
+    ? json({ message: { DOI: known.doi, agency: { id: "crossref" } } })
+    : new Response("Not found", { status: 404 });
+  const result = await enrichWithCrossref([known], { fetchImpl: mock, retries: 0 });
+  assert.equal(result.status.status, "error");
+  assert.equal(result.publications.length, 0);
+});
+
+test("a check containing only other-agency DOIs completes successfully without inventing metadata", async () => {
+  const known = { ...paper("mEDRA publication"), doi: "10.19191/ep19.4.a03.070" };
+  const mock: typeof fetch = async (input) => String(input).includes("/agency")
+    ? json({ message: { DOI: known.doi, agency: { id: "medra" } } })
+    : new Response("Not found", { status: 404 });
+  const result = await enrichWithCrossref([known], { fetchImpl: mock, retries: 0 });
+  assert.equal(result.status.status, "ok");
+  assert.equal(result.status.count, 0);
+  assert.equal(result.publications.length, 0);
+  assert.match(result.status.message ?? "", /1 registered outside Crossref; 0 unavailable/);
+});
+
+test("a failed or mismatched DOI agency check cannot hide a lookup failure", async () => {
+  const known = { ...paper("Unverified agency"), doi: "10.1234/missing" };
+  for (const agencyResponse of [
+    () => new Response("Unavailable", { status: 503 }),
+    () => json({ message: { DOI: "10.1234/different", agency: { id: "medra" } } }),
+  ]) {
+    const mock: typeof fetch = async (input) => String(input).includes("/agency")
+      ? agencyResponse() : new Response("Not found", { status: 404 });
+    const result = await enrichWithCrossref([known], { fetchImpl: mock, retries: 0 });
+    assert.equal(result.status.status, "error");
+  }
+});
+
 test("split author profile inherited ORCID alone cannot admit the physicist's work", () => {
   const work = {
     title: "Deep learning in PT-symmetric multimode waveguide sensors",
