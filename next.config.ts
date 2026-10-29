@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const config: NextConfig = {
+  experimental: {
+    agentUpgrade: "security",
+  },
   devIndicators: false,
   allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
