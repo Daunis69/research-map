@@ -16,6 +16,9 @@ import {
 import { hasBlobStorage, readSnapshot, writeSnapshot } from "@/lib/storage";
 import { withBundledCitations } from "@/lib/citationSnapshot";
 import { refreshPublicationCitations } from "@/lib/publications/citationSync";
+import { currentScholarSnapshot } from "@/lib/scholarSnapshot";
+import { refreshScholarReference } from "@/lib/publications/scholarSync";
+import { attachScholarCitations } from "@/lib/scholarCitations";
 
 export const DATASET_TAG = "makris-publications-v1";
 const importedDataset = seed as PublicationDataset;
@@ -75,6 +78,12 @@ async function performSync(onlyIfStale: boolean): Promise<SyncResult> {
       ? `Citation checks failed for ${citations.failed} known works; previously checked counts are retained.`
       : "Exact DOI/work citation lookups completed. Unindexed papers remain unavailable.",
   });
+  const scholar = await refreshScholarReference(currentScholarSnapshot(previous.scholarSnapshot), incoming.publications);
+  incoming.sources.push({
+    source: "Google Scholar citations", status: scholar.succeeded ? "ok" : "error", count: scholar.snapshot.records.length,
+    message: scholar.succeeded ? "Verified profile and paper citation counts refreshed."
+      : "Google Scholar could not be checked; the last verified citation snapshot and its checked date are retained.",
+  });
   const result = compareDatasets(
     previous.publications.map((p) => enrichAuthorLocations(p)),
     incoming.publications.map((p) => enrichAuthorLocations(p)),
@@ -82,7 +91,8 @@ async function performSync(onlyIfStale: boolean): Promise<SyncResult> {
   );
   const next: PublicationDataset = {
     ...incoming,
-    publications: result.publications,
+    publications: attachScholarCitations(result.publications, scholar.snapshot).publications,
+    scholarSnapshot: scholar.snapshot,
     fetchedAt: timestamp,
     lastAttemptAt: timestamp,
     isFallback: false,

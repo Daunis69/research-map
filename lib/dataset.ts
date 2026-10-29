@@ -9,6 +9,7 @@ import type { PublicationDataset } from "@/types/publication";
 import { isExcludedPublication } from "@/lib/publications/eligibility";
 import { deduplicatePublications } from "@/lib/publications/deduplicate";
 import { withBundledCitations } from "@/lib/citationSnapshot";
+import { withCurrentScholarReference } from "@/lib/scholarSnapshot";
 
 const cachedSnapshot = unstable_cache(
   async () => encodeCachedDataset((await readSnapshot())?.dataset ?? { ...seedDataset, isFallback: true }),
@@ -43,11 +44,11 @@ export async function getPublicationDataset(): Promise<PublicationDataset> {
     hasCronSecret: Boolean(process.env.CRON_SECRET),
   })];
   // Apply current checked-in overrides on every read, including to an older Blob snapshot.
-  return {
+  return withCurrentScholarReference({
     ...dataset,
     sources,
     publications: withBundledCitations(deduplicatePublications([...dataset.publications, ...seedDataset.publications]))
       .filter((p) => !isExcludedPublication(p))
       .map((p) => enrichAuthorLocations(p)),
-  };
+  });
 }

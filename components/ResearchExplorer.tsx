@@ -580,6 +580,7 @@ export default function ResearchExplorer({
                 key={`${serializedFilters}:${params.get("citationYear") ?? ""}`}
                 publications={filtered}
                 allPublications={dataset.publications}
+                reference={dataset.citationReference}
                 citationYear={params.get("citationYear") ?? ""}
                 onYearChange={(year) => update({ citationYear: year }, true)}
                 onSelect={setSelectedPublication}

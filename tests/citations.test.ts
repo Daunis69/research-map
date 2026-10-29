@@ -139,8 +139,9 @@ test("bundled citation evidence upgrades only exact identities and preserves new
 });
 
 test("most-cited sorting keeps verified zeros ahead of unknown legacy counts", () => {
-  const high = paper(metrics({ cited_by_count: 12 }), { id: "high" });
-  const zero = paper(metrics({ cited_by_count: 0, counts_by_year: [] }), { id: "zero" });
+  const scholar = (publicationId: string, total: number) => ({ source: "Google Scholar" as const, publicationId, workId: `iCd8LKAAAAAJ:${publicationId}`, url: `https://scholar.google.com/citations?user=iCd8LKAAAAAJ&citation_for_view=iCd8LKAAAAAJ:${publicationId}`, total, checkedAt: now });
+  const high = paper(metrics({ cited_by_count: 12 }), { id: "high", scholarCitations: scholar("high", 12) });
+  const zero = paper(metrics({ cited_by_count: 0, counts_by_year: [] }), { id: "zero", scholarCitations: scholar("zero", 0) });
   const unknown = paper(undefined, { id: "unknown", citationCount: 9999 });
   const filters: ExplorerFilters = { q: "", year: "", from: "", to: "", country: "", city: "", place: "", topic: "", geography: "", sort: "citations" };
   assert.deepEqual(filterPublications([unknown, zero, high], filters).map(p => p.id), ["high", "zero", "unknown"]);
