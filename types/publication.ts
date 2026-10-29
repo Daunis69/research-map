@@ -33,6 +33,8 @@ export interface Publication {
   citationCount?: number;
   /** Verified citations for this canonical work; missing data is not zero. */
   citationMetrics?: CitationMetrics;
+  /** Primary citation reference, matched to this exact publication identity. */
+  scholarCitations?: ScholarCitationMetrics;
   source: {
     openAlex?: string;
     orcid?: string;
@@ -77,6 +79,52 @@ export interface CitationMetrics {
   };
 }
 
+export type CitationYearSeries = NonNullable<CitationMetrics["yearly"]>;
+
+export interface ScholarCitationMetrics {
+  source: "Google Scholar";
+  publicationId: string;
+  workId: string;
+  url: string;
+  total: number;
+  checkedAt: string;
+  estimated?: boolean;
+  yearly?: CitationYearSeries;
+}
+
+export interface ScholarCitationRecord {
+  id: string;
+  url: string;
+  title: string;
+  authors: string;
+  publication: string;
+  year: number | null;
+  total: number;
+  estimated?: boolean;
+  doi?: string;
+  yearly?: CitationYearSeries;
+  historyCheckedAt?: string;
+}
+
+export interface ScholarCitationProfile {
+  source: "Google Scholar";
+  profileId: string;
+  url: string;
+  name: string;
+  total: number;
+  recent?: { from: number; total: number };
+  yearly?: CitationYearSeries;
+  checkedAt: string;
+  recordCount: number;
+  updateStatus: "live" | "snapshot";
+  lastAttemptAt?: string;
+}
+
+export interface ScholarCitationSnapshot {
+  profile: ScholarCitationProfile;
+  records: ScholarCitationRecord[];
+}
+
 export interface AuthorAffiliation {
   author: string;
   authorId?: string;
@@ -109,6 +157,9 @@ export interface PublicationDataset {
   sources: SourceStatus[];
   isFallback?: boolean;
   lastAttemptAt?: string;
+  citationReference?: ScholarCitationProfile;
+  /** Stored on the server; omitted from the public page payload. */
+  scholarSnapshot?: ScholarCitationSnapshot;
 }
 
 export interface LocationOverride {

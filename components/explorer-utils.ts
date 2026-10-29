@@ -1,5 +1,5 @@
 import type { Publication, PublicationDataset, StudyLocation } from "@/types/publication";
-import { getCitationCount } from "@/lib/citations";
+import { getCitationCount } from "@/lib/scholarCitations";
 
 export function getCollectionStatus(dataset: PublicationDataset, now = Date.now()) {
   const failed = (source: string) => dataset.sources.some(item => item.source === source && item.status === "error");
